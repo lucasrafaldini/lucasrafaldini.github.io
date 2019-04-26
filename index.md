@@ -1,37 +1,14 @@
-## Welcome to GitHub Pages
+## Welcome to my Coding Journal
 
-You can use the [editor on GitHub](https://github.com/lucasrafaldini/My-Page/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+Here I show some projects I've been developing for myself and that can be interesting for you.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+If you're trying to reach me somehow, you will always be able to [email me](mailto:lrafaldini@pm.me).
 
-### Markdown
+Otherwise, you can call me on my celphone number too, but that kind of info just can't be public, alright?
+So, please, email me and I'll give you my number if you really need it.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Social Media
 
-```markdown
-Syntax highlighted code block
+I'm not the kind of _Social Media Guy_. Honestly, I think Social Media turned into some kind of current open tv. Thereafter, it's users are turning into _open tv spectators_. But that is just my opinion, don't even mind that.
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/lucasrafaldini/My-Page/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Anyhow, I can't stop writing and reading, so nevertheless you can find me at [Medium](https://medium.com/@lrafaldini) and [GoodReads](https://www.goodreads.com/user/show/86762812-lucas).
