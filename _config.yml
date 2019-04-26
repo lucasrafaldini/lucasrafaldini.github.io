@@ -1,9 +1,5 @@
 theme: jekyll-theme-minimal
 title: "Rafaldini's Coding Journal"
-author:
-	  name : Lucas Rafaldini
-	  email : lrafaldini@pm.me
-	  github : lucasrafaldini
 plugins:
   - jekyll-relative-links
 relative_links:
