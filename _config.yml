@@ -1,5 +1,6 @@
 theme: jekyll-theme-minimal
 title: "Rafaldini's Coding Journal"
+markdown: kramdown
 plugins:
   - jekyll-relative-links
 relative_links:
