@@ -1,3 +1,4 @@
+# Lucas Rafaldini's Coding Journal
 ## Welcome to my Coding Journal
 
 Here I show some projects I've been developing for myself and that can be interesting for you.
