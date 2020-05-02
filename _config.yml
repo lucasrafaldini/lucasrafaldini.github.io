@@ -1,4 +1,4 @@
-theme: jekyll-theme-minimal
+theme: jekyll-theme-dinky
 title: "Rafaldini's Coding Journal"
 markdown: kramdown
 plugins:
