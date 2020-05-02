@@ -1,6 +1,7 @@
 theme: jekyll-theme-slate
 title: "Rafaldini's Coding Journal"
 markdown: kramdown
+url: "https://lucasrafaldini.github.io"
 plugins:
   - jekyll-relative-links
   - jekyll-sitemap
