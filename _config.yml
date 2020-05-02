@@ -12,6 +12,10 @@ plugins:
   - jekyll-feed
   - jekyll-avatar
   - github-pages-health-check
+  - github-pages
+jekyll-mentions:
+  base_url: https://twitter.com
+  
 relative_links:
   enabled: true
   collections: true
