@@ -3,6 +3,13 @@ title: "Rafaldini's Coding Journal"
 markdown: kramdown
 plugins:
   - jekyll-relative-links
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-mentions
+  - jekyll-feed
+  - jekyll-avatar
+  - github-pages-health-check
 relative_links:
   enabled: true
   collections: true
