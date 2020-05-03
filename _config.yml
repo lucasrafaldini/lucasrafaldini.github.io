@@ -1,2 +1,6 @@
 name: Lucas Rafaldini
 markdown: kramdown
+
+
+# Keep it always in last line
+permalink: /blog/:year/:month/:day/:title
