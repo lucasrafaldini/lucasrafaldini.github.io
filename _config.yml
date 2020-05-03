@@ -1,5 +1,7 @@
 name: Lucas Rafaldini
 markdown: kramdown
+disqus:
+    shortname: outras-ideias
 
 
 # Keep it always in last line
