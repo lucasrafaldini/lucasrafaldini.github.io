@@ -45,7 +45,6 @@ ul.posts li {
 .image{
     height: inherit;
     display: absolute;
-    
 }
 
 .grid {
@@ -81,6 +80,9 @@ ul.posts li {
         opacity: 0.7;
     }
 
+#not_found {
+    text-align: center;
+}
   /* .grid-item--width2 { width: 320px; }
   .grid-item--width3 { width: 480px; }
   .grid-item--width4 { width: 640px; }
