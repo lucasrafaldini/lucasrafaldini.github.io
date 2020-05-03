@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "Lucas sai da caverna"
+title: "Saindo da caverna - Outras Ideias"
+post_title: "Saindo da caverna"
 date: 2020-05-02
 ---
 
