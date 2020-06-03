@@ -62,7 +62,9 @@ Os dados mais comuns enviados em um header são:
 - **Connection**: Define se a conexão com o Servidor (Host) deve ser mantida aberta para requisições futuras ou não. Quando a conexão é mantida, envia-se **keep-alive**; quando não, envia-se **close**;
 
 - **Cookie**: O _Cookie_ auxilia nos processos de manteneção da sessão do usuário e de identificação do cliente. Como o HTTP é um protocolo [stateless](https://pt.wikipedia.org/wiki/Protocolo_sem_estado), ele não tem como manter um "estado" do Cliente. Dessa forma, quando você faz login em algum site e, em seguida, deseja executar alguma tarefa que necessita que o usuário esteja logado, você precisaria se logar novamente. Para que esse processo redundante seja evitado para o Cliente, utilizamos os _Cookies_. Ele nada mais é, _grosso modo_, que uma string [hasheada](https://pt.wikipedia.org/wiki/Fun%C3%A7%C3%A3o_hash) que pode carregar dados do usuário, como seu login, senha e dados complementares ao já mencionado _User-Agent_;
+
 - **Referer**: Esse dado fornece ao Servidor(Host) o endereço de onde a requisição partiu, o que pode ser usado para rastreamento e análises de uso de um site, por exemplo;
+
 - **Origin**: Esse dado é bastante semelhante com o _Referer_, mas leva um dado mais simplificado sobre a origem da requisição para o Servidor(Host). Enquanto o _Referer_ costuma enviar o caminho inteiro de uma URL (como, por exemplo, www.exemplo.com/home/login), o _Origin_ enviaria algo como www.exemplo.com.
 
 ## Tudo que sobe, desce
