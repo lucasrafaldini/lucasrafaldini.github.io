@@ -40,3 +40,132 @@ O Github é uma interface web para visualização do fluxo do Git. É algo como 
 Agora que você já sabe um pouco mais sobre o porquê do Git existir e a sua importância para um desenvolvedor, tá na hora de você colocar a mão na massa e destravar com o Git (e o Github) de uma vez por todas!
 
 Primeiramente, se você ainda não tem uma conta no Github, crie agora em [Criar a sua conta](https://github.com/join).
+
+### Repositórios
+
+Os repositórios podem ser locais ou remotos. Local significa que ele está sendo salvo na sua máquina, tendo o controle de versão registrado no seu computador. Um repositório remoto é um repositório de código que tem o seu controle de versão e _branches_ armazenados em um portal de distribuição e controle de repositórios online, como o Github, o [GitLab](https://about.gitlab.com/) e o [BitBucket](https://bitbucket.org/). Copiando um repositório remoto, você pode entrar para o fluxo de trabalho de um projeto novo ou já em andamento, trazendo para o seu computador o código de todas as _branches_ que você tenha autorização para acessar e alterar.
+
+### Adicionando repositórios remotos
+
+Como já dito, os repositórios remotos são versões de projetos seus ou de outros que estão armazenados em algum lugar da internet. Adicionar um repositório remoto é basicamente indicar para o seu Git onde o seu código está sendo armazenado. Você pode adicionar utilizando a URL do repositório (ou do fork de algum usuário).
+
+```
+git remote add <nome> <url-do-repositorio>
+```
+
+O **nome** trata-se de um nome único de repositório remoto na sua máquina. Ele pode ser qualquer coisa, mas necessariamente precisa ser diferente de outros nomes que você já tenha dado para repositórios que você já tenha adicionado.
+
+Para ver a lista de repositórios remotos que você já adicionou, execute o seguinte comando:
+
+```
+git remote -v
+```
+
+### Alterando repositórios remotos
+
+Pode ser que você queira mudar a URL atribuída a algum dos repositórios remotos que você adicionou.
+
+Para fazer isso, use o seguinte comando:
+
+```
+git remote set-url <um-nome-de-repositorio-existente> <nova-url>
+```
+
+Lembre-se de executar o _**git remote -v**_ depois de alterar a URL para confirmar se a sua alteração funcionou.
+
+### Criando uma branch (localmente e remotamente)
+
+Então você escolhe um repositório (ou o cria) e quer começar a codar. Tudo bem, mas antes disso você precisa de um _branch_ para chamar de sua. Para criar uma _branch_ localmente, roda o seguinte comando:
+
+```
+git branch <nome-da-nova-branch>
+```
+
+Em seguida, confira se a sua _branch_ aparece listada entre as suas _branches_ com
+
+```
+git branch
+```
+
+Para mudar de _branch_ de trabalho, basta digitar
+
+```
+git checkout <nome-da-branch>
+```
+
+Para simplificar o trabalho e você não ter que criar e fazer o _checkout_ com dois comandos, basta usar o seguinte comando:
+
+```
+git checkout -b <nome-da-nova-branch>
+```
+
+Legal, agora a sua nova _branch_ está criada localmente! Agora, supondo que você fez alterações bem legais no código e quer subir um [Pull Request](https://help.github.com/pt/github/collaborating-with-issues-and-pull-requests/about-pull-requests), basta você executar os seguintes comandos:
+
+```
+git add .
+git commit -m 'Sua descrição de commit'
+git push origin <nome-da-branch>
+```
+
+O primeiro comando (_**add**_) adiciona os arquivos alterados ao seu _commit_, o ponto seguinte indica que todos os arquivos alterados devem ser adicionados ao _commit_. Caso você deseje adicionar somente uma ou mais alterações, basta adicionar o caminho do arquivo referente à alteração. Caso você não lembre do caminho, basta usar o comando que lista todas as alterações:
+
+```
+git status
+```
+
+O segundo comando (_**commit**_) cria um novo commit para a sua _branch_. A flag **-m** serve para você adicionar a mensagem do _commit_ diretamente no mesmo comando, que é o parâmetro que vem em seguida entra aspas simples.
+
+### Deletando uma _branch_ (localmente e remotamente)
+
+Para deletar uma _branch_ local, não tem segredo. Basta utilizar o comando:
+
+```
+git branch -d <nome-da-branch>
+```
+
+Lembre-se sempre de confirmar se a _branch_ foi realmente deletada utilizando o _**git branch**_.
+
+Agora, para deletar uma _branch_ remota, basta que você use o seguinte comando:
+
+```
+git push origin --delete <nome-da-branch>
+```
+
+Lembrando que para o Git, **_origin_** indica a origem desse repositório, ou seja, o repositório que está online, enquanto a sua cópia é remota. Por isso usa-se a referência **_origin_**.
+
+### Desfazer um _commit_
+
+Para desafazer um commit localmente, basta utilizar o comando _**git reset**_. Por exemplo, se você quer desfazer o seu último _commit_, execute o seguinte comando:
+
+```
+git reset --soft HEAD~1
+```
+
+A flag **_--soft_** mantém as alterações feitas nos arquivos que você adicionou ao _comitt_, apenas o _commit_ é revertido. Entretanto, se você preferir reverter o _commit_ e as alterações feitas e adicionadas a ele, execute esse comando no lugar do anterior:
+
+```
+git reset --hard HEAD~1
+```
+
+O parâmetro _**HEAD~1**_ aponta para o seu último commit. Se você prefere desfazer algum _commit_ anterior a esse, você pode utilizar o comando **_git reflog_** para ter um registro de todos os _commits_ anteriores. Tendo acesso aos _commits_ anteriores, basta utilizar o mesmo comando _**reset**_ substituindo o _**HEAD~1**_ pelo hash referente ao _commit_ que você deseja desfazer:
+
+```
+git reset --soft <hash-do-commit>
+```
+
+Para desfazer um _commit_ remoto, você pode utilizar o comando **_git revert_** para desfazer o _commit_ localmente e, então, fazer o _**push**_ das alterações para a _branch_ remota.
+
+Para isso, primeiro execute o _**reflog**_ e depois o _**revert**_:
+
+```
+git reflog
+git revert <hash-do-commit>
+```
+
+Por fim, faça o push para a _branch_ remota desejada.
+
+**E aí? Gostou do artigo? Acha que faltou abordar alguma questão?**
+
+**Comenta aqui e me deixa saber se esse conteúdo te ajudou de alguma forma.**
+
+_**Até a próxima!**_
