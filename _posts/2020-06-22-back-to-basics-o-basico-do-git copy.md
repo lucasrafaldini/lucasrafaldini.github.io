@@ -17,7 +17,7 @@ O git atualmente é o sistema de controle de versões mais usado no mundo. Isso 
 
 - É preciso que essas alterações, caso sejam interpretadas como pouco importantes ou improdutivas, possam ser descartadas sem prejudicar o código legado, ou simplesmente o que havia antes da alteração;
 
-Pensando nisso, Linus, _a grosso modo_, criou o Git. O git separava o código legado em uma _branch_ prioritária, obrigando que cada desenvolvedor, oa desejar fazer uma alteração, não alterasse essa _branch_ diretamente, mas copiasse uma nova _branch_ na qual ele incluiria suas modificações e, posteriormente, submeteria uma solicitação de _merge_ com a _branch_ prioritária. Dessa forma, ele conseguiria controlar o código legado e escolheria ele mesmo o que deveria e o que não deveria ser alterado no seu código.
+Pensando nisso, Linus, _a grosso modo_, criou o Git. O git separava o código legado em uma _branch_ prioritária, obrigando que cada desenvolvedor, ao desejar fazer uma alteração, não alterasse essa _branch_ diretamente, mas copiasse uma nova _branch_ na qual ele incluiria suas modificações e, posteriormente, submeteria uma solicitação de _merge_ com a _branch_ prioritária. Dessa forma, ele conseguiria controlar o código legado e escolheria ele mesmo o que deveria e o que não deveria ser alterado no seu código.
 
 ## A metáfora da árvore
 
