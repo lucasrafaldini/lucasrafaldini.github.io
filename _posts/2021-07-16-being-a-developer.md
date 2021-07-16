@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: "Being a developer"
-date: 2021-06-21
+date: 2021-07-17
 ---
 
 There is an increased reliance on developers to not only adapt to new technologies but create and improve them.
