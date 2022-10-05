@@ -1,5 +1,5 @@
 {
-  "I.": {
+  "I": {
     "columnName": "Key Scale",
     "0": "0",
     "1": "1",
@@ -37,7 +37,7 @@
     "32 bis": "32 bis",
     "31 bis": "31 bis"
   },
-  "II.*": {
+  "II": {
     "columnName": "Hebrew Names of Numbers and Letters",
     "0": [
       "Ain",
@@ -79,8 +79,8 @@
     "32 bis": "Tau",
     "31 bis": "Shin"
   },
-  "III.": {
-    "columnName": "English of Col. II.",
+  "III": {
+    "columnName": "English of Col. II",
     "0": [
       "Nothing",
       "No Limit",
@@ -121,7 +121,7 @@
     "32 bis": ".........",
     "31 bis": "........."
   },
-  "IV.*": {
+  "IV": {
     "columnName": "Consciousness of the Adept",
     "0": ".......",
     "1": "awh",
@@ -159,7 +159,7 @@
     "32 bis": "",
     "31 bis": ""
   },
-  "V.*": {
+  "V": {
     "columnName": "God-Names in Assiah",
     "0": "",
     "1": "",
@@ -197,7 +197,7 @@
     "32 bis": "",
     "31 bis": ""
   },
-  "VI.": {
+  "VI": {
     "columnName": "The Heavens of Assiah",
     "0": "Rashith ha-Gilgalim",
     "1": "",
@@ -235,8 +235,8 @@
     "32 bis": "Aretz",
     "31 bis": "Ath"
   },
-  "VII.": {
-    "columnName": "English of Col. VI.",
+  "VII": {
+    "columnName": "English of Col. VI",
     "0": "............",
     "1": "Sphere of Primum Mobile",
     "2": "Sphere of the Zodiac ",
@@ -273,7 +273,7 @@
     "32 bis": "Earth",
     "31 bis": "Spirit"
   },
-  "VIII.*": {
+  "VIII": {
     "columnName": "Orders of Qliphoth",
     "0": "..............",
     "1": "Thaumiel",
@@ -286,7 +286,7 @@
     "8": "Samael",
     "9": "Gamaliel",
     "10": "Lilith",
-    "11": "[Elements. See Col. LXVIII.] ",
+    "11": "[Elements. See Col. LXVIII] ",
     "12": "[Planets follow Sephiroth]",
     "13": "..............",
     "14": "..............",
@@ -311,7 +311,7 @@
     "32 bis": "..............",
     "31 bis": ".............."
   },
-  "IX.": {
+  "IX": {
     "columnName": "The Sword and the Serpent",
     "0": "...",
     "1": "",
@@ -349,7 +349,7 @@
     "32 bis": "...",
     "31 bis": "..."
   },
-  "X.": {
+  "X": {
     "columnName": "Mystic Numbers of the Sephiroth",
     "0": "0",
     "1": "1",
@@ -387,7 +387,7 @@
     "32 bis": ".......",
     "31 bis": "......."
   },
-  "XI.*": {
+  "XI": {
     "columnName": "Elements (with their Planetary Rulers)",
     "0": "...",
     "1": "Root of Air",
@@ -425,7 +425,7 @@
     "32 bis": "Cold and Dry Fire",
     "31 bis": "..."
   },
-  "XII.*": {
+  "XII": {
     "columnName": "The Tree of Life",
     "0": "............",
     "1": "1st Plane, Middle Pillar",
@@ -463,45 +463,45 @@
     "32 bis": "............",
     "31 bis": "............"
   },
-  "XIII.": {
+  "XIII": {
     "columnName": "The Paths of the Sepher Yetzirah",
     "0": "..................",
     "1": "Admirable or Hidden Intelligence",
-    "2": "Illuminating I.",
-    "3": "Sanctifying I.",
-    "4": "Measuring Cohesive or Receptacular I.",
-    "5": "Radical I.",
-    "6": "I. of the Mediating Influence",
-    "7": "Occult or Hidden I.",
-    "8": "Absolute or Perfect I.",
-    "9": "Pure or Clear I.",
-    "10": "Resplendent I.",
-    "11": "Scintillating I.",
-    "12": "I. of Transparency",
-    "13": "Uniting I.",
-    "14": "Illuminating I.",
-    "15": "Constituting I.",
+    "2": "Illuminating I",
+    "3": "Sanctifying I",
+    "4": "Measuring Cohesive or Receptacular I",
+    "5": "Radical I",
+    "6": "I of the Mediating Influence",
+    "7": "Occult or Hidden I",
+    "8": "Absolute or Perfect I",
+    "9": "Pure or Clear I",
+    "10": "Resplendent I",
+    "11": "Scintillating I",
+    "12": "I of Transparency",
+    "13": "Uniting I",
+    "14": "Illuminating I",
+    "15": "Constituting I",
     "16": "Triumphal or Eternal One",
     "17": "Disposing One",
-    "18": "I. of the House of Influence",
-    "19": "I. of all the Activities of the Spiritual Being ",
-    "20": "I. of Will",
-    "21": "I. of Conciliation ",
-    "22": "Faithful I.",
-    "23": "Stable I.",
-    "24": "Imaginative I.",
-    "25": "I. of Probation or Tentative One",
-    "26": "Renovating I.",
-    "27": "Exciting I.",
-    "28": "Natural I.",
-    "29": "Corporeal I.",
-    "30": "Collecting I.",
-    "31": "Perpetual I.",
-    "32": "Administrative I.",
+    "18": "I of the House of Influence",
+    "19": "I of all the Activities of the Spiritual Being ",
+    "20": "I of Will",
+    "21": "I of Conciliation ",
+    "22": "Faithful I",
+    "23": "Stable I",
+    "24": "Imaginative I",
+    "25": "I of Probation or Tentative One",
+    "26": "Renovating I",
+    "27": "Exciting I",
+    "28": "Natural I",
+    "29": "Corporeal I",
+    "30": "Collecting I",
+    "31": "Perpetual I",
+    "32": "Administrative I",
     "32 bis": "..................",
     "31 bis": "................."
   },
-  "XIV.": {
+  "XIV": {
     "columnName": "General Attribution of Tarot",
     "0": "..............",
     "1": "The 4 Aces",
@@ -539,7 +539,7 @@
     "32 bis": "Empresses [Coins]",
     "31 bis": "All 22 Trumps"
   },
-  "XV.*": {
+  "XV": {
     "columnName": "The King Scale of Colour (y)",
     "0": ".............",
     "1": "Brilliance ",
@@ -577,7 +577,7 @@
     "32 bis": "Citrine, russet, olive, and black (quartered)",
     "31 bis": "White, merging Grey"
   },
-  "XVI.*": {
+  "XVI": {
     "columnName": "The Queen Scale of Colour (h)",
     "0": ".............",
     "1": "White brilliance",
@@ -615,7 +615,7 @@
     "32 bis": "Amber",
     "31 bis": "Deep purple (near black)"
   },
-  "XVII.*": {
+  "XVII": {
     "columnName": "The Emperor Scale of Colour (v)",
     "0": "..............",
     "1": "White brilliance",
@@ -653,7 +653,7 @@
     "32 bis": "Dark brown",
     "31 bis": "The 7 prismatic colours, the violet being outside"
   },
-  "XVIII.*": {
+  "XVIII": {
     "columnName": "The Empress Scale of Colour (#)",
     "0": "................",
     "1": "White flecked gold",
@@ -691,7 +691,7 @@
     "32 bis": "Black and yellow",
     "31 bis": "White, red, yellow, blue, black (the latter outside)"
   },
-  "XIX.*": {
+  "XIX": {
     "columnName": "Selection of Egyptian Gods",
     "0": "Harpocrates, Amoun, Nuith [[Nuit and Hadit]]",
     "1": "Ptah, Asar un Nefer, Hadith [[Heru-Ra-Ha]]",
@@ -729,7 +729,7 @@
     "32 bis": "Satem, Ahapshi, Nephthys, Ameshet",
     "31 bis": "Asar"
   },
-  "XX.": {
+  "XX": {
     "columnName": "Complete Practical Attribution of Egyptian Gods",
     "0": "Heru-pa-Kraath",
     "1": "Ptah",
@@ -767,7 +767,7 @@
     "32 bis": ".........",
     "31 bis": "........."
   },
-  "XXI.*": {
+  "XXI": {
     "columnName": "The Perfected Man",
     "0": "Nu—the Hair",
     "1": "Disk (of Ra)—the Face. [In Daath, Asi—the Neck]",
@@ -805,7 +805,7 @@
     "32 bis": "the Bones. As 16",
     "31 bis": "..."
   },
-  "XXII.": {
+  "XXII": {
     "columnName": "Small selection of Hindu Deities",
     "0": "AUM",
     "1": "Parabrahm (or any other whom one wishes to please) [[Shiva, Brahma]]",
@@ -843,7 +843,7 @@
     "32 bis": "[Prithivi]",
     "31 bis": "[Akasa]"
   },
-  "XXIII.*": {
+  "XXIII": {
     "columnName": "The Forty Buddhist Meditations",
     "0": [
       "Nothing and Neither P no p'",
@@ -891,7 +891,7 @@
     "32 bis": "Earth K",
     "31 bis": "Breathing R"
   },
-  "XXIV.": {
+  "XXIV": {
     "columnName": "Certain of the Hindu and Buddhist Results",
     "0": [
       "Nerodha-samapatti",
@@ -933,7 +933,7 @@
     "32 bis": "Prithiva-Bhawana",
     "31 bis": "Vision of the Higher Self, Prana-yama."
   },
-  "XXV.- XXXII.": {
+  "XXV- XXXII": {
     "columnName": "Some Assyrian, Syrian, Mongolian, ...",
     "0": "We have insufficient knowledge of the attributions",
     "1": "We have insufficient knowledge of the attributions",
@@ -971,7 +971,7 @@
     "32 bis": "We have insufficient knowledge of the attributions",
     "31 bis": "We have insufficient knowledge of the attributions"
   },
-  "XXXIII.": {
+  "XXXIII": {
     "columnName": "Some Scandinavian Gods",
     "0": "...",
     "1": "Wotan",
@@ -1009,7 +1009,7 @@
     "32 bis": "...",
     "31 bis": "..."
   },
-  "XXXIV.": {
+  "XXXIV": {
     "columnName": "Some Greek Gods",
     "0": "Pan",
     "1": "Zeus, Iacchus",
@@ -1047,7 +1047,7 @@
     "32 bis": "[Demeter] [[Gaia]]",
     "31 bis": "Iacchus"
   },
-  "XXXV.": {
+  "XXXV": {
     "columnName": "Some Roman Gods",
     "0": "..............",
     "1": "Jupiter",
@@ -1085,7 +1085,7 @@
     "32 bis": "Saturn [[Terminus, Astræa]] Ceres",
     "31 bis": "[Liber] [[Bacchus]]"
   },
-  "XXXVI.": {
+  "XXXVI": {
     "columnName": "Selection of Christian Gods (10); Apostles (12); Evangelists (4) and Churches of Asia (7).",
     "0": "......................",
     "1": "God the 3 in 1",
@@ -1123,7 +1123,7 @@
     "32 bis": "Luke",
     "31 bis": "The Holy Ghost"
   },
-  "XXXVII.": {
+  "XXXVII": {
     "columnName": "Hindu Legendary Demons",
     "0": "",
     "1": "",
@@ -1161,7 +1161,7 @@
     "32 bis": "",
     "31 bis": ""
   },
-  "XXXVIII.*": {
+  "XXXVIII": {
     "columnName": "Animals, Real and Imaginary.",
     "0": "[[Dragon]]",
     "1": "God [[Swan, Hawk]]",
@@ -1199,7 +1199,7 @@
     "32 bis": "Bull (Cherub of E)",
     "31 bis": "Sphinx (if sworded and crowned)"
   },
-  "XXXIX.*": {
+  "XXXIX": {
     "columnName": "Plants, Real and Imaginary",
     "0": "[[Lotus, Rose]]",
     "1": "Almond in Flower [[Banyan]]",
@@ -1237,7 +1237,7 @@
     "32 bis": "Oak, Ivy [[Cereals]]",
     "31 bis": "Almond in Flower"
   },
-  "XL.*": {
+  "XL": {
     "columnName": "Precious Stones",
     "0": "[[Star Sapphire, Black Diamond]]",
     "1": "Diamond",
@@ -1275,7 +1275,7 @@
     "32 bis": "Salt",
     "31 bis": "Black Diamond"
   },
-  "XLI.": {
+  "XLI": {
     "columnName": "Magical Weapons",
     "0": "[[No attribution possible]]",
     "1": "Swastika or Fylfot Cross, Crown [[The Lamp]]",
@@ -1313,7 +1313,7 @@
     "32 bis": "[[The Thurible]] A Sickle",
     "31 bis": "The Pantacle or [[Bread and]] Salt [[The Winged Egg]]"
   },
-  "CLXXXVII.": {
+  "CLXXXVII": {
     "columnName": "Magical Formulæ (see Col. XLI)",
     "0": [
       "LASTAL",
@@ -1363,7 +1363,7 @@
     "32 bis": "..........",
     "31 bis": ".........."
   },
-  "XLII.*": {
+  "XLII": {
     "columnName": "Perfumes",
     "0": "[[No attribution possible]]",
     "1": "Ambergris",
@@ -1401,7 +1401,7 @@
     "32 bis": "Storax, all Dull and Heavy Odours",
     "31 bis": "[[No attribution possible]]"
   },
-  "XLIII.*": {
+  "XLIII": {
     "columnName": "Vegetable Drugs",
     "0": "...................",
     "1": "Elixir Vitæ",
@@ -1439,7 +1439,7 @@
     "32 bis": "...................",
     "31 bis": "Stramonium"
   },
-  "XLIV.*": {
+  "XLIV": {
     "columnName": "Mineral Drugs",
     "0": "Carbon",
     "1": "Aur. Pot.",
@@ -1477,7 +1477,7 @@
     "32 bis": "Bismuth",
     "31 bis": "Carbon"
   },
-  "XLV.": {
+  "XLV": {
     "columnName": "Magical Powers [Western Mysticism]",
     "0": "The Supreme Attainment [[Vision of No Difference]]",
     "1": "Union with God",
@@ -1515,7 +1515,7 @@
     "32 bis": "Alchemy, Geomancy, Making of Pantacles, [[Travels on the Astral Plane]]",
     "31 bis": "Invisibility, Transformations, Vision of the Genius"
   },
-  "XLVI.": {
+  "XLVI": {
     "columnName": "System of Taoism",
     "0": "The Tao or Great Extreme of the Yi King.",
     "1": "Shang Ti (also the Tao)",
@@ -1553,7 +1553,7 @@
     "32 bis": "Kan",
     "31 bis": "...................."
   },
-  "XLVII.": {
+  "XLVII": {
     "columnName": "Kings and Princes of the Jinn",
     "0": "",
     "1": "",
@@ -1591,7 +1591,7 @@
     "32 bis": "",
     "31 bis": ""
   },
-  "XLVIII.": {
+  "XLVIII": {
     "columnName": "Figures related to Pure Number",
     "0": "..............",
     "1": "..............",
@@ -1629,7 +1629,7 @@
     "32 bis": "..................",
     "31 bis": ".................."
   },
-  "XLIX.*": {
+  "XLIX": {
     "columnName": "Lineal Figures of the Planets, &c., and Geomany",
     "0": "The Circle",
     "1": "The Point",
@@ -1667,7 +1667,7 @@
     "32 bis": "Those of Earth y Triplicity",
     "31 bis": ".................."
   },
-  "L.*": {
+  "L": {
     "columnName": "Transcendental Morality. [10 Virtues (1-10), 7 Sins (Planets), 4 Magick Powers (Elements).]",
     "0": "...................",
     "1": "Pyrrho-Zoroastrianusm (Accomplishment of Great Work)",
@@ -1705,7 +1705,7 @@
     "32 bis": "Tacere",
     "31 bis": "..................."
   },
-  "LI.": {
+  "LI": {
     "columnName": "The Coptic Alphabet",
     "0": "",
     "1": "",
@@ -1743,8 +1743,8 @@
     "32 bis": "",
     "31 bis": ""
   },
-  "LI.2": {
-    "columnName": "Numeration of Col. LI.",
+  "LI2": {
+    "columnName": "Numeration of Col. LI",
     "0": "...",
     "1": "6",
     "2": "...",
@@ -1781,8 +1781,8 @@
     "32 bis": "...",
     "31 bis": "..."
   },
-  "LI.3": {
-    "columnName": "English equivalent of Col. LI.",
+  "LI3": {
+    "columnName": "English equivalent of Col. LI",
     "0": ".........",
     "1": "St",
     "2": "Sz",
@@ -1819,7 +1819,7 @@
     "32 bis": ".........",
     "31 bis": "........."
   },
-  "LII.": {
+  "LII": {
     "columnName": "The Arabic Alphabet",
     "0": "...",
     "1": "Three Lost Fathers",
@@ -1857,7 +1857,7 @@
     "32 bis": "",
     "31 bis": ""
   },
-  "CLXXXIV.": {
+  "CLXXXIV": {
     "columnName": "Numeration of Arabic Alphabet",
     "0": ".........",
     "1": ".........",
@@ -1895,7 +1895,7 @@
     "32 bis": ".........",
     "31 bis": "........."
   },
-  "LIII.": {
+  "LIII": {
     "columnName": "The Greek Alphabet",
     "0": "",
     "1": "",
@@ -1933,7 +1933,7 @@
     "32 bis": "Υ υ",
     "31 bis": ""
   },
-  "CLXXXV.": {
+  "CLXXXV": {
     "columnName": "Numeration of Greek Alphabet",
     "0": "......",
     "1": "31",
@@ -1971,7 +1971,7 @@
     "32 bis": "400",
     "31 bis": "......"
   },
-  "CLXXXVI.": {
+  "CLXXXVI": {
     "columnName": "Diseases (Typical)",
     "0": "...............",
     "1": "Death",
@@ -2009,7 +2009,7 @@
     "32 bis": "Sluggishness",
     "31 bis": "Death (full Insanity)"
   },
-  "LIV.": {
+  "LIV": {
     "columnName": "The Letters of the Name",
     "11": "י",
     "23": "ה",
@@ -2017,7 +2017,7 @@
     "32 bis": "ח",
     "31 bis": "ש"
   },
-  "LV.": {
+  "LV": {
     "columnName": "The Elements and Senses",
     "11": "Air, Smell",
     "23": "Water, Taste",
@@ -2025,7 +2025,7 @@
     "32 bis": "Earth, touch",
     "31 bis": "Spirit, Hearing"
   },
-  "LVI.": {
+  "LVI": {
     "columnName": "The Four Rivers",
     "11": "Hiddekel",
     "23": "Gihon",
@@ -2033,7 +2033,7 @@
     "32 bis": "Phrath",
     "31 bis": "...."
   },
-  "LVII.*": {
+  "LVII": {
     "columnName": "The Four Quarters",
     "11": "Mezrach",
     "23": "Maareb",
@@ -2041,7 +2041,7 @@
     "32 bis": "Tzaphon",
     "31 bis": "...."
   },
-  "LVIII.": {
+  "LVIII": {
     "columnName": "Supereme Elemental Kings",
     "11": "Tahoeloj",
     "23": "Thahebyobeaatan",
@@ -2049,7 +2049,7 @@
     "32 bis": "Thahaaothahe",
     "31 bis": "...."
   },
-  "LIX.": {
+  "LIX": {
     "columnName": "Archangels of the Quarters",
     "11": "Raphael",
     "23": "Gabriel",
@@ -2057,7 +2057,7 @@
     "32 bis": "Auriel",
     "31 bis": "...."
   },
-  "LX.": {
+  "LX": {
     "columnName": "The Rulers of the Elements",
     "11": "Ariel",
     "23": "Tharsis",
@@ -2065,7 +2065,7 @@
     "32 bis": "Kerub",
     "31 bis": "...."
   },
-  "LXI.": {
+  "LXI": {
     "columnName": "Angels of the elements",
     "11": "Chassan",
     "23": "Taliahad",
@@ -2073,7 +2073,7 @@
     "32 bis": "Phorlakh",
     "31 bis": "...."
   },
-  "LXII.": {
+  "LXII": {
     "columnName": "Kings of the Elemental Spirits",
     "11": "Paralda",
     "23": "Niksa",
@@ -2081,7 +2081,7 @@
     "32 bis": "Ghob",
     "31 bis": "...."
   },
-  "LXIII.": {
+  "LXIII": {
     "columnName": "The Four Worlds",
     "11": "Yetrizah, Formative World",
     "23": "Briah, Creative World",
@@ -2089,7 +2089,7 @@
     "32 bis": "Assiah, Material World",
     "31 bis": "...."
   },
-  "LXIV.": {
+  "LXIV": {
     "columnName": "Secret Names of the Four Words",
     "11": "Mah",
     "23": "Seg",
@@ -2097,7 +2097,7 @@
     "32 bis": "Ben",
     "31 bis": "...."
   },
-  "LXV.": {
+  "LXV": {
     "columnName": "Secret Numbers corresponding",
     "11": "45",
     "23": "63",
@@ -2105,7 +2105,7 @@
     "32 bis": "52",
     "31 bis": "...."
   },
-  "LXVI.": {
+  "LXVI": {
     "columnName": "Spelling of Tetragrammaton in the Four Worlds",
     "11": "אה ואו אה רוי",
     "23": "אה ואו אה רוי",
@@ -2113,7 +2113,7 @@
     "32 bis": "הה וו הה רוי",
     "31 bis": "...."
   },
-  "LXVII.": {
+  "LXVII": {
     "columnName": "The Parts of the Soul",
     "11": "Ruach",
     "23": "Neshamah",
@@ -2121,7 +2121,7 @@
     "32 bis": "Nephesh",
     "31 bis": "Yechidah"
   },
-  "LXVIII.": {
+  "LXVIII": {
     "columnName": "The Demon Kings",
     "11": "Oriens",
     "23": "Ariton",
@@ -2129,7 +2129,7 @@
     "32 bis": "Amaimon",
     "31 bis": "..."
   },
-  "LXIX.*": {
+  "LXIX": {
     "columnName": "The Alchemical Elements",
     "11": "🜢(?)",
     "23": "🜔",
@@ -2137,7 +2137,7 @@
     "32 bis": "🜔",
     "31 bis": "..."
   },
-  "LXX.": {
+  "LXX": {
     "columnName": "Attribution of Pentagram.",
     "11": "Left Upper Point",
     "23": "Right Upper Point",
@@ -2145,7 +2145,7 @@
     "32 bis": "Left Lower Point",
     "31 bis": "Topmost Point"
   },
-  "LXXI.": {
+  "LXXI": {
     "columnName": "The Court Cards of the Tarot, with the Spheres of their Celestial Dominion—Wands",
     "11": "The Prince of the Chariot of Fire. Rules 20° d to 20° f, including most of Leo Minor.",
     "23": "The Queen of the Thrones of Flame. 20° l to 20° a, including part of Andromeda.",
@@ -2153,7 +2153,7 @@
     "32 bis": "The Princess of the Shining Flame. The Rose of the Palace of Fire. Rules one Quadrant of Heavens round N. Pole.",
     "31 bis": "The Root of the Powers of Fire (Ace)"
   },
-  "LXXII.": {
+  "LXXII": {
     "columnName": "The Court Cards of the Tarot, with the Spheres of their Celestial Dominion—Cups",
     "11": "The Prince of the Chariot of the Waters. 20° g to 20° h",
     "23": "The Queen of the Thrones of the Waters. 20° c to 20° d",
@@ -2161,7 +2161,7 @@
     "32 bis": "The Princess of the Waters. The Rose of the Palace of the Floods. Rules another Quadrant",
     "31 bis": "The Root of the Powers of Water."
   },
-  "LXXIII.": {
+  "LXXIII": {
     "columnName": "The Court Cards of the Tarot, with the Spheres of their Celestial Dominion—Swords.",
     "11": "The Prince of the Chariot of Air. 20° j to 20° k",
     "23": "The Queen of the Thrones of Air. 20° f to 20° g",
@@ -2169,7 +2169,7 @@
     "32 bis": "The Princess of the Rushing Winds. The Lotus of the Palace of Air. Rules a 3rd Quadrant.",
     "31 bis": "The Root of the Powers of Air"
   },
-  "LXXIV.": {
+  "LXXIV": {
     "columnName": "The Court Cards of the Tarot, with the Spheres of their Celestial Dominion—Pantacles.",
     "11": "The Prince of the Chariot of Earth. 20° a to 20° b",
     "23": "The Queen of the Thrones of the Earth. 20° i to 20° j",
@@ -2177,7 +2177,7 @@
     "32 bis": "The Princess of the Echoing Hills. The Lotus of the Palace of the Earth. Rules a 4th Quadrant of the Heavens about Kether.",
     "31 bis": "The Root of the Powers of Water."
   },
-  "LXXV.": {
+  "LXXV": {
     "columnName": "The Five Elements (Tatwas)",
     "11": "Vayu—the Blue Circle",
     "23": "Apas—the Silver Crescent",
@@ -2185,7 +2185,7 @@
     "32 bis": "Prithivi—the Yellow Square",
     "31 bis": "Akasa—the Black Egg"
   },
-  "LXXVI.": {
+  "LXXVI": {
     "columnName": "The Five Skandhas",
     "11": "Sankhara",
     "23": "Vedana",
@@ -2193,7 +2193,7 @@
     "32 bis": "Rupa",
     "31 bis": "Viñnanam"
   },
-  "CLXXXVIII.": {
+  "CLXXXVIII": {
     "columnName": "The Body",
     "11": "Breath",
     "23": "Chyle, Lymph",
@@ -2479,7 +2479,7 @@
     "9": "Veil of the vault of heaven",
     "10": "Veil of the vault of heaven"
   },
-  "XCV.": {
+  "XCV": {
     "columnName": "Contents of Col. XCIV",
     "0": "...",
     "1": "Blessings, all good things",
@@ -2493,7 +2493,7 @@
     "9": "Has no use. Follow 390 heavens, 18,000 worlds, Earth, Eden and Hell.",
     "10": "Has no use. Follow 390 heavens, 18,000 worlds, Earth, Eden and Hell."
   },
-  "XCVI.*": {
+  "XCVI": {
     "columnName": "The Revolutions of HWHY in Yetzirah",
     "0": "...",
     "1": "הוהי",
@@ -2507,7 +2507,7 @@
     "9": "היהו",
     "10": "ההיו"
   },
-  "XCVII.": {
+  "XCVII": {
     "columnName": "Parts of the Soul",
     "0": "...",
     "1": "Yechidah",
@@ -2549,7 +2549,7 @@
     "9": "Gabriel",
     "10": "Sandalphon (Metatron)"
   },
-  "C.*": {
+  "C": {
     "columnName": "Angels of Assiah",
     "0": "...",
     "1": "Chaioth ha-Qadosh",
@@ -2563,7 +2563,7 @@
     "9": "Kerubim",
     "10": "Ashim"
   },
-  "CI.": {
+  "CI": {
     "columnName": "English of Col. C.",
     "0": "...",
     "1": "Holy living creatures",
@@ -2577,7 +2577,7 @@
     "9": "Angels of elements",
     "10": "Flames"
   },
-  "CII.*": {
+  "CII": {
     "columnName": "The Revolutions of ינדא in Assiah",
     "0": "...",
     "1": "ינדא",
@@ -2591,7 +2591,7 @@
     "9": "נאיד",
     "10": "ינאד"
   },
-  "CIII.*": {
+  "CIII": {
     "columnName": "The Ten Divisions of the Body of God",
     "0": "...",
     "1": "Skull",
@@ -2605,7 +2605,7 @@
     "9": "Sign of the holy covenant",
     "10": "Crown which is in Yesod"
   },
-  "CIV.": {
+  "CIV": {
     "columnName": "...",
     "0": "...",
     "1": "Aretz",
@@ -2619,7 +2619,7 @@
     "9": "Tebhel",
     "10": "Cheled"
   },
-  "CV.": {
+  "CV": {
     "columnName": "English of Col. CIV",
     "0": "...",
     "1": "Earth (dry)",
@@ -2633,7 +2633,7 @@
     "9": "Wet earth",
     "10": "Wet earth"
   },
-  "CVI. *": {
+  "CVI *": {
     "columnName": "The Ten Hells in Seven Palaces",
     "0": "...",
     "1": "Sheol",
@@ -2647,7 +2647,7 @@
     "9": "Gehinnom",
     "10": "Gehinnom"
   },
-  "CVII.": {
+  "CVII": {
     "columnName": "Translation of Hells",
     "0": "...",
     "1": "Grave",
@@ -2661,7 +2661,7 @@
     "9": "Hell",
     "10": "Hell"
   },
-  "CVIII.*": {
+  "CVIII": {
     "columnName": "Some Princes of the Qliphoth",
     "0": "...",
     "1": "Satan and Moloch",
@@ -2675,7 +2675,7 @@
     "9": "",
     "10": ""
   },
-  "CIX.*": {
+  "CIX": {
     "columnName": "The Kings of Edom.",
     "0": "...",
     "1": "...",
@@ -2689,7 +2689,7 @@
     "9": "Baal-Hannan",
     "10": "Hadar of Pau"
   },
-  "CIX. (continued)*": {
+  "CIX (continued)*": {
     "columnName": "The Dukes of Edom",
     "0": "...",
     "1": "...",
@@ -2703,7 +2703,7 @@
     "9": "Mibzar and Magdiel",
     "10": "Eram"
   },
-  "CX.": {
+  "CX": {
     "columnName": "Elements and Quarters (Sepher Yetzirah)",
     "0": "...",
     "1": "",
@@ -2717,7 +2717,7 @@
     "9": "South",
     "10": "North"
   },
-  "CXI.": {
+  "CXI": {
     "columnName": "Sephirothic Colours (Dr. Jellinek)",
     "0": "...",
     "1": "Concealed Light",
@@ -2731,7 +2731,7 @@
     "9": "White-red-whitsh-red-reddish-white",
     "10": "The Light reflecting all colours"
   },
-  "CXII.": {
+  "CXII": {
     "columnName": "Alchemical Tree of Life (i.)",
     "0": "...",
     "1": "🜢(?)",
@@ -2745,7 +2745,7 @@
     "9": "☿",
     "10": "Mercurius Philosophorum"
   },
-  "CXIII.": {
+  "CXIII": {
     "columnName": "Alchemical Metals (ii.)",
     "0": "..",
     "1": "Metallic Radix",
@@ -2759,7 +2759,7 @@
     "9": "☿",
     "10": "Medicina Metallorum"
   },
-  "CXIV.": {
+  "CXIV": {
     "columnName": "Passwords of the Grades",
     "0": "...",
     "1": "Silence *",
@@ -2773,7 +2773,7 @@
     "9": "",
     "10": ""
   },
-  "CXV.*": {
+  "CXV": {
     "columnName": "Officers in a Masonic Lodge",
     "0": "...",
     "1": "Past Master",
@@ -2787,7 +2787,7 @@
     "9": "Inner Guard",
     "10": "Tyler and Candidate"
   },
-  "CXVI.": {
+  "CXVI": {
     "columnName": "Egyptian Attribution of Parts of the Soul",
     "0": "Hammemit",
     "1": "Kha, or Yekh",
@@ -2801,7 +2801,7 @@
     "9": "Hati",
     "10": "Kheibt, Khat, Tet, Sahu"
   },
-  "CXVII.": {
+  "CXVII": {
     "columnName": "The Soul (Hindu)",
     "0": "...",
     "1": "Atma",
@@ -2815,7 +2815,7 @@
     "9": "Linga Sharira",
     "10": "Sthula Sharira"
   },
-  "CXVIII.": {
+  "CXVIII": {
     "columnName": "The Chakkras or Centres of Prana (Hinduism)",
     "0": "...",
     "1": "Sahasrara (above Head)",
@@ -2829,7 +2829,7 @@
     "9": "Muladhara (Lingam and Anus)",
     "10": ""
   },
-  "CXIX.": {
+  "CXIX": {
     "columnName": "The Ten Fetters (Buddhism)",
     "0": "...",
     "1": "Aruparga",
@@ -2843,7 +2843,7 @@
     "9": "Kama",
     "10": "Avigga"
   },
-  "CXX.": {
+  "CXX": {
     "columnName": "Magical Images of the Sephiroth",
     "0": "...",
     "1": "Ancient bearded king seen in profile",
@@ -2857,7 +2857,7 @@
     "9": "A beautiful naked man, very strong",
     "10": "A young woman crowned and veiled"
   },
-  "CXXI.*": {
+  "CXXI": {
     "columnName": "The Grades of the Order.",
     "0": "",
     "1": "Ipsissimus",
@@ -2874,7 +2874,7 @@
       "Neophyte"
     ]
   },
-  "CXXII.": {
+  "CXXII": {
     "columnName": "The Ten Plagues of Egypt",
     "0": "...",
     "1": "Death of First-born",
@@ -2888,8 +2888,8 @@
     "9": "Frogs",
     "10": "Water turned to Blood"
   },
-  "CXXIII.": {
-    "columnName": "English of Col. VIII., Lines 1-10",
+  "CXXIII": {
+    "columnName": "English of Col. VIII, Lines 1-10",
     "0": "...",
     "1": "Dual contending Forces",
     "2": "Hinderers",
@@ -2902,7 +2902,7 @@
     "9": "Obscene Ones",
     "10": "The Evil Woman or (simply) The Woman"
   },
-  "CXXIV.": {
+  "CXXIV": {
     "columnName": "The Heavenly Hexagram",
     "0": "...",
     "1": "Jupiter",
@@ -2916,7 +2916,7 @@
     "9": "",
     "10": ""
   },
-  "CXXV.*": {
+  "CXXV": {
     "columnName": "Seven Hells of the Arabs",
     "0": "...",
     "1": "Háwiyah",
@@ -2930,7 +2930,7 @@
     "9": "Jehannum",
     "10": "Jehannum"
   },
-  "CXXVI.": {
+  "CXXVI": {
     "columnName": "Their Inhabitants",
     "0": "...",
     "1": "Hypocrites",
@@ -2944,7 +2944,7 @@
     "9": "Moslems",
     "10": "Moslems"
   },
-  "CXXVII.*": {
+  "CXXVII": {
     "columnName": "Seven Heavens of the Arabs.",
     "0": "...",
     "1": "Dar al-Jalai",
@@ -2958,8 +2958,8 @@
     "9": "Jannat al-’adn or al-Karar",
     "10": "Jannat al-’adn or al-Karar"
   },
-  "CXXVIII.": {
-    "columnName": "Meaning of Col. CXXVII.",
+  "CXXVIII": {
+    "columnName": "Meaning of Col. CXXVII",
     "0": "...",
     "1": "House of Glory, made of pearls",
     "2": "House of Glory, made of pearls",
@@ -2972,7 +2972,7 @@
     "9": "Garden of Eden, or Everlasting Abode, made of red pearls or pure musk",
     "10": "Garden of Eden, or Everlasting Abode, made of red pearls or pure musk"
   },
-  "CXXIX.": {
+  "CXXIX": {
     "columnName": "Pairs of Angels ruling Wands",
     "0": "...",
     "1": "...",
@@ -2986,7 +2986,7 @@
     "9": "",
     "10": ""
   },
-  "CXXX.": {
+  "CXXX": {
     "columnName": "Pairs of Angels ruling Cups",
     "0": "...",
     "1": "...",
@@ -3000,7 +3000,7 @@
     "9": "",
     "10": ""
   },
-  "CXXXI.": {
+  "CXXXI": {
     "columnName": "Pairs of Angels ruling Swords",
     "0": "...",
     "1": "...",
@@ -3014,7 +3014,7 @@
     "9": "",
     "10": ""
   },
-  "CXXXII.": {
+  "CXXXII": {
     "columnName": "Pairs of Angels ruling Coins",
     "0": "...",
     "1": "...",
@@ -3028,7 +3028,7 @@
     "9": "",
     "10": ""
   },
-  "CXXXIII.*": {
+  "CXXXIII": {
     "columnName": "Titles and Attributions of the Wand Suit [Clubs]",
     "0": "...",
     "1": "The Root of the Powers of Fire",
@@ -3042,7 +3042,7 @@
     "9": "",
     "10": ""
   },
-  "CXXXIV.": {
+  "CXXXIV": {
     "columnName": "Titles and Attributions of the Cup or Chalice Suit [Hearts]",
     "0": "...",
     "1": "",
@@ -3056,7 +3056,7 @@
     "9": "",
     "10": ""
   },
-  "CXXXV.": {
+  "CXXXV": {
     "columnName": "Titles and Attributions of the Sword Suit [Spades]",
     "0": "...",
     "1": "The Root of the Powers of Air",
@@ -3070,7 +3070,7 @@
     "9": "",
     "10": ""
   },
-  "CXXXVI.": {
+  "CXXXVI": {
     "columnName": "Titles and Attributions of the Coin, Disc or Pantacle Suit [Diamonds]",
     "0": "...",
     "1": "The Root of the Powers of Earth",
@@ -3084,7 +3084,7 @@
     "9": "",
     "10": ""
   },
-  "CXXXVII.": {
+  "CXXXVII": {
     "columnName": "Signs of the Zodiac",
     "1": "",
     "2": "♆",
@@ -3109,8 +3109,8 @@
     "28": "♒ Aquarius",
     "29": "♓ Pisces"
   },
-  "CXXXVIII.*": {
-    "columnName": "Planets ruling Col. CXXXVII.",
+  "CXXXVIII": {
+    "columnName": "Planets ruling Col. CXXXVII",
     "15": "♂",
     "16": "♀",
     "17": "☿",
@@ -3124,8 +3124,8 @@
     "28": "♄",
     "29": "♃"
   },
-  "CXXXIX.": {
-    "columnName": "Planets exalted in Col. CXXXVII.",
+  "CXXXIX": {
+    "columnName": "Planets exalted in Col. CXXXVII",
     "15": "♂",
     "16": "♀",
     "17": "☿",
@@ -3169,7 +3169,7 @@
     "28": "Reuben",
     "29": "Simeon"
   },
-  "CXLII.": {
+  "CXLII": {
     "columnName": "Angels ruling Houses",
     "15": "Ayel",
     "16": "Toel",
@@ -3184,7 +3184,7 @@
     "28": "Ansuel",
     "29": "Pasiel"
   },
-  "CXLIII.": {
+  "CXLIII": {
     "columnName": "Twelve Lesser Assistant Angels in the Signs",
     "15": "Sharhiel",
     "16": "Araziel",
@@ -3199,7 +3199,7 @@
     "28": "Tzakmiqiel",
     "29": "Vakabiel"
   },
-  "CXLIV.": {
+  "CXLIV": {
     "columnName": "Angel Lords of the Triplicity in the Signs by Day",
     "15": "Sateraton",
     "16": "Rayel",
@@ -3214,7 +3214,7 @@
     "28": "Athor",
     "29": "Ramara"
   },
-  "CXLV.": {
+  "CXLV": {
     "columnName": "Angel Lords of the Triplicity in the Signs by Night",
     "15": "Sapatavi",
     "16": "Totath",
@@ -3229,7 +3229,7 @@
     "28": "Polayan",
     "29": "Nathdorinel"
   },
-  "CXLVI.": {
+  "CXLVI": {
     "columnName": "Angels of the Decantes (Ascendant).",
     "15": "Zazer",
     "16": "Kadamidi",
@@ -3244,7 +3244,7 @@
     "28": "Saspam",
     "29": "Bihelami"
   },
-  "CXLVII.": {
+  "CXLVII": {
     "columnName": "Angels of the Decantes (Succedent).",
     "15": "Behahemi",
     "16": "Minacharai",
@@ -3259,7 +3259,7 @@
     "28": "Abdaron",
     "29": "Avron"
   },
-  "CXLVIII.": {
+  "CXLVIII": {
     "columnName": "Angels of the Decantes (Cadent).",
     "15": "Satonder",
     "16": "Yakasaganotz",
@@ -3274,7 +3274,7 @@
     "28": "Gerodiel",
     "29": "Satrip"
   },
-  "CXLIX.": {
+  "CXLIX": {
     "columnName": "Magical Images of the Decans (Ascendant)",
     "15": "A tall, dark, restless man, with keen flame-coloured eyes, bearing a sword.",
     "16": "A woman with long and beautiful hair, clad in flame-coloured robes",
@@ -3304,7 +3304,7 @@
     "28": "A man arrayed like a king, looking with pride and conceit on all around him.",
     "29": "A grave man pointing to the sky."
   },
-  "CLI.": {
+  "CLI": {
     "columnName": "Magical Images of the Decans (Cadent)",
     "15": "A restless man in scarlet robes, with golden bracelets on his hands and arms",
     "16": "A swarthy man with white lashes, his body elephantine with long legs; with him, a horse, a stag, and a calf",
@@ -3319,7 +3319,7 @@
     "28": "A small-headed man dressed like a woman, and with him an old man",
     "29": "A man of grave and thoughtful face, with a bird in his hand, before him a woman and an ass"
   },
-  "CLII.": {
+  "CLII": {
     "columnName": "Perfumes (Ascendant)",
     "15": "Myrtle",
     "16": "Costum",
@@ -3334,7 +3334,7 @@
     "28": "Euphorbium",
     "29": "Thyme"
   },
-  "CLIII.": {
+  "CLIII": {
     "columnName": "Perfumes (Succedent)",
     "15": "Stammonia",
     "16": "Codamorns",
@@ -3349,7 +3349,7 @@
     "28": "Stammonia",
     "29": "Coxium"
   },
-  "CLIV.": {
+  "CLIV": {
     "columnName": "Perfumes (Cadent)",
     "15": "Black Pepper",
     "16": "Cassia",
@@ -3364,7 +3364,7 @@
     "28": "Rhubarb",
     "29": "Santal Alb"
   },
-  "CLV.": {
+  "CLV": {
     "columnName": "Goetic Demons of Decans by Day (Ascendant)",
     "15": "Bael",
     "16": "Gamigina",
@@ -3379,8 +3379,8 @@
     "28": "Foras",
     "29": "Furfur"
   },
-  "CL VI.": {
-    "columnName": "Magical Images of Col. CLV.",
+  "CL VI": {
+    "columnName": "Magical Images of Col. CLV",
     "15": "Cat, toad, man, or all at once.",
     "16": "Little horse or ass.",
     "17": "(1) Wolf with serpent’s tail. (2) Man with dog’s teeth and raven’s head.",
@@ -3394,7 +3394,7 @@
     "28": "A strong man in human shape.",
     "29": "(1) Hart with fiery tail. (2) Angel."
   },
-  "CL VII.": {
+  "CL VII": {
     "columnName": "Goetic Demons of Decans by Day (Succedent)",
     "15": "Agares",
     "16": "Marbas",
@@ -3409,8 +3409,8 @@
     "28": "Asmoday",
     "29": "Marchosias"
   },
-  "CL VIII.": {
-    "columnName": "Magical Images of Col. CLVII.",
+  "CL VIII": {
+    "columnName": "Magical Images of Col. CLVII",
     "15": "Old man, riding a crocodile and carrying a goshawk.",
     "16": "Great Lion.",
     "17": "Accompanied by 4 noble kings and great troops.",
@@ -3424,7 +3424,7 @@
     "28": "3 heads (bull, man, ram), snake’ s tail, goose’ s feet. Rides, with lance and banner, on a dragon.",
     "29": "Wolf with a gryphon’s wings and serpent’s tail. Breathes flames."
   },
-  "CLIX.": {
+  "CLIX": {
     "columnName": "Goetic Demons of Decans by Day (Cadent)",
     "15": "Vassago",
     "16": "Valefor",
@@ -3439,7 +3439,7 @@
     "28": "Gaap",
     "29": "Stolas"
   },
-  "CLX.": {
+  "CLX": {
     "columnName": "Magical Images of Col. CLIX.",
     "15": "Like Agares.",
     "16": "Lion with ass’s head, bellowing",
@@ -3454,7 +3454,7 @@
     "28": "Like a guide. To be kings.",
     "29": "Raven."
   },
-  "CLXI.": {
+  "CLXI": {
     "columnName": "Goetic Demons &c. by Night (Ascendant)",
     "15": "Phenex",
     "16": "Raum",
@@ -3469,8 +3469,8 @@
     "28": "Amdusias",
     "29": "Seere"
   },
-  "CLXII.": {
-    "columnName": "Magical Images of Col. CLXI.",
+  "CLXII": {
+    "columnName": "Magical Images of Col. CLXI",
     "15": "Child-voices phœnix.",
     "16": "Crow.",
     "17": "Soldier with lion’s head rides pale horse.",
@@ -3484,7 +3484,7 @@
     "28": "(1) Unicorn. (2) Dilatory bandmaster.",
     "29": "Beautiful man on winged horse."
   },
-  "CLXIII.": {
+  "CLXIII": {
     "columnName": "Goetic Demons &c. by Night (Succedent)",
     "15": "Halphas",
     "16": "Focalor",
@@ -3499,8 +3499,8 @@
     "28": "Belial",
     "29": "Dantalion"
   },
-  "CLXIV.": {
-    "columnName": "Magical Images of Col. CLXIII.",
+  "CLXIV": {
+    "columnName": "Magical Images of Col. CLXIII",
     "15": "Stock-dove with sore throat. ",
     "16": "Man with gryphon’s wings. ",
     "17": "Stcck-dove with sore throat. Dromedary.",
@@ -3514,7 +3514,7 @@
     "28": "Man with many countenances, all men’s and women’s, carries a",
     "29": "book in right hand."
   },
-  "CLXV.": {
+  "CLXV": {
     "columnName": "Goetic Demons &c. by Night (Cadent)",
     "15": "Malphas",
     "16": "Vepar",
@@ -3529,8 +3529,8 @@
     "28": "Decarabia",
     "29": "Andromalius"
   },
-  "CLXVI.": {
-    "columnName": "Magical Images of Col. CLXV.",
+  "CLXVI": {
+    "columnName": "Magical Images of Col. CLXV",
     "15": "Crow with sore throat.",
     "16": "Mermaid.",
     "17": "Lion on black horse carrying viper.",
@@ -3544,7 +3544,7 @@
     "28": "A star in a pentacle.",
     "29": "Man holding great serpent."
   },
-  "CLXVII.": {
+  "CLXVII": {
     "columnName": "Egyptian Gods of Zodiac (Asc. Decans)",
     "15": "Aroueris",
     "16": "Serapis",
@@ -3559,7 +3559,7 @@
     "28": "Brondeus",
     "29": "Rephan"
   },
-  "CLXVIII.": {
+  "CLXVIII": {
     "columnName": "Egyptian Names of Asc. Decans",
     "15": "Assicean",
     "16": "Asicath",
@@ -3604,7 +3604,7 @@
     "28": "Astiro",
     "29": "Thopibui"
   },
-  "CLXXI.": {
+  "CLXXI": {
     "columnName": "As Col. CXLVII (Cadent)",
     "15": "Horus",
     "16": "Apophis",
@@ -3619,7 +3619,7 @@
     "28": "Proteus",
     "29": "Phallophorus"
   },
-  "CLXXII.": {
+  "CLXXII": {
     "columnName": "As Col. CXLVIII (Cadent)",
     "15": "Asentacer",
     "16": "Aharph",
@@ -3634,7 +3634,7 @@
     "28": "Tepisatras",
     "29": "Atembui"
   },
-  "CLXXIII.*": {
+  "CLXXIII": {
     "columnName": "Genii of the Twelve Hours (Levi)",
     "15": "Papus, Sinbuck, Rasphuia, Zahun, Heiglot, Mizkun, Haven",
     "16": "Sisera, Torvatus, Nitibus, Hizarbin, Sachluph, Baglis, Laberzerin",
@@ -3649,7 +3649,7 @@
     "28": "Æglun, Zuphlas, Phaldor, Rosabis, Adjuchas, Zophas, Halacho",
     "29": "Tarab, Misran, Labus, Kalab, Hahab, Marnes, Sellen"
   },
-  "CLXXIV.": {
+  "CLXXIV": {
     "columnName": "The Mansions of the Moon. [Hindu, Nakshatra] Arab, Manazil",
     "15": "",
     "16": "",
@@ -3664,7 +3664,7 @@
     "28": "",
     "29": ""
   },
-  "CLXXV.": {
+  "CLXXV": {
     "columnName": "Hebrew Letters",
     "11": "א",
     "12": "ב",
@@ -3691,8 +3691,8 @@
     "32 bis": "ת",
     "31 bis": "ש"
   },
-  "CLXXVI.": {
-    "columnName": "Numerical Value of Col. CLXXV.",
+  "CLXXVI": {
+    "columnName": "Numerical Value of Col. CLXXV",
     "11": "1",
     "12": "2",
     "13": "3",
@@ -3718,7 +3718,7 @@
     "32 bis": "400",
     "31 bis": "300"
   },
-  "CLXXVII.*": {
+  "CLXXVII": {
     "columnName": "Geomantic Intelligences",
     "11": "...........",
     "12": "Raphael",
@@ -3799,7 +3799,7 @@
     "32 bis": "....................",
     "31 bis": "...................."
   },
-  "CLXXXI.": {
+  "CLXXXI": {
     "columnName": "Correct Design of Tarot Trumps",
     "11": "A bearded Ancient seen in profile *",
     "12": "A fair youth with winged helment and heels, equipped as a Magician, displays his art *",
@@ -3826,7 +3826,7 @@
     "32 bis": "........................",
     "31 bis": "........................"
   },
-  "CLXXXII.": {
+  "CLXXXII": {
     "columnName": "The Human Body",
     "11": "Respiratory Organs",
     "12": "Cerebral and Nervous Systems",
@@ -3853,7 +3853,7 @@
     "32 bis": "Excretory Organs, Skeleton",
     "31 bis": "Organs of Intelligence"
   },
-  "CLXXXIII.": {
+  "CLXXXIII": {
     "columnName": "Legendary Orders of Being",
     "11": "Sylphs",
     "12": "“Voices,” Witches and Wizards",

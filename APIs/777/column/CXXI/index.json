@@ -1,0 +1,17 @@
+{
+  "columnName": "The Grades of the Order.",
+  "0": "",
+  "1": "Ipsissimus",
+  "2": "Magus",
+  "3": "Magister Templi",
+  "4": "Adeptus Exemptus",
+  "5": "Adeptus Major",
+  "6": "Adeptus Minor",
+  "7": "Philosophus",
+  "8": "Praticus",
+  "9": "Theoricus",
+  "10": [
+    "Zelator",
+    "Neophyte"
+  ]
+}
