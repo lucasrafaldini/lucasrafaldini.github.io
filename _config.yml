@@ -2,7 +2,3 @@ name: Lucas Rafaldini
 markdown: kramdown
 disqus:
     shortname: outras-ideias
-
-
-# Keep it always in last line
-permalink: /blog/:year/:month/:day/:title
