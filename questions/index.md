@@ -16,6 +16,7 @@ title: Lucas Rafaldini - Questions
 </p>
 <p>
 <a href="/questions/1/"> #1 - Why is Linux better than Windows or OSx?</a>
+<a href="/questions/2/"> #2 - What are the forms of meditation that were teach by Buda? How can I practice insight meditation?</a>
 </p>
 
 
