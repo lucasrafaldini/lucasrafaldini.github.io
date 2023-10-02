@@ -1,0 +1,21 @@
+exclude: >
+    (?x)^(
+      \.vscode/settings\.json|
+      test.*\.md|
+      test.*\.txt|
+      test.*\.html|
+      test.*\.xml|
+      .*commonmark\.json|
+      benchmark/.*\.md|
+      .*/spec\.md
+    )$
+repos:
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.3.0
+    hooks:
+    - id: check-json
+    - id: check-yaml
+    - id: end-of-file-fixer
+    - id: trailing-whitespace
+

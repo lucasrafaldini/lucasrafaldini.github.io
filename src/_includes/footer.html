@@ -1,0 +1,47 @@
+<div class="footer">
+    <nav class="nav_bar">
+      <ul class="footer_owner_info">
+        <!-- email -->
+        {% if site.email %}
+        <a class="footer_btn" href="mailto://{{ site.email }}">
+          <i class="fa fa-envelope-square">
+            {% if page.btn_text != false %}
+            <p>Email</p>
+            {% endif %}
+          </i>
+        </a>
+        {% endif %}
+        <!-- github -->
+        {% if site.github %}
+        <a class="footer_btn" href="https://github.com/{{ site.github }}">
+          <i class="fa fa-github">
+            {% if page.btn_text != false %}
+            <p>Github</p>
+            {% endif %}
+          </i>
+        </a>
+        {% endif %}
+        <!-- youtube -->
+        {% if site.youtube %}
+        <a
+          class="footer_btn"
+          href="https://www.youtube.com/{{ site.youtube }}"
+        >
+          <i class="fa fa-youtube">
+            {% if page.btn_text != false %}
+            <p>Youtube</p>
+            {% endif %}
+          </i>
+        </a>
+        {% endif %}
+      </ul>
+      <!-- copyright -->
+      <ul class="footer_copyright">
+        <li class="copyright">© 2015 - 2020</li>
+        {% if site.statement %}
+        <li>{{ site.statement }}</li>
+        {% endif %}
+      </ul>
+    </nav>
+  </div>
+  
