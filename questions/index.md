@@ -18,8 +18,9 @@ title: Lucas Rafaldini - Questions
 <a href="/questions/1/"> #1 - Why is Linux better than Windows or OSx?</a>
 <br>
 <a href="/questions/2/"> #2 - What are the forms of meditation that were teach by Buda? How can I practice insight meditation?</a>
+<br>
+<a href="/questions/3/"> #3 - Why is Rust so overrated?</a>
 </p>
-
 
 
 <script>
