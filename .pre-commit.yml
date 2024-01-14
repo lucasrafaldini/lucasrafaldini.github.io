@@ -1,6 +1,0 @@
-- id: markdownlint
-  name: Markdownlint
-  description: Run markdownlint on your Markdown files
-  entry: mdl
-  language: ruby
-  files: \.(md|mdown|markdown)$
