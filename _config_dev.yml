@@ -1,0 +1,27 @@
+# Development Configuration
+# Use this file for development: jekyll serve --config _config.yml,_config_dev.yml
+
+# Force no caching
+no_cache: true
+incremental: false
+
+# Development settings
+JEKYLL_ENV: development
+development: true
+
+# Asset handling
+asset_cache_bust: true
+asset_timestamp: true
+
+# Disable compression
+compress_html:
+  clippings: none
+  comments: none
+  endings: none
+  profile: false
+  blanklines: false
+  ignore:
+    envs: []
+
+# Force reload
+force_reload: true

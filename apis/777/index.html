@@ -1,9 +1,228 @@
-<h1>Welcome to 777 API</h1>
+---
+layout: default
+title: Liber 777 API - Lucas Rafaldini
+---
+
+<div class="api-777-header">
+    <h1>🔮 Liber 777 API</h1>
+    <p>
+        Bem-vindo à API da Tabela de Correspondências do Liber 777. </p>    
+    <p>
+        Esta é uma das obras mais importantes da magia cerimonial moderna, compilada por Aleister Crowley e Allan Bennett.
+    </p>
+    <div class="api-info">
+        <div class="info-item">
+            <span class="info-label">📊 Total de Colunas:</span>
+            <span class="info-value" id="totalColumns">Carregando...</span>
+        </div>
+        <div class="info-item">
+            <span class="info-label">📈 Valores por Coluna:</span>
+            <span class="info-value">32</span>
+        </div>
+        <div class="info-item">
+            <span class="info-label">🔄 Última Atualização:</span>
+            <span class="info-value">Agosto 2025</span>
+        </div>
+    </div>
+</div>
+
+<div class="api-777-content">
+    <div class="api-section">
+        <h2>Como usar a API</h2>
+        <div class="usage-grid">
+            <div class="usage-card">
+                <h3>🔍 Buscar todos os Dados</h3>
+                <p>Acesse todos os dados da tabela de correspondências de uma vez.</p>
+                <a href="/apis/777/all/" target="_blank" class="btn btn-primary">Acessar todos os dados</a>
+            </div>
+
+            <div class="usage-card">
+                <h3>🔗 URLs Diretas</h3>
+                <p>Use estas URLs para acessar dados específicos:</p>
+                <ul class="url-list">
+                    <li><code>/apis/777/all/</code> - Todos os dados</li>
+                    <li><code>/apis/777/column/{número da coluna}/</code> - Coluna desejada</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="api-section">
+        <h2>🔍 Busca Rápida</h2>
+        <div class="search-container">
+            <input type="text" id="quickSearch" placeholder="Digite para buscar colunas ou valores..." class="search-input">
+            <div class="search-results" id="searchResults"></div>
+        </div>
+    </div>
+
+    <div class="api-section">
+        <h2>Navegação por Colunas</h2>
+        <div class="columns-grid" id="columnsGrid">
+            <div class="loading">Carregando colunas...</div>
+        </div>
+    </div>
+
+    <div class="api-section">
+        <h2>Sobre o Liber 777</h2>
+        <div class="about-content">
+            <p>
+                O Liber 777 é uma das obras mais importantes da magia cerimonial moderna. Compilado por Aleister Crowley 
+                e Allan Bennett, contém uma extensa tabela de correspondências que relaciona elementos de diferentes 
+                sistemas mágicos, incluindo:
+            </p>
+            <ul>
+                <li><strong>Cabala:</strong> Sephiroth, caminhos e correspondências hebraicas</li>
+                <li><strong>Astrologia:</strong> Planetas, signos e aspectos astrológicos</li>
+                <li><strong>Elementos:</strong> Fogo, água, ar e terra</li>
+                <li><strong>Magia Cerimonial:</strong> Instrumentos, cores e invocações</li>
+                <li><strong>Tarot:</strong> Arcanos maiores e menores</li>
+            </ul>
+            <p>
+                Esta API disponibiliza todos esses dados de forma estruturada e acessível, permitindo que desenvolvedores 
+                e pesquisadores possam integrar essas informações em suas aplicações.
+            </p>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Load API data and populate interface
+    loadAPIData();
+    
+    // Setup search functionality
+    setupSearch();
+});
+
+async function loadAPIData() {
+    try {
+        const response = await fetch('/apis/777/all/index.json');
+        const data = await response.json();
+        
+        // Update total columns count
+        const totalColumns = Object.keys(data).length;
+        document.getElementById('totalColumns').textContent = totalColumns;
+        
+        // Populate columns grid
+        populateColumnsGrid(data);
+        
+    } catch (error) {
+        console.error('Erro ao carregar dados da API:', error);
+        document.getElementById('totalColumns').textContent = 'Erro ao carregar';
+    }
+}
 
 
-<h2>Here you will find all the table of correspondences present in Liber 777 available as an API.</h2>
 
+function populateColumnsGrid(data) {
+    const gridContainer = document.getElementById('columnsGrid');
+    const columns = Object.keys(data);
+    
+    const gridHTML = columns.map(column => {
+        const columnData = data[column];
+        return `
+            <div class="column-card">
+                <div class="column-header">
+                    <h3>Coluna ${column}</h3>
+                    <span class="column-status">Ativo</span>
+                </div>
+                <p class="column-description">${columnData.columnName || 'Sem descrição'}</p>
+                <div class="column-stats">
+                    <span class="stat">${Object.keys(columnData).length - 1} valores</span>
+                </div>
+                <div class="column-actions">
+                    <a href="/apis/777/column/${column}/" class="btn btn-secondary">Ver Coluna</a>
+                </div>
+            </div>
+        `;
+    }).join('');
+    
+    gridContainer.innerHTML = gridHTML;
+}
 
-<h3>To grab all the information, call the query params 'all'.</h3>
+function setupSearch() {
+    const searchInput = document.getElementById('quickSearch');
+    const resultsContainer = document.getElementById('searchResults');
+    
+    searchInput.addEventListener('input', async (e) => {
+        const query = e.target.value;
+        
+        if (query.length < 2) {
+            resultsContainer.innerHTML = '';
+            return;
+        }
+        
+        try {
+            const response = await fetch('/apis/777/all/index.json');
+            const data = await response.json();
+            
+            const results = searchInData(data, query);
+            displaySearchResults(results, resultsContainer);
+        } catch (error) {
+            console.error('Erro na busca:', error);
+        }
+    });
+}
 
-<h3>To grab information about one specific column, add 'column/' to the URL then add the number of the column (in roman number format).</h3>
+function searchInData(data, query) {
+    const results = [];
+    const queryLower = query.toLowerCase();
+    
+    Object.keys(data).forEach(column => {
+        const columnData = data[column];
+        const columnName = columnData.columnName || '';
+        
+        if (columnName.toLowerCase().includes(queryLower)) {
+            results.push({
+                type: 'column',
+                id: column,
+                name: columnName,
+                url: `/apis/777/column/${column}/`
+            });
+        }
+        
+        // Search in column values
+        Object.keys(columnData).forEach(key => {
+            const value = columnData[key];
+            if (typeof value === 'string' && value.toLowerCase().includes(queryLower)) {
+                results.push({
+                    type: 'value',
+                    column: column,
+                    key: key,
+                    value: value,
+                    columnName: columnName
+                });
+            }
+        });
+    });
+    
+    return results.slice(0, 15); // Limit results
+}
+
+function displaySearchResults(results, container) {
+    if (results.length === 0) {
+        container.innerHTML = '<p class="no-results">Nenhum resultado encontrado</p>';
+        return;
+    }
+    
+    const resultsHTML = results.map(result => {
+        if (result.type === 'column') {
+            return `
+                <div class="search-result">
+                    <a href="${result.url}">
+                        <strong>Coluna ${result.id}</strong>: ${result.name}
+                    </a>
+                </div>
+            `;
+        } else {
+            return `
+                <div class="search-result">
+                    <strong>${result.columnName}</strong> (${result.key}): ${result.value}
+                </div>
+            `;
+        }
+    }).join('');
+    
+    container.innerHTML = resultsHTML;
+}
+</script>

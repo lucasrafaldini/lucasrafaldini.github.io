@@ -1,31 +1,103 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-			<script src="/js/app.js"></script>
-			{% include analytics.html %}
-		</head>
-		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-	        		<li><a href="/perguntas&respostas">Perguntas & Respostas</a></li>
-	        		<li><a href="/apis">APIs</a></li>
-	    		</ul>
-			</nav>
-			<div class="container">
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
 
-			{{ content }}
+    
+    <!-- SEO Meta Tags -->
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.name }}</title>
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}Portfólio pessoal de Lucas Rafaldini - Engenheiro de Software especializado em Cibersegurança. APIs abertas e conteúdo sobre tecnologia.{% endif %}">
+    <meta name="keywords" content="Lucas Rafaldini, Engenheiro de Software, Cibersegurança, API, Liber 777, Tecnologia, Desenvolvimento">
+    <meta name="author" content="Lucas Rafaldini">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
+    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}Portfólio pessoal de Lucas Rafaldini - Engenheiro de Software especializado em Cibersegurança.{% endif %}">
+    <meta property="og:image" content="{{ site.url }}/assets/images/og-image.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
+    <meta property="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}Portfólio pessoal de Lucas Rafaldini - Engenheiro de Software especializado em Cibersegurança.{% endif %}">
+    <meta property="twitter:image" content="{{ site.url }}/assets/images/og-image.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Lucas Rafaldini",
+        "jobTitle": "Engenheiro de Software",
+        "description": "Especializado em Cibersegurança",
+        "url": "{{ site.url }}",
+        "sameAs": [
+            "https://github.com/lucasrafaldini",
+            "https://www.linkedin.com/in/lucasrafaldini/",
+            "https://dev.to/lucasrafaldini"
+        ],
+        "email": "lucas.rafaldini@gmail.com"
+    }
+    </script>
+    
+    <!-- Analytics -->
+    {% include analytics.html %}
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="/" aria-label="Página inicial">Home</a></li>
+            <li><a href="/perguntas&respostas" aria-label="Perguntas e respostas">Perguntas & Respostas</a></li>
+            <li><a href="/apis" aria-label="APIs disponíveis">APIs</a></li>
+        </ul>
+        <div class="theme-toggle">
+            <button id="themeToggle" aria-label="Alternar tema">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main class="container">
+        {{ content }}
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <ul>
+            <li><a href="mailto:lucas.rafaldini@gmail.com" target="_blank" aria-label="Enviar email">email</a></li>
+            <li><a href="https://github.com/lucasrafaldini" target="_blank" aria-label="Perfil no GitHub">github</a></li>
+            <li><a href="https://www.linkedin.com/in/lucasrafaldini/" target="_blank" aria-label="Perfil no LinkedIn">linkedin</a></li>
+        </ul>
+    </footer>
+    
 
-			</div>
-			<footer>
-	    		<ul>
-	        		<li><a href="mailto:lucas.rafaldini@gmail.com" target="_blank">email</a></li>
-	        		<li><a href="https://github.com/lucasrafaldini" target="_blank">github</a></li>
-	        		<li><a href="https://www.linkedin.com/in/lucasrafaldini/" target="_blank">linkedin</a></li>
-				</ul>
-			</footer>
-		</body>
-	</html>
+    
+    <!-- JavaScript -->
+    <script src="/js/app.js" defer></script>
+    
+    <!-- Service worker registration removed -->
+</body>
+</html>
