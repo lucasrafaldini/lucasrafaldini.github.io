@@ -1,3 +1,6 @@
+---
+layout: null
+---
 <!DOCTYPE html>
 <html lang="pt-BR" data-theme="dark">
 <head>
@@ -118,6 +121,16 @@
       .legend { display:none; }
     }
   </style>
+  <!-- SiteProtect: secret meta (same as default layout fallback logic) -->
+  <meta name="site-protect-secret" content="{% if site.protect_secret %}{{ site.protect_secret }}{% else %}{{ site.time | date: '%Y%m%d%H%M%S' }}{% endif %}">
+  <!-- SiteProtect: critical prehide CSS and scripts (this page bypasses Jekyll layout) -->
+  <style id="sp-critical">
+    html.sp-prehide body > * { visibility: hidden !important; }
+    html.sp-prehide .sp-overlay { visibility: visible !important; }
+  </style>
+  <script>window.SITE_BASEURL = '';</script>
+  <script src="/js/protect.js" defer></script>
+  <script src="/js/protect-config.js" defer></script>
 </head>
 <body>
   <div class="container card">

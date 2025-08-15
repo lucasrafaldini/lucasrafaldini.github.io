@@ -1,0 +1,6 @@
+# Production overrides are written by GitHub Actions at build time.
+# This file may be overwritten in CI; local value here is ignored.
+# CI step writes:
+#   echo "protect_secret: \"${{ secrets.github_pages_pass_key }}\"" > _config_prod.yml
+
+protect_secret: "REPLACED_BY_CI"

@@ -43,6 +43,16 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     
+    <!-- SiteProtect: secret used to sign cookies (client-side deterrent only).
+        If protect_secret is set in _config.yml, use it; otherwise fallback to build timestamp. -->
+    <meta name="site-protect-secret" content="{% if site.protect_secret %}{{ site.protect_secret }}{% else %}{{ site.time | date: '%Y%m%d%H%M%S' }}{% endif %}">
+    
+        <!-- Critical: hide content while SiteProtect locks page -->
+        <style id="sp-critical">
+            html.sp-prehide body > * { visibility: hidden !important; }
+            html.sp-prehide .sp-overlay { visibility: visible !important; }
+        </style>
+    
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
@@ -96,6 +106,9 @@
 
     
     <!-- JavaScript -->
+    <script>window.SITE_BASEURL = '{{ site.baseurl | default: "" }}';</script>
+    <script src="{{ site.baseurl | default: '' }}/js/protect.js" defer></script>
+    <script src="{{ site.baseurl | default: '' }}/js/protect-config.js" defer></script>
     <script src="/js/app.js" defer></script>
     
     <!-- Service worker registration removed -->
