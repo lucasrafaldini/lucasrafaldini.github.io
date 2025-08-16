@@ -309,10 +309,3 @@ document.addEventListener('DOMContentLoaded', () => {
     // Create a single global app instance and reuse it from inline handlers
     window.rafaldiniApp = new RafaldiniApp();
 });
-
-// Legacy function for backward compatibility
-function gridClick(event) {
-    // Use the global instance if available; create and store it if not.
-    const app = window.rafaldiniApp || (window.rafaldiniApp = new RafaldiniApp());
-    app.handleGridClick(event);
-}
