@@ -1,3 +1,4 @@
+
 # This workflow uses actions that are not certified by GitHub.
 # They are provided by a third-party and are governed by
 # separate terms of service, privacy policy, and support
@@ -30,6 +31,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Fail if password secrets are missing
+        run: |
+          if [ -z "${{ secrets.PROTECT_PASS_777 }}" ] || [ -z "${{ secrets.PROTECT_PASS_ARVORE }}" ]; then
+            echo "Missing required password secrets!" >&2
+            exit 1
+          fi
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -53,6 +60,12 @@ jobs:
         run: |
           sed -i 's/__PROTECT_PASS_777__/${{ secrets.PROTECT_PASS_777 }}/g' js/protect-config.js
           sed -i 's/__PROTECT_PASS_ARVORE__/${{ secrets.PROTECT_PASS_ARVORE }}/g' js/protect-config.js
+      - name: Fail if placeholders remain in protect-config.js
+        run: |
+          if grep -q '__PROTECT_PASS_' js/protect-config.js; then
+            echo 'Password placeholder not replaced!' >&2
+            exit 1
+          fi
       - name: Build with Jekyll
         env:
           JEKYLL_ENV: production
