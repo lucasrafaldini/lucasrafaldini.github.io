@@ -18,9 +18,10 @@ class RafaldiniApp {
             this.initQASection();
         }
         
-        // Inicializa a seção de perguntas e respostas também quando o URL contém 'perguntas&respostas'
-        // ou qualquer variação de codificação do '&'
-        if (this.currentPage.includes('/perguntas&') || this.currentPage.includes('/perguntas%26') || this.currentPage.includes('/perguntas%2526')) {
+        // Decode the pathname to handle all encoding variations
+        const decodedPath = decodeURIComponent(this.currentPage);
+        // Initialize Q&A section if the path contains '/perguntas' or '/perguntas&...' (any encoding)
+        if (/\/perguntas($|&|\/|respostas)/.test(decodedPath)) {
             this.initQASection();
         }
     }
