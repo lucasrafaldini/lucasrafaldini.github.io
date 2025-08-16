@@ -1,15 +1,11 @@
 ---
 layout: default
-title: Lucas Rafaldini - Por que Rust é tão supervalorizado??
+title: Por que Rust é tão supervalorizado??
 ---
-
-<div class="perguntas-respostas">
 
 # Perguntas & Respostas
 
 ## Por que Rust é tão supervalorizado?
-
-### Eleve Suas Checagens de Integridade de Arquivos com Rust: Uma Abordagem Segura e Performática
 
 No âmbito da cibersegurança, manter a integridade dos arquivos é primordial. Este artigo apresenta um sofisticado script em Rust que não só realiza checagens de integridade de arquivos em um diretório especificado, mas também registra essas checagens de forma eficiente em um arquivo CSV. As características incomparáveis de segurança e performance do Rust o tornam a linguagem ideal para desenvolver tais ferramentas críticas de segurança. Vamos mergulhar no script e explorar por que Rust é a escolha superior para esta tarefa.
 
@@ -99,6 +95,8 @@ Este script Rust demonstra uma maneira segura e eficiente de verificar a integri
 
 ---
 
-Ao fornecer insights sobre as vantagens únicas do Rust, este artigo serve não apenas como um tutorial para criar um verificador de integridade de arquivo, mas também enfatiza a adequação da linguagem para programação focada em segurança. Rust capacita os desenvolvedores a construir aplicações resilientes e performáticas, o que é inestimável no mundo da cibersegurança. Se você estiver interessado em aprender mais sobre Rust, confira o site [Rust Programming Language](https://www.rust-lang.org/).
+Ao fornecer insights sobre as vantagens únicas do Rust, este artigo serve não apenas como um tutorial para criar um verificador de integridade de arquivo, mas também enfatiza a adequação da linguagem para programação focada em segurança. 
 
-</div>
+Rust capacita os desenvolvedores a construir aplicações resilientes e performáticas, o que é inestimável no mundo da cibersegurança. 
+
+Se você estiver interessado em aprender mais sobre Rust, confira o site [Rust Programming Language](https://www.rust-lang.org/).
