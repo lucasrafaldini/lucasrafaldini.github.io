@@ -358,7 +358,7 @@ layout: null
     const meta = getPathMeta(a,b);
     const color = meta ? meta.color : '#2e3f55';
     const title = meta ? `Caminho ${meta.num} ${MDASH} ${meta.letter}` : `Caminho`;
-    tt.innerHTML = buildTooltipHTML(title, `Letra/Signo/Tarot`, color, pages);
+    tt.innerHTML = buildTooltipHTML(title, `Correspondências`, color, pages);
     tt.dataset.pages = JSON.stringify(pages);
     tt.style.display = 'block'; positionTooltip(evt);
   }

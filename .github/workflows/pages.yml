@@ -49,6 +49,10 @@ jobs:
         shell: bash
         run: |
           echo "protect_secret: \"${{ secrets.pages_pass_key }}\"" > _config_prod.yml
+      - name: Replace passwords in protect-config.js
+        run: |
+          sed -i 's/__PROTECT_PASS_777__/${{ secrets.PROTECT_PASS_777 }}/g' js/protect-config.js
+          sed -i 's/__PROTECT_PASS_ARVORE__/${{ secrets.PROTECT_PASS_ARVORE }}/g' js/protect-config.js
       - name: Build with Jekyll
         env:
           JEKYLL_ENV: production
