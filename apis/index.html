@@ -1,35 +1,82 @@
 ---
-
 layout: default
-title: Strains API Home
-
+title: APIs - Lucas Rafaldini
 ---
 
-<h1>APIs abertas</h1>
-<hr>
-<p>
-    Já não é mais tão incomum eu encontrar por aí uma massa de dados que eu acho relevantíssimos, mas que estão esquecidos em algum lugar escuro da internet.
-</p>
-<p>
-	Por conta disso decidi abrir essas APIs de dados por aqui, pois afinal é grátis, é acessível e vai bem direto ao ponto, então acredito ser a melhor maneira de ampliar o acesso a esses dados.
-</p>
-<p>
-<a href="/apis/777/"> - Liber 777 - Table of Correspondences</a>
-</p>
+<div class="api-header">
+    <h1>APIs Abertas</h1>
+    <p>
+        Já não é mais tão incomum eu encontrar por aí uma massa de dados que eu acho relevantíssimos, mas que estão esquecidos em algum lugar escuro da internet.
+    </p>
+    <p>
+        Por conta disso decidi abrir essas APIs de dados por aqui, pois afinal é grátis, é acessível e vai bem direto ao ponto, então acredito ser a melhor maneira de ampliar o acesso a esses dados.
+    </p>
+</div>
+
+<div class="api-grid">
+    <div class="api-card" data-api="777">
+        <div class="api-card-header">
+            <h3>🔮 Liber 777</h3>
+            <span class="api-status">Ativo</span>
+            <span class="api-status">Requer password</span>
+        </div>
+        <p>
+            Tabela de Correspondências do Liber 777 - uma das obras mais importantes da magia cerimonial moderna.
+        </p>
+        <div class="api-stats">
+            <div class="stat">
+                <span class="stat-number">180+</span>
+                <span class="stat-label">Colunas</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">32</span>
+                <span class="stat-label">Valores por Coluna</span>
+            </div>
+        </div>
+        <div class="api-actions">
+            <a href="/apis/777/" class="btn btn-primary">Explorar API</a>
+        </div>
+    </div>
+    
+    <div class="api-card coming-soon">
+        <div class="api-card-header">
+            <h3>🔮 Nova API</h3>
+            <span class="api-status">Em Breve</span>
+        </div>
+        <p>
+            Mais APIs serão adicionadas em breve. Aguarde por novidades!
+        </p>
+        <div class="api-actions">
+            <button class="btn btn-disabled" disabled>Em Desenvolvimento</button>
+        </div>
+    </div>
+</div>
 
 
 
 <script>
-	let url = 'https://gist.githubusercontent.com/lucasrafaldini/ff873c2b3d4c5f587803a6e4d540b8c9/raw/9a02fd39ab2b50cb1482b6d02291f2bf6b75e049/strains-db.json'
-	fetch(url, {
-		method: 'GET',
-	}).then((response) => {
-		if (!response.ok){
-			console.erro("Response Failed")
-		}
-		return response.json()
-	}).then((data) => {
-		console.log("Sucesso?", JSON.stringify(data), document)
-
-	})
+// API usage statistics
+document.addEventListener('DOMContentLoaded', function() {
+    // Track API usage
+    const apiCards = document.querySelectorAll('.api-card');
+    
+    apiCards.forEach(card => {
+        card.addEventListener('click', function(e) {
+            if (e.target.tagName === 'A') return; // Don't track link clicks
+            
+            const apiName = this.dataset.api;
+            if (apiName) {
+                // Track API interaction
+                console.log(`API ${apiName} accessed`);
+            }
+        });
+    });
+    
+    // Add loading animation to API cards
+    apiCards.forEach((card, index) => {
+        setTimeout(() => {
+            card.classList.add('fade-in');
+        }, index * 200);
+    });
+});
 </script>

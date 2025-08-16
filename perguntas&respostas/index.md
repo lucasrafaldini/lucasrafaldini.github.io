@@ -3,6 +3,7 @@ layout: default
 title: Lucas Rafaldini - Perguntas & Respostas
 ---
 
+<div class="perguntas-respostas">
 <h1>Perguntas & Respostas</h1>
 <hr>
 <p>
@@ -21,6 +22,7 @@ title: Lucas Rafaldini - Perguntas & Respostas
 <br>
 <a href="/perguntas&respostas/4/"> #4 - Por que a maioria das grandes empresas do Brasil ainda possuem sistemas vulneráveis??</a>
 </p>
+</div>
 
 <script>
 	// Let's make something nice here in the future, ok?

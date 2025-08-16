@@ -3,6 +3,8 @@ layout: default
 title: Lucas Rafaldini - Por que o Linux é melhor do que o Windows ou o OSx?
 ---
 
+<div class="perguntas-respostas">
+
 # Perguntas & Respostas
 
 ## Por que o Linux é melhor do que o Windows ou o OSx?
@@ -16,3 +18,5 @@ Segundo, o Linux é frequentemente mais personalizável do que o Windows ou o OS
 Terceiro, o Linux é frequentemente gratuito ou de baixo custo para usar. Muitas versões do sistema operacional são de código aberto, o que significa que qualquer pessoa pode baixar e usá-las gratuitamente. Isso o torna uma boa escolha para usuários que desejam economizar dinheiro com seu sistema operacional.
 
 No geral, o Linux é um sistema operacional poderoso e versátil que oferece muitas vantagens sobre o uso de um computador pessoal com um sistema operacional Windows ou OSx. Ele é estável, seguro, personalizável e frequentemente gratuito, o que o torna uma boa escolha para muitos tipos diferentes de usuários.
+
+</div>

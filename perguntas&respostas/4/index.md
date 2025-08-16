@@ -3,6 +3,8 @@ layout: default
 title: Lucas Rafaldini - Por que a maioria das grandes empresas do Brasil ainda possuem sistemas vulneráveis??
 ---
 
+<div class="perguntas-respostas">
+
 # Perguntas & Respostas
 
 ## Por que a maioria das grandes empresas do Brasil ainda possuem sistemas vulneráveis?
@@ -30,3 +32,5 @@ O cenário de ameaças cibernéticas está em constante evolução, com novas vu
 Existe uma escassez global de profissionais qualificados em segurança da informação, e o Brasil não é exceção. Segundo o relatório da (ISC)², uma associação internacional de segurança cibernética, há uma lacuna significativa de talentos na área de segurança cibernética no Brasil, o que dificulta o desenvolvimento e a implementação de estratégias eficazes de segurança.
 
 A vulnerabilidade dos sistemas nas grandes empresas brasileiras é resultado de uma combinação de fatores econômicos, culturais e tecnológicos. Para mitigar esses riscos, é necessário um investimento maior em segurança da informação, desenvolvimento de uma cultura de segurança robusta, modernização de sistemas legados, adaptação às ameaças em evolução e investimento na formação e contratação de profissionais qualificados em segurança cibernética.
+
+</div>

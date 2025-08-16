@@ -3,6 +3,8 @@ layout: default
 title: Lucas Rafaldini - Quais são as formas de meditação que foram ensinadas por Buda? Como posso praticar a meditação de insight?
 ---
 
+<div class="perguntas-respostas">
+
 # Perguntas & Respostas
 
 ## Quais são as formas de meditação que foram ensinadas por Buda? Como posso praticar a meditação de insight?
@@ -24,3 +26,5 @@ A meditação de insight, também conhecida como meditação vipassana, é uma f
 ### 6. Continue focando na sua respiração por 10-20 minutos. Você pode aumentar gradualmente o tempo de meditação conforme se sentir mais confortável com a prática.
 
 Lembre-se de que a meditação é uma habilidade que leva tempo e prática para desenvolver. Seja paciente consigo mesmo e não se preocupe se sua mente divagar ou se você tiver dificuldade em focar. Com a prática regular, você gradualmente aprimorará sua capacidade de focar e estar mais presente no momento.
+
+</div>

@@ -1,0 +1,31 @@
+# Development Configuration
+# Use this file for development: jekyll serve --config _config.yml,_config_dev.yml
+
+# Force no caching
+no_cache: true
+incremental: false
+
+# Development settings
+JEKYLL_ENV: development
+development: true
+
+# Asset handling
+asset_cache_bust: true
+asset_timestamp: true
+
+# Disable compression
+compress_html:
+  clippings: none
+  comments: none
+  endings: none
+  profile: false
+  blanklines: false
+  ignore:
+    envs: []
+
+# Force reload
+force_reload: true
+
+# Local-only: client protection secret for signing cookies
+# This value is used only when serving locally with _config_dev.yml.
+protect_secret: "dev-local-c3b5a9f7b1f245fc8dc5d6a8a2c9e4f1e9b7c6a1d3f0b2c4a6e8d0f2b4c6a8e0"
