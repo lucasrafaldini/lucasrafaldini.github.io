@@ -13,7 +13,7 @@
       // match with or without trailing slash
       pathPrefix: '/apis/777',
       // hostname removed so it matches localhost and production
-      password: '12345',
+      password: '__PROTECT_PASS_777__',
       title: 'Acesso restrito — API Liber 777',
       message: 'Esta seção é privada. Insira a senha fornecida para prosseguir.',
       rememberDays: 30
@@ -21,7 +21,7 @@
     {
       id: 'arvore-da-vida',
       pathPrefix: '/arvore-da-vida',
-      password: '12345',
+      password: '__PROTECT_PASS_ARVORE__',
       title: 'Acesso restrito — Árvore da Vida',
       message: 'Esta seção é privada. Insira a senha fornecida para prosseguir.',
       rememberDays: 30
