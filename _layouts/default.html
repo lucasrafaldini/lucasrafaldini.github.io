@@ -90,13 +90,17 @@
     </nav>
     
     <!-- Main Content -->
-    <main class="container">
-        <div class="perguntas-respostas">
-            <div class="perguntas-respostas-inner">
+        <main class="container">
+            {% if page.url contains '/perguntas&respostas' %}
+                <div class="perguntas-respostas">
+                    <div class="perguntas-respostas-inner">
+                        {{ content }}
+                    </div>
+                </div>
+            {% else %}
                 {{ content }}
-            </div>
-        </div>
-    </main>
+            {% endif %}
+        </main>
     
     <!-- Footer -->
     <footer>
