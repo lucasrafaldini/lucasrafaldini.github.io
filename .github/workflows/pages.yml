@@ -55,6 +55,32 @@ jobs:
           sed -i "s|__PROTECT_PASS_ARVORE__|${{ secrets.PROTECT_PASS_ARVORE }}|g" js/protect-config.js
       - name: Debug protect-config.js
         run: cat js/protect-config.js
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install javascript-obfuscator
+        run: npm install -g javascript-obfuscator
+
+      - name: Obfuscate protect-config.js (máxima ofuscação)
+        run: |
+          javascript-obfuscator js/protect-config.js --output js/protect-config.js \
+            --compact true \
+            --self-defending true \
+            --control-flow-flattening true \
+            --control-flow-flattening-threshold 1 \
+            --dead-code-injection true \
+            --dead-code-injection-threshold 1 \
+            --string-array true \
+            --string-array-encoding base64 \
+            --string-array-threshold 1 \
+            --rename-globals true \
+            --identifier-names-generator mangled \
+            --numbers-to-expressions true \
+            --split-strings true \
+            --split-strings-chunk-length 3
       - name: Build with Jekyll
         env:
           JEKYLL_ENV: production
