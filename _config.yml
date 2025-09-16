@@ -9,21 +9,6 @@ social:
   linkedin: lucasrafaldini
   dev: lucasrafaldini
 
-# API Configuration
-api:
-  liber777:
-    name: "Liber 777 API"
-    description: "Tabela de Correspondências do Liber 777"
-    version: "1.0.0"
-    base_url: "/apis/777"
-    endpoints:
-      - path: "/all/"
-        description: "Todos os dados"
-        method: "GET"
-      - path: "/column/{id}/"
-        description: "Coluna específica"
-        method: "GET"
-
 # Performance
 compress_html:
   clippings: all
@@ -40,7 +25,7 @@ compress_html:
 seo:
   title: "Lucas Rafaldini - Engenheiro de Software"
   description: "Portfólio pessoal de Lucas Rafaldini - Engenheiro de Software especializado em Cibersegurança"
-  keywords: "Lucas Rafaldini, Engenheiro de Software, Cibersegurança, API, Tecnologia, Desenvolvimento"
+  keywords: "Lucas Rafaldini, Engenheiro de Software, Cibersegurança, Tecnologia, Desenvolvimento"
   author: "Lucas Rafaldini"
   image: "/assets/images/og-image.png"
   twitter:

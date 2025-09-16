@@ -3,23 +3,11 @@ layout: default
 title: Lucas Rafaldini - Perguntas & Respostas
 ---
 
-<div class="container">
+<div class="container perguntas-respostas-index">
   <h1>Perguntas & Respostas</h1>
-  <p>
-    Esse é um repositório de perguntas que eu frequentemente salvo para pensar mais tarde porque são complexas ou precisam de uma resposta mais sofisticada.<br>
-    Se você chegou aqui por acaso, seja bem-vindo e sinta-se à vontade para perguntar algo também.<br>
-    Estou comprometido em responder às perguntas feitas, desde que eu as entenda. Para as partes ou a totalidade do assunto que sou incapaz de explicar, prometo fornecer algumas fontes extras que ajudarão você a obter o conhecimento que está procurando.
-  </p>
+  <p>Esse é um repositório de perguntas que eu frequentemente salvo para pensar mais tarde porque são complexas ou precisam de uma resposta mais sofisticada.<br>
+    Se você chegou aqui por acaso, seja bem-vindo e sinta-se à vontade para perguntar algo também.
 
-  <div class="grid">
-    {% assign pr_pages = site.pages | where_exp: "p", "p.path contains 'perguntas&respostas/' and p.path != 'perguntas&respostas/index.html' and p.path contains '/index.md'" %}
-    {% assign pr_pages = pr_pages | sort: "path" %}
-    {% for post in pr_pages %}
-      <a class="column-card" href="{{ post.url }}">
-        <div>
-          <h2 style="font-size:1.18rem; margin:0 0 0.7rem 0; color:var(--accent,#2b6cb0); font-weight:600;">{{ post.title | escape }}</h2>
-        </div>
-      </a>
-    {% endfor %}
-  </div>
+    Estou comprometido em responder às perguntas feitas, desde que eu as entenda. Para as partes ou a totalidade do assunto que sou incapaz de explicar, prometo fornecer algumas fontes extras que ajudarão você a obter o conhecimento que está procurando.</p>
+  <div class="grid">{% assign pr_pages = site.pages | where_exp: "p", "p.path contains 'perguntas&respostas/' and p.path != 'perguntas&respostas/index.html' and p.path contains '/index.md'" %}{% assign pr_pages = pr_pages | sort: "path" %}{% for post in pr_pages %}<a class="column-card" href="{{ post.url }}">{{ post.title | escape }}</a>{% endfor %}</div>
 </div>

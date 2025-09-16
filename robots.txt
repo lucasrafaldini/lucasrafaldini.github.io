@@ -9,7 +9,6 @@ Disallow: /admin/
 Disallow: /private/
 
 # Allow important pages
-Allow: /apis/
 Allow: /perguntas&respostas/
 
 # Crawl delay (optional)

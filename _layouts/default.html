@@ -10,7 +10,7 @@
     <!-- SEO Meta Tags -->
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.name }}</title>
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}Portfólio pessoal de Lucas Rafaldini - Engenheiro de Software especializado em Cibersegurança. APIs abertas e conteúdo sobre tecnologia.{% endif %}">
-    <meta name="keywords" content="Lucas Rafaldini, Engenheiro de Software, Cibersegurança, API, Liber 777, Tecnologia, Desenvolvimento">
+    <meta name="keywords" content="Lucas Rafaldini, Engenheiro de Software, Cibersegurança, Tecnologia, Desenvolvimento">
     <meta name="author" content="Lucas Rafaldini">
     
     <!-- Open Graph / Facebook -->
@@ -80,7 +80,6 @@
         <ul>
             <li><a href="/" aria-label="Página inicial">Home</a></li>
             <li><a href="/perguntas&respostas" aria-label="Perguntas e respostas">Perguntas & Respostas</a></li>
-            <li><a href="/apis" aria-label="APIs disponíveis">APIs</a></li>
         </ul>
         <div class="theme-toggle">
             <button id="themeToggle" aria-label="Alternar tema">
@@ -93,9 +92,7 @@
         <main class="container">
             {% if page.url contains '/perguntas&respostas' %}
                 <div class="perguntas-respostas">
-                    <div class="perguntas-respostas-inner">
-                        {{ content }}
-                    </div>
+                    {{ content | newline_to_br }}
                 </div>
             {% else %}
                 {{ content }}

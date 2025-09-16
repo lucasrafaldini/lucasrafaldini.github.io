@@ -2,27 +2,19 @@
 layout: default
 title: Por que Rust é tão supervalorizado??
 ---
-
 # Perguntas & Respostas
-
 ## Por que Rust é tão supervalorizado?
-
 No âmbito da cibersegurança, manter a integridade dos arquivos é primordial. Este artigo apresenta um sofisticado script em Rust que não só realiza checagens de integridade de arquivos em um diretório especificado, mas também registra essas checagens de forma eficiente em um arquivo CSV. As características incomparáveis de segurança e performance do Rust o tornam a linguagem ideal para desenvolver tais ferramentas críticas de segurança. Vamos mergulhar no script e explorar por que Rust é a escolha superior para esta tarefa.
-
-Por que Rust?
-
+#### Por que Rust?
 Rust é uma linguagem de programação moderna que enfatiza segurança, velocidade e concorrência. Suas capacidades de programação de sistemas a tornam uma escolha excepcional para o desenvolvimento de aplicações críticas de performance, como um verificador de integridade de arquivos. Aqui estão algumas razões-chave pelas quais Rust aprimora esse algoritmo:
-
 - Segurança de Memória: O modelo de propriedade do Rust garante segurança de memória sem o sobrecusto de um coletor de lixo, tornando-o ideal para tarefas intensivas de recursos.
 - Abstrações de Custo Zero: Rust oferece abstrações que não impõem sobrecarga adicional de tempo de execução, permitindo expressividade de alto nível e controle de baixo nível.
 - Concorrência sem Medo: A abordagem do Rust para concorrência elimina condições de corrida de dados, permitindo que você escreva aplicativos multithread poderosos.
 - Tempo de Execução Mínimo: Rust tem um tempo de execução mínimo e não necessita de uma máquina virtual, o que é benéfico para aplicações focadas em segurança, onde menos complexidade é preferível.
 - Gerenciamento de Pacotes: O gerenciador de pacotes e sistema de build do Rust, Cargo, facilita o gerenciamento de dependências e garante builds reproduzíveis.
-
 Com essas características em mente, vamos nos aprofundar no script Rust para verificação da integridade de arquivos.
 
 #### Script Rust para Verificação de Integridade de Arquivos
-
 ```rust
 use std::collections::HashMap;
 use std::fs;
@@ -90,12 +82,7 @@ fn main() {
     }
 }
 ```
-
 Este script Rust demonstra uma maneira segura e eficiente de verificar a integridade de arquivos e rastreá-los ao longo do tempo. As vantagens do Rust em segurança de memória, desempenho e concorrência o tornam uma excelente ferramenta para o desenvolvimento de aplicações seguras. Ao utilizar Rust, os desenvolvedores podem construir ferramentas de segurança robustas com confiança, sabendo que seu código não é apenas seguro, mas também eficiente.
-
----
-
-Ao fornecer insights sobre as vantagens únicas do Rust, este artigo serve não apenas como um tutorial para criar um verificador de integridade de arquivo, mas também enfatiza a adequação da linguagem para programação focada em segurança. 
 
 Rust capacita os desenvolvedores a construir aplicações resilientes e performáticas, o que é inestimável no mundo da cibersegurança. 
 

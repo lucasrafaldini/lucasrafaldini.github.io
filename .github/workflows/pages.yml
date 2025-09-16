@@ -38,23 +38,23 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
-      - name: Validate required secrets
-        shell: bash
-        run: |
-          if [ -z "${{ secrets.PROTECT_PASS_777 }}" ] || [ -z "${{ secrets.PROTECT_PASS_ARVORE }}" ] || [ -z "${{ secrets.PAGES_PASS_KEY }}" ]; then
-            echo "Missing required secrets!" >&2
-            exit 1
-          fi
-      - name: Create production override config with secret
-        shell: bash
-        run: |
-          echo "protect_secret: \"${{ secrets.PAGES_PASS_KEY }}\"" > _config_prod.yml
-      - name: Replace passwords in protect-config.js
-        run: |
-          sed -i "s|__PROTECT_PASS_777__|${{ secrets.PROTECT_PASS_777 }}|g" js/protect-config.js
-          sed -i "s|__PROTECT_PASS_ARVORE__|${{ secrets.PROTECT_PASS_ARVORE }}|g" js/protect-config.js
-      - name: Debug protect-config.js
-        run: cat js/protect-config.js
+      # - name: Validate required secrets
+      #   shell: bash
+      #   run: |
+      #     if [ -z "${{ secrets.PROTECT_PASS_777 }}" ] || [ -z "${{ secrets.PROTECT_PASS_ARVORE }}" ] || [ -z "${{ secrets.PAGES_PASS_KEY }}" ]; then
+      #       echo "Missing required secrets!" >&2
+      #       exit 1
+      #     fi
+      # - name: Create production override config with secret
+      #   shell: bash
+      #   run: |
+      #     echo "protect_secret: \"${{ secrets.PAGES_PASS_KEY }}\"" > _config_prod.yml
+      # - name: Replace passwords in protect-config.js
+      #   run: |
+      #     sed -i "s|__PROTECT_PASS_777__|${{ secrets.PROTECT_PASS_777 }}|g" js/protect-config.js
+      #     sed -i "s|__PROTECT_PASS_ARVORE__|${{ secrets.PROTECT_PASS_ARVORE }}|g" js/protect-config.js
+      # - name: Debug protect-config.js
+      #   run: cat js/protect-config.js
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -64,7 +64,7 @@ jobs:
       - name: Install javascript-obfuscator
         run: npm install -g javascript-obfuscator
 
-      - name: Obfuscate protect-config.js (máxima ofuscação)
+      - name: Obfuscate protect-config.js
         run: |
           javascript-obfuscator js/protect-config.js --output js/protect-config.js \
             --compact true \
