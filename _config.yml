@@ -33,3 +33,10 @@ seo:
     creator: "@lucasrafaldini"
   facebook:
     app_id: ""
+
+# Permalinks para posts
+permalink: pretty
+collections:
+  posts:
+    output: true
+    permalink: /posts/:title/

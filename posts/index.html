@@ -1,0 +1,19 @@
+---
+layout: default
+title: Posts
+description: Lista de posts do site
+---
+
+<h1>Posts</h1>
+
+<div class="columns-grid">
+    {% for post in site.posts %}
+    <a class="column-card" href="{{ post.url }}">
+        <div>
+            <h3>{{ post.title }}</h3>
+            <p>{{ post.excerpt | strip_html | truncate: 140 }}</p>
+            <p><small>{{ post.date | date: "%d %b %Y" }}</small></p>
+        </div>
+    </a>
+    {% endfor %}
+</div>
