@@ -1,0 +1,141 @@
+name: Crosspost to DEV.to
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "_posts/*.md"
+
+jobs:
+  crosspost-devto:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install deps
+        run: |
+          npm init -y >/dev/null 2>&1
+          npm i gray-matter node-fetch@3
+
+      - name: Find changed posts
+        id: changed
+        run: |
+          if [ "${{ github.event_name }}" = "push" ] && [ -n "${{ github.event.before }}" ]; then
+            git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '^_posts/.*\.md$' || true
+          else
+            ls _posts/*.md 2>/dev/null || true
+          fi | tr '\n' ' ' > changed.txt
+          echo "files=$(cat changed.txt)" >> $GITHUB_OUTPUT
+
+      - name: Publish/Update to DEV.to
+        if: ${{ steps.changed.outputs.files != '' }}
+        env:
+          DEVTO_API_KEY: ${{ secrets.DEVTO_API_KEY }}
+          CHANGED_FILES: ${{ steps.changed.outputs.files }}
+        run: |
+          node <<'NODE'
+          import fs from 'fs';
+          import matter from 'gray-matter';
+          import fetch from 'node-fetch';
+
+          const files = (process.env.CHANGED_FILES || '').split(' ').filter(Boolean);
+          const DEV_KEY = process.env.DEVTO_API_KEY;
+
+          if (!DEV_KEY) {
+            console.error('❌ Falta DEVTO_API_KEY');
+            process.exit(1);
+          }
+
+          async function devToCreate(apiKey, post) {
+            const body = {
+              article: {
+                title: post.title,
+                published: post.published,
+                body_markdown: post.content,
+                tags: post.tags?.slice?.(0,5) || [],
+                canonical_url: post.canonical_url || undefined,
+                description: post.summary || undefined
+              }
+            };
+            const r = await fetch('https://dev.to/api/articles', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                'api-key': apiKey
+              },
+              body: JSON.stringify(body)
+            });
+            const txt = await r.text();
+            if (!r.ok) throw new Error(`POST DEV.to falhou: ${r.status} ${txt}`);
+            const j = JSON.parse(txt);
+            console.log(`✅ DEV.to criado: ${j.url} (id: ${j.id})`);
+            return j;
+          }
+
+          async function devToUpdate(apiKey, id, post) {
+            const body = {
+              article: {
+                title: post.title,
+                published: post.published,
+                body_markdown: post.content,
+                tags: post.tags?.slice?.(0,5) || [],
+                canonical_url: post.canonical_url || undefined,
+                description: post.summary || undefined
+              }
+            };
+            const r = await fetch(`https://dev.to/api/articles/${id}`, {
+              method: 'PUT',
+              headers: {
+                'Content-Type': 'application/json',
+                'api-key': apiKey
+              },
+              body: JSON.stringify(body)
+            });
+            const txt = await r.text();
+            if (!r.ok) throw new Error(`PUT DEV.to falhou (id ${id}): ${r.status} ${txt}`);
+            const j = JSON.parse(txt);
+            console.log(`🔄 DEV.to atualizado: ${j.url} (id: ${j.id})`);
+            return j;
+          }
+
+          (async () => {
+            if (!files.length) { console.log('Sem alterações em posts.'); return; }
+
+            for (const file of files) {
+              const raw = fs.readFileSync(file, 'utf8');
+              const { data, content } = matter(raw);
+
+              const post = {
+                title: data.title || file,
+                tags: Array.isArray(data.tags) ? data.tags : [],
+                canonical_url: data.canonical_url || undefined,
+                summary: data.summary || undefined,
+                published: (typeof data.published === 'boolean') ? data.published : true,
+                content
+              };
+
+              const devtoId = data.devto_id;
+
+              try {
+                console.log(`\n==> ${devtoId ? 'Atualizando' : 'Publicando'}: ${post.title}`);
+                if (devtoId) {
+                  await devToUpdate(DEV_KEY, devtoId, post);
+                } else {
+                  const created = await devToCreate(DEV_KEY, post);
+                  console.log(`💡 Copie este ID para 'devto_id:' no frontmatter: ${created.id}`);
+                }
+              } catch (e) {
+                console.error('Erro:', e.message);
+              }
+            }
+          })().catch(e => { console.error(e); process.exit(1); });
+          NODE
