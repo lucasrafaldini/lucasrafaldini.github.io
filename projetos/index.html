@@ -1,0 +1,15 @@
+---
+layout: default
+title: Projetos
+username: lucasrafaldini
+include_repos: []
+exclude_repos: ["lucasrafaldini", "Exercicios-python", "lucasrafaldini.github.io", "Daily-python-challenges", "python-lessons", "Primeiros-passos-dados-python"]
+---
+
+<h1>Projetos</h1>
+
+<div id="projects" class="columns-grid" data-username="{{ page.username }}" data-include='{{ page.include_repos | jsonify }}' data-exclude='{{ page.exclude_repos | jsonify }}'></div>
+
+<div class="loading" id="projectsLoading">Carregando projetos…</div>
+
+<script src="/js/projects.js" defer></script>
