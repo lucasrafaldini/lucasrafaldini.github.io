@@ -64,23 +64,31 @@ jobs:
       - name: Install javascript-obfuscator
         run: npm install -g javascript-obfuscator
 
-      - name: Obfuscate protect-config.js
+      - name: Obfuscate all JavaScript files
+        shell: bash
         run: |
-          javascript-obfuscator js/protect-config.js --output js/protect-config.js \
-            --compact true \
-            --self-defending true \
-            --control-flow-flattening true \
-            --control-flow-flattening-threshold 1 \
-            --dead-code-injection true \
-            --dead-code-injection-threshold 1 \
-            --string-array true \
-            --string-array-encoding base64 \
-            --string-array-threshold 1 \
-            --rename-globals true \
-            --identifier-names-generator mangled \
-            --numbers-to-expressions true \
-            --split-strings true \
-            --split-strings-chunk-length 3
+          set -euo pipefail
+          # Observação: para excluir arquivos específicos da ofuscação, ajuste o find.
+          # Exemplo: find js -type f -name '*.js' ! -name 'arquivo.js' -print0
+          mapfile -d '' FILES < <(find js -type f -name '*.js' !name 'projects.js' -print0)
+          for f in "${FILES[@]}"; do
+            echo "Obfuscating: $f"
+            javascript-obfuscator "$f" --output "$f" \
+              --compact true \
+              --self-defending true \
+              --control-flow-flattening true \
+              --control-flow-flattening-threshold 1 \
+              --dead-code-injection true \
+              --dead-code-injection-threshold 1 \
+              --string-array true \
+              --string-array-encoding base64 \
+              --string-array-threshold 1 \
+              --rename-globals true \
+              --identifier-names-generator mangled \
+              --numbers-to-expressions true \
+              --split-strings true \
+              --split-strings-chunk-length 3
+          done
       - name: Build with Jekyll
         env:
           JEKYLL_ENV: production
