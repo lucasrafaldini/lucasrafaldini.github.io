@@ -15,6 +15,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # necessário para acessar ${{ github.event.before }}
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -29,8 +31,10 @@ jobs:
       - name: Find changed posts
         id: changed
         run: |
-          if [ "${{ github.event_name }}" = "push" ] && [ -n "${{ github.event.before }}" ]; then
-            git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '^_posts/.*\.md$' || true
+          BEFORE_SHA="${{ github.event.before }}"
+          # Quando é o primeiro commit da branch, BEFORE_SHA pode ser zeros
+          if [ "${{ github.event_name }}" = "push" ] && [ -n "$BEFORE_SHA" ] && ! echo "$BEFORE_SHA" | grep -q '^0\{40\}$'; then
+            git diff --name-only "$BEFORE_SHA" "${{ github.sha }}" | grep '^_posts/.*\.md$' || true
           else
             ls _posts/*.md 2>/dev/null || true
           fi | tr '\n' ' ' > changed.txt
