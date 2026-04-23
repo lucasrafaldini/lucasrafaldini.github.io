@@ -1,14 +1,38 @@
 ---
 layout: default
 title: "Conselhos para Startups — Tradução de Sam Altman"
+title_en: "Startup Advice - Sam Altman (Portuguese Translation)"
 description: "Tradução comentada e fiel ao texto original de Sam Altman, fundador da OpenAI e ex-presidente da Y Combinator, com 95 lições práticas para quem está construindo uma startup."
 author: "Tradução por Lucas Rafaldini"
 tags: ["startup", "empreendedorismo", "YC", "Sam Altman", "tradução"]
 summary: "Tradução do texto original de Sam Altman, fundador da OpenAI e ex-presidente da Y Combinator, com 95 lições práticas para quem está construindo uma startup."
+summary_en: "A curated page with the original Startup Advice reference by Sam Altman and the full Portuguese translation by Lucas Rafaldini."
 canonical_url: "https://lucas-rafaldini.github.io/posts/2025-10-17-hello-world"
 published: true         # true = publica; false = rascunho
 # devto_id:               # (opcional) preencha para atualizar um artigo já existente
 ---
+
+<section class="lang-en" markdown="1">
+
+# Startup Advice
+
+This page contains the full Portuguese translation of **Startup Advice** by Sam Altman.
+
+- Original post (English): [Startup Advice](https://blog.samaltman.com/startup-advice)
+- Portuguese translation on this page: switch language to PT in the top menu.
+
+If you prefer reading in English, the original source above is the canonical version.
+
+## Credits
+
+Original text: Sam Altman.
+
+Portuguese translation and adaptation: Lucas Rafaldini.
+
+</section>
+
+<section class="lang-pt" markdown="1">
+
 # Conselhos para Startups  
 
 **post de 03/12/2013, por [Sam Altman](https://blog.samaltman.com/startup-advice)**  
@@ -217,3 +241,5 @@ Tradução: *Lucas Rafaldini*
 > Publicado originalmente em inglês no blog de Sam Altman.  
 > Tradução e adaptação autorizadas para fins educacionais e de divulgação.  
 > ✍️ *Publicado em lucas.rafaldini.github.io*.
+
+</section>

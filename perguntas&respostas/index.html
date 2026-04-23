@@ -4,10 +4,17 @@ title: Lucas Rafaldini - Perguntas & Respostas
 ---
 
 <div class="container perguntas-respostas-index">
-  <h1>Perguntas & Respostas</h1>
-  <p>Esse é um repositório de perguntas que eu frequentemente salvo para pensar mais tarde porque são complexas ou precisam de uma resposta mais sofisticada.<br>
-    Se você chegou aqui por acaso, seja bem-vindo e sinta-se à vontade para perguntar algo também.
-
-    Estou comprometido em responder às perguntas feitas, desde que eu as entenda. Para as partes ou a totalidade do assunto que sou incapaz de explicar, prometo fornecer algumas fontes extras que ajudarão você a obter o conhecimento que está procurando.</p>
-  <div class="grid">{% assign pr_pages = site.pages | where_exp: "p", "p.path contains 'perguntas&respostas/' and p.path != 'perguntas&respostas/index.html' and p.path contains '/index.md'" %}{% assign pr_pages = pr_pages | sort: "path" %}{% for post in pr_pages %}<a class="column-card" href="{{ post.url }}">{{ post.title | escape }}</a>{% endfor %}</div>
+  <h1>
+    <span class="lang-en">Questions & Answers</span>
+    <span class="lang-pt">Perguntas & Respostas</span>
+  </h1>
+  <p>
+    <span class="lang-en">This is a repository of questions I often save to think about later, because they are complex or require a more sophisticated answer.<br>
+    If you found this page by chance, welcome, and feel free to ask something as well.<br><br>
+    I am committed to answering the questions I receive, as long as I understand them. For parts of a topic, or even the full topic, that I cannot explain well, I will provide additional sources to help you find the knowledge you are looking for.</span>
+    <span class="lang-pt">Esse e um repositorio de perguntas que eu frequentemente salvo para pensar mais tarde porque sao complexas ou precisam de uma resposta mais sofisticada.<br>
+    Se voce chegou aqui por acaso, seja bem-vindo e sinta-se a vontade para perguntar algo tambem.<br><br>
+    Estou comprometido em responder as perguntas feitas, desde que eu as entenda. Para as partes ou a totalidade do assunto que sou incapaz de explicar, prometo fornecer algumas fontes extras que ajudarao voce a obter o conhecimento que esta procurando.</span>
+  </p>
+  <div class="grid">{% assign pr_pages = site.pages | where_exp: "p", "p.path contains 'perguntas&respostas/' and p.path != 'perguntas&respostas/index.html' and p.path contains '/index.md'" %}{% assign pr_pages = pr_pages | sort: "path" %}{% for post in pr_pages %}<a class="column-card" href="{{ post.url }}"><span class="lang-en">{{ post.title_en | default: post.title | escape }}</span><span class="lang-pt">{{ post.title | escape }}</span></a>{% endfor %}</div>
 </div>

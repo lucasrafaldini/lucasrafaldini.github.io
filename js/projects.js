@@ -1,6 +1,26 @@
 (function(){
     function byId(id){ return document.getElementById(id); }
     function createEl(tag, cls){ const el = document.createElement(tag); if(cls) el.className = cls; return el; }
+    function currentLanguage(){ return document.body.getAttribute('data-lang') === 'pt' ? 'pt' : 'en'; }
+    function t(key){
+        const dict = {
+            en: {
+                fetchError: 'Failed to fetch repositories',
+                noDescription: 'No description provided',
+                unavailable: 'N/A',
+                loadingProjects: 'Loading projects...',
+                projectsLoadError: 'Unable to load projects right now.'
+            },
+            pt: {
+                fetchError: 'Falha ao buscar repositorios',
+                noDescription: 'Sem descricao',
+                unavailable: 'N/A',
+                loadingProjects: 'Carregando projetos...',
+                projectsLoadError: 'Nao foi possivel carregar os projetos agora.'
+            }
+        };
+        return dict[currentLanguage()][key];
+    }
     function parseDataAttr(node, name){
         try { return JSON.parse(node.getAttribute(name) || '[]'); } catch(e) { return []; }
     }
@@ -18,7 +38,7 @@
     async function fetchRepos(username){
         const url = `https://api.github.com/users/${encodeURIComponent(username)}/repos?per_page=100&sort=updated`;
         const res = await fetch(url, { headers: { 'Accept': 'application/vnd.github+json' } });
-        if (!res.ok) throw new Error('Falha ao buscar repositórios');
+        if (!res.ok) throw new Error(t('fetchError'));
         return res.json();
     }
 
@@ -41,10 +61,10 @@
               h3.textContent = repo.name;
 
               const p = createEl('p');
-              p.textContent = (repo.description || '').trim() || 'Sem descrição';
+              p.textContent = (repo.description || '').trim() || t('noDescription');
 
               const meta = createEl('p');
-              meta.innerHTML = `<small>★ ${repo.stargazers_count} • ${repo.language || 'N/A'}</small>`;
+              meta.innerHTML = `<small>★ ${repo.stargazers_count} • ${repo.language || t('unavailable')}</small>`;
 
               wrap.appendChild(h3);
               wrap.appendChild(p);
@@ -64,13 +84,18 @@
         const username = container.getAttribute('data-username');
         const includeList = parseDataAttr(container, 'data-include');
         const excludeList = parseDataAttr(container, 'data-exclude');
+        let cachedRepos = [];
 
         try {
-            const repos = await fetchRepos(username);
-            renderRepos(container, repos, includeList, excludeList);
+            cachedRepos = await fetchRepos(username);
+            renderRepos(container, cachedRepos, includeList, excludeList);
+
+            document.addEventListener('languagechange', () => {
+                renderRepos(container, cachedRepos, includeList, excludeList);
+            });
         } catch (err) {
             console.error(err);
-            container.innerHTML = '<p class="loading">Não foi possível carregar os projetos agora.</p>';
+            container.innerHTML = `<p class="loading">${t('projectsLoadError')}</p>`;
         } finally {
             if (loading) loading.style.display = 'none';
         }

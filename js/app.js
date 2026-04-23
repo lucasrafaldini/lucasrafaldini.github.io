@@ -2,10 +2,26 @@
 class RafaldiniApp {
     constructor() {
         this.currentPage = window.location.pathname;
+        this.currentLanguage = 'en';
+        this.messages = {
+            en: {
+                openingLink: 'Opening link...',
+                loading: 'Loading...',
+                switchToLightMode: 'Switch to light mode',
+                switchToDarkMode: 'Switch to dark mode'
+            },
+            pt: {
+                openingLink: 'Abrindo link...',
+                loading: 'Carregando...',
+                switchToLightMode: 'Mudar para modo claro',
+                switchToDarkMode: 'Mudar para modo escuro'
+            }
+        };
         this.init();
     }
 
     init() {
+        this.initLanguage();
         this.setupEventListeners();
         this.initializeAnimations();
         this.setupLazyLoading();
@@ -26,7 +42,73 @@ class RafaldiniApp {
         }
     }
 
+    initLanguage() {
+        const savedLanguage = localStorage.getItem('siteLanguage');
+        const initialLanguage = savedLanguage === 'pt' ? 'pt' : 'en';
+        this.applyLanguage(initialLanguage, false);
+    }
+
+    t(key) {
+        const dictionary = this.messages[this.currentLanguage] || this.messages.en;
+        return dictionary[key] || key;
+    }
+
+    applyLanguage(language, persist = true) {
+        this.currentLanguage = language === 'pt' ? 'pt' : 'en';
+
+        document.body.setAttribute('data-lang', this.currentLanguage);
+        document.documentElement.setAttribute('data-lang', this.currentLanguage);
+        document.documentElement.setAttribute('lang', this.currentLanguage === 'pt' ? 'pt-BR' : 'en');
+
+        this.updateLanguageButtons();
+        this.updateTranslatedAttributes();
+
+        if (persist) {
+            localStorage.setItem('siteLanguage', this.currentLanguage);
+        }
+
+        document.dispatchEvent(new CustomEvent('languagechange', {
+            detail: { language: this.currentLanguage }
+        }));
+    }
+
+    updateLanguageButtons() {
+        document.querySelectorAll('[data-set-lang]').forEach((button) => {
+            button.classList.toggle('active', button.getAttribute('data-set-lang') === this.currentLanguage);
+        });
+    }
+
+    updateTranslatedAttributes() {
+        const language = this.currentLanguage;
+
+        document.querySelectorAll('[data-i18n-aria-en]').forEach((element) => {
+            const text = element.getAttribute(`data-i18n-aria-${language}`);
+            if (text) {
+                element.setAttribute('aria-label', text);
+            }
+        });
+
+        document.querySelectorAll('[data-i18n-title-en]').forEach((element) => {
+            const text = element.getAttribute(`data-i18n-title-${language}`);
+            if (text) {
+                element.setAttribute('title', text);
+            }
+        });
+
+        const themeIcon = document.querySelector('#themeToggle .theme-icon');
+        if (themeIcon) {
+            this.updateThemeIcon(themeIcon, document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+        }
+    }
+
     setupEventListeners() {
+        document.querySelectorAll('[data-set-lang]').forEach((button) => {
+            button.addEventListener('click', () => {
+                const selectedLanguage = button.getAttribute('data-set-lang');
+                this.applyLanguage(selectedLanguage);
+            });
+        });
+
         // Grid item click handling with improved UX
         document.addEventListener('click', (e) => {
             // Ignore events already handled by inline handlers
@@ -105,7 +187,7 @@ class RafaldiniApp {
         event.__rafHandled = true;
         
         // Show loading state
-        this.showNotification('Abrindo link...', 'info');
+        this.showNotification(this.t('openingLink'), 'info');
         
         // Open link after animation
         setTimeout(() => {
@@ -116,7 +198,7 @@ class RafaldiniApp {
 
     showLoadingState(element) {
         const originalText = element.textContent;
-        element.textContent = 'Carregando...';
+        element.textContent = this.t('loading');
         element.style.opacity = '0.7';
         
         setTimeout(() => {
@@ -152,6 +234,8 @@ class RafaldiniApp {
 
     initThemeToggle() {
         const themeToggle = document.getElementById('themeToggle');
+        if (!themeToggle) return;
+
         const themeIcon = themeToggle.querySelector('.theme-icon');
         
         // Check for saved theme preference or default to system preference
@@ -190,10 +274,10 @@ class RafaldiniApp {
     updateThemeIcon(icon, theme) {
         if (theme === 'dark') {
             icon.textContent = '☀️';
-            icon.setAttribute('aria-label', 'Mudar para modo claro');
+            icon.setAttribute('aria-label', this.t('switchToLightMode'));
         } else {
             icon.textContent = '🌙';
-            icon.setAttribute('aria-label', 'Mudar para modo escuro');
+            icon.setAttribute('aria-label', this.t('switchToDarkMode'));
         }
     }
 }

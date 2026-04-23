@@ -4,15 +4,29 @@ title: Posts
 description: Lista de posts do site
 ---
 
-<h1>Posts</h1>
+<h1>
+    <span class="lang-en">Posts</span>
+    <span class="lang-pt">Posts</span>
+</h1>
 
 <div class="columns-grid">
     {% for post in site.posts %}
     <a class="column-card" href="{{ post.url }}">
         <div>
-            <h3>{{ post.title }}</h3>
-            <p>{{ post.excerpt | strip_html | truncate: 140 }}</p>
-            <p><small>{{ post.date | date: "%d %b %Y" }}</small></p>
+            <h3>
+                <span class="lang-en">{{ post.title_en | default: post.title }}</span>
+                <span class="lang-pt">{{ post.title }}</span>
+            </h3>
+            <p>
+                <span class="lang-en">{{ post.summary_en | default: post.summary | default: post.excerpt | strip_html | truncate: 140 }}</span>
+                <span class="lang-pt">{{ post.summary | default: post.excerpt | strip_html | truncate: 140 }}</span>
+            </p>
+            <p>
+                <small>
+                    <span class="lang-en">{{ post.date | date: "%b %d, %Y" }}</span>
+                    <span class="lang-pt">{{ post.date | date: "%d %b %Y" }}</span>
+                </small>
+            </p>
         </div>
     </a>
     {% endfor %}

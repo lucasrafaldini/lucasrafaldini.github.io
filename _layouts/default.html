@@ -1,9 +1,23 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <script>
+        (function () {
+            try {
+                var savedLanguage = localStorage.getItem('siteLanguage');
+                var initialLanguage = savedLanguage === 'pt' ? 'pt' : 'en';
+                document.documentElement.setAttribute('data-lang', initialLanguage);
+                document.documentElement.setAttribute('lang', initialLanguage === 'pt' ? 'pt-BR' : 'en');
+            } catch (e) {
+                document.documentElement.setAttribute('data-lang', 'en');
+                document.documentElement.setAttribute('lang', 'en');
+            }
+        })();
+    </script>
     
 
     
@@ -78,16 +92,44 @@
     <!-- Navigation -->
     <nav>
         <ul>
-            <li><a href="/" aria-label="Página inicial">Home</a></li>
-            <li><a href="/perguntas&respostas" aria-label="Perguntas e respostas">Perguntas & Respostas</a></li>
-            <li><a href="/posts" aria-label="Posts">Posts</a></li>
-            <li><a href="/projetos" aria-label="Projetos">Projetos</a></li>
-            <li><a href="/estudos" aria-label="Estudos">Estudos</a></li>
+            <li>
+                <a href="/" aria-label="Home" data-i18n-aria-en="Home" data-i18n-aria-pt="Pagina inicial">
+                    <span class="lang-en">Home</span>
+                    <span class="lang-pt">Inicio</span>
+                </a>
+            </li>
+            <li>
+                <a href="/perguntas&respostas" aria-label="Questions and Answers" data-i18n-aria-en="Questions and Answers" data-i18n-aria-pt="Perguntas e respostas">
+                    <span class="lang-en">Q&A</span>
+                    <span class="lang-pt">Perguntas & Respostas</span>
+                </a>
+            </li>
+            <li>
+                <a href="/posts" aria-label="Posts" data-i18n-aria-en="Posts" data-i18n-aria-pt="Posts">Posts</a>
+            </li>
+            <li>
+                <a href="/projetos" aria-label="Projects" data-i18n-aria-en="Projects" data-i18n-aria-pt="Projetos">
+                    <span class="lang-en">Projects</span>
+                    <span class="lang-pt">Projetos</span>
+                </a>
+            </li>
+            <li>
+                <a href="/estudos" aria-label="Studies" data-i18n-aria-en="Studies" data-i18n-aria-pt="Estudos">
+                    <span class="lang-en">Studies</span>
+                    <span class="lang-pt">Estudos</span>
+                </a>
+            </li>
         </ul>
-        <div class="theme-toggle">
-            <button id="themeToggle" aria-label="Alternar tema">
-                <span class="theme-icon">🌙</span>
-            </button>
+        <div class="nav-controls">
+            <div class="language-toggle" role="group" aria-label="Language selector">
+                <button class="lang-btn" type="button" data-set-lang="en" aria-label="Switch language to English">EN</button>
+                <button class="lang-btn" type="button" data-set-lang="pt" aria-label="Mudar idioma para Portugues">PT</button>
+            </div>
+            <div class="theme-toggle">
+                <button id="themeToggle" aria-label="Switch theme" data-i18n-aria-en="Switch theme" data-i18n-aria-pt="Alternar tema">
+                    <span class="theme-icon">🌙</span>
+                </button>
+            </div>
         </div>
     </nav>
     
@@ -105,9 +147,9 @@
     <!-- Footer -->
     <footer>
         <ul>
-            <li><a href="mailto:lucas.rafaldini@gmail.com" target="_blank" aria-label="Enviar email">email</a></li>
-            <li><a href="https://github.com/lucasrafaldini" target="_blank" aria-label="Perfil no GitHub">github</a></li>
-            <li><a href="https://www.linkedin.com/in/lucasrafaldini/" target="_blank" aria-label="Perfil no LinkedIn">linkedin</a></li>
+            <li><a href="mailto:lucas.rafaldini@gmail.com" target="_blank" aria-label="Send email" data-i18n-aria-en="Send email" data-i18n-aria-pt="Enviar email">email</a></li>
+            <li><a href="https://github.com/lucasrafaldini" target="_blank" aria-label="GitHub profile" data-i18n-aria-en="GitHub profile" data-i18n-aria-pt="Perfil no GitHub">github</a></li>
+            <li><a href="https://www.linkedin.com/in/lucasrafaldini/" target="_blank" aria-label="LinkedIn profile" data-i18n-aria-en="LinkedIn profile" data-i18n-aria-pt="Perfil no LinkedIn">linkedin</a></li>
         </ul>
     </footer>
     
