@@ -1,0 +1,2282 @@
+[
+  {
+    "id": "apple-ii",
+    "name": "Apple II",
+    "year": 1977,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "MOS Technology 6502",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Apple_II_IMG_4212.jpg/330px-Apple_II_IMG_4212.jpg",
+    "release_year": 1977,
+    "development_year": 1975,
+    "manufacturing_budget": "$2,500 (Initial Capital)"
+  },
+  {
+    "id": "apple-silentype",
+    "name": "Apple Silentype",
+    "year": 1980,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Apple_Silentype.JPG/330px-Apple_Silentype.JPG",
+    "release_year": 1980,
+    "development_year": 1978,
+    "manufacturing_budget": "Est. $6,000,000"
+  },
+  {
+    "id": "apple-iii",
+    "name": "Apple III",
+    "year": 1980,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "MOS Technology 6502",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple3.jpg/330px-Apple3.jpg",
+    "release_year": 1980,
+    "development_year": 1975,
+    "manufacturing_budget": "$2,500 (Initial Capital)"
+  },
+  {
+    "id": "apple-lisa",
+    "name": "Apple Lisa",
+    "year": 1983,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Motorola 68000",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Apple_Lisa_Computer.jpg/330px-Apple_Lisa_Computer.jpg",
+    "release_year": 1983,
+    "development_year": 1978,
+    "manufacturing_budget": "$50,000,000"
+  },
+  {
+    "id": "apple-iie",
+    "name": "Apple IIe",
+    "year": 1983,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "MOS Technology/Synertek 6502 @ 1.023&nbs...",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Apple_IIe.jpg/330px-Apple_IIe.jpg",
+    "release_year": 1983,
+    "development_year": 1975,
+    "manufacturing_budget": "$2,500 (Initial Capital)"
+  },
+  {
+    "id": "mac",
+    "name": "Mac",
+    "year": 1984,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "| related = Apple IIApple LisaiPad",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/IMac_aluminium.png/330px-IMac_aluminium.png",
+    "release_year": 1984,
+    "development_year": 1982,
+    "manufacturing_budget": "Est. $2,000,000"
+  },
+  {
+    "id": "apple-iic",
+    "name": "Apple IIc",
+    "year": 1984,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "WDC 65C02",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Apple_IIc_with_monitor.jpg/330px-Apple_IIc_with_monitor.jpg",
+    "release_year": 1984,
+    "development_year": 1975,
+    "manufacturing_budget": "$2,500 (Initial Capital)"
+  },
+  {
+    "id": "apple-scribe",
+    "name": "Apple Scribe",
+    "year": 1984,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/2/28/Apple_scribe.jpg",
+    "release_year": 1984,
+    "development_year": 1982,
+    "manufacturing_budget": "Est. $6,000,000"
+  },
+  {
+    "id": "macintosh-512k",
+    "name": "Macintosh 512K",
+    "year": 1984,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Mac512K_wb.jpg/330px-Mac512K_wb.jpg",
+    "release_year": 1984,
+    "development_year": 1982,
+    "manufacturing_budget": "Est. $8,000,000"
+  },
+  {
+    "id": "macintosh-xl",
+    "name": "Macintosh XL",
+    "year": 1985,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Motorola 68000 family",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Macintosh_XL_1.jpg/330px-Macintosh_XL_1.jpg",
+    "release_year": 1985,
+    "development_year": 1983,
+    "manufacturing_budget": "Est. $8,000,000"
+  },
+  {
+    "id": "macintosh-se",
+    "name": "Macintosh SE",
+    "year": 1987,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Q667808",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Macintosh_SE_b.jpg/330px-Macintosh_SE_b.jpg",
+    "release_year": 1987,
+    "development_year": 1985,
+    "manufacturing_budget": "Est. $3,000,000"
+  },
+  {
+    "id": "macintosh-classic",
+    "name": "Macintosh Classic",
+    "year": 1990,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Q667808",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Macintosh_classic.jpg/330px-Macintosh_classic.jpg",
+    "release_year": 1990,
+    "development_year": 1988,
+    "manufacturing_budget": "Est. $12,000,000"
+  },
+  {
+    "id": "imac-g3",
+    "name": "iMac G3",
+    "year": 1998,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "PowerPC",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/IMac-IMG_7042.jpg/330px-IMac-IMG_7042.jpg",
+    "release_year": 1998,
+    "development_year": 1996,
+    "manufacturing_budget": "Est. $31,000,000"
+  },
+  {
+    "id": "emac",
+    "name": "eMac",
+    "year": 2002,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "PowerPC G4",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Apple-eMac-Bottom.jpg/330px-Apple-eMac-Bottom.jpg",
+    "release_year": 2002,
+    "development_year": 2000,
+    "manufacturing_budget": "Est. $48,000,000"
+  },
+  {
+    "id": "power-mac-g5",
+    "name": "Power Mac G5",
+    "year": 2003,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Power_Mac_G5_transparent_right.png/330px-Power_Mac_G5_transparent_right.png",
+    "release_year": 2003,
+    "development_year": 2001,
+    "manufacturing_budget": "Est. $24,000,000"
+  },
+  {
+    "id": "macbook-pro",
+    "name": "MacBook Pro",
+    "year": 2006,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Intel Core 7",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/MacBook_Pro_16_%28M1_Pro%2C_2021%29_-_Wikipedia.jpg/330px-MacBook_Pro_16_%28M1_Pro%2C_2021%29_-_Wikipedia.jpg",
+    "release_year": 2006,
+    "development_year": 2004,
+    "manufacturing_budget": "Est. $122,000,000"
+  },
+  {
+    "id": "iphone-3gs",
+    "name": "iPhone 3GS",
+    "year": 2009,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "ARM Cortex-A8",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/IPhone_1st_Gen.svg/330px-IPhone_1st_Gen.svg.png",
+    "release_year": 2009,
+    "development_year": 2007,
+    "manufacturing_budget": "Est. $115,000,000"
+  },
+  {
+    "id": "ipad-(1st-generation)",
+    "name": "iPad (1st generation)",
+    "year": 2010,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Apple A4",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Apple_iPad_Event03.jpg/330px-Apple_iPad_Event03.jpg",
+    "release_year": 2010,
+    "development_year": 2004,
+    "manufacturing_budget": "$100,000,000+"
+  },
+  {
+    "id": "apple-thunderbolt-display",
+    "name": "Apple Thunderbolt Display",
+    "year": 2011,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Apple_Thunderbolt_Display.png/330px-Apple_Thunderbolt_Display.png",
+    "release_year": 2011,
+    "development_year": 2009,
+    "manufacturing_budget": "Est. $130,000,000"
+  },
+  {
+    "id": "iphone-5s",
+    "name": "iPhone 5S",
+    "year": 2013,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Apple A7",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/IPhone_5s_Black.png/330px-IPhone_5s_Black.png",
+    "release_year": 2013,
+    "development_year": 2011,
+    "manufacturing_budget": "Est. $62,000,000"
+  },
+  {
+    "id": "iphone-6",
+    "name": "iPhone 6",
+    "year": 2014,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Apple A8",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/IPhone6_silver_frontface.png/330px-IPhone6_silver_frontface.png",
+    "release_year": 2014,
+    "development_year": 2012,
+    "manufacturing_budget": "Est. $109,000,000"
+  },
+  {
+    "id": "iphone-6-plus",
+    "name": "iPhone 6 Plus",
+    "year": 2014,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Apple A8",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/IPhone_6_%26_6_Plus.png/330px-IPhone_6_%26_6_Plus.png",
+    "release_year": 2014,
+    "development_year": 2012,
+    "manufacturing_budget": "Est. $115,000,000"
+  },
+  {
+    "id": "iphone-6s",
+    "name": "iPhone 6S",
+    "year": 2015,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Apple A9",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/IPhone_6s_vector.svg/330px-IPhone_6s_vector.svg.png",
+    "release_year": 2015,
+    "development_year": 2013,
+    "manufacturing_budget": "Est. $66,000,000"
+  },
+  {
+    "id": "apple-pencil",
+    "name": "Apple Pencil",
+    "year": 2015,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Apple_Pencil.jpg/330px-Apple_Pencil.jpg",
+    "release_year": 2015,
+    "development_year": 2013,
+    "manufacturing_budget": "Est. $74,000,000"
+  },
+  {
+    "id": "iphone-se-(1st-generation)",
+    "name": "iPhone SE (1st generation)",
+    "year": 2016,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Apple A9",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/IPhone_SE_%281st_generation%29_rose_gold.svg/330px-IPhone_SE_%281st_generation%29_rose_gold.svg.png",
+    "release_year": 2016,
+    "development_year": 2014,
+    "manufacturing_budget": "Est. $200,000,000"
+  },
+  {
+    "id": "iphone-7",
+    "name": "iPhone 7",
+    "year": 2016,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Apple A10 Fusion",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/IPhone_7_Jet_Black.svg/330px-IPhone_7_Jet_Black.svg.png",
+    "release_year": 2016,
+    "development_year": 2014,
+    "manufacturing_budget": "Est. $50,000,000"
+  },
+  {
+    "id": "iphone\u00a07-plus",
+    "name": "iPhone\u00a07 Plus",
+    "year": 2016,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Apple A10 Fusion",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/IPhone_7_Plus_Jet_Black.svg/330px-IPhone_7_Plus_Jet_Black.svg.png",
+    "release_year": 2016,
+    "development_year": 2014,
+    "manufacturing_budget": "Est. $185,000,000"
+  },
+  {
+    "id": "iphone\u00a08",
+    "name": "iPhone\u00a08",
+    "year": 2017,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Apple A11 Bionic",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/IPhone_8_Product_Red_vector.svg/330px-IPhone_8_Product_Red_vector.svg.png",
+    "release_year": 2017,
+    "development_year": 2015,
+    "manufacturing_budget": "Est. $69,000,000"
+  },
+  {
+    "id": "imac-pro",
+    "name": "iMac Pro",
+    "year": 2017,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Xeon",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/IMac_Pro.svg/330px-IMac_Pro.svg.png",
+    "release_year": 2017,
+    "development_year": 2015,
+    "manufacturing_budget": "Est. $58,000,000"
+  },
+  {
+    "id": "iphone-x",
+    "name": "iPhone X",
+    "year": 2017,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/IPhone_X_vector.svg/330px-IPhone_X_vector.svg.png",
+    "release_year": 2017,
+    "development_year": 2015,
+    "manufacturing_budget": "Est. $56,000,000"
+  },
+  {
+    "id": "iphone\u00a08-plus",
+    "name": "iPhone\u00a08 Plus",
+    "year": 2017,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Apple A11 Bionic",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/IPhone_8.png/330px-IPhone_8.png",
+    "release_year": 2017,
+    "development_year": 2015,
+    "manufacturing_budget": "Est. $124,000,000"
+  },
+  {
+    "id": "iphone-xs-max",
+    "name": "iPhone XS Max",
+    "year": 2018,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Apple A12 Bionic",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/IPhone_XS_Max_Gold.svg/330px-IPhone_XS_Max_Gold.svg.png",
+    "release_year": 2018,
+    "development_year": 2016,
+    "manufacturing_budget": "Est. $89,000,000"
+  },
+  {
+    "id": "iphone-xr",
+    "name": "iPhone XR",
+    "year": 2018,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Apple A12 Bionic",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/IPhone_XR_Blue.svg/330px-IPhone_XR_Blue.svg.png",
+    "release_year": 2018,
+    "development_year": 2016,
+    "manufacturing_budget": "Est. $141,000,000"
+  },
+  {
+    "id": "iphone-11",
+    "name": "iPhone 11",
+    "year": 2019,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Apple A13 Bionic",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/IPhone_11_Green.svg/330px-IPhone_11_Green.svg.png",
+    "release_year": 2019,
+    "development_year": 2017,
+    "manufacturing_budget": "Est. $55,000,000"
+  },
+  {
+    "id": "iphone-11-pro",
+    "name": "iPhone 11 Pro",
+    "year": 2019,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Apple A13 Bionic",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/IPhone_11_Pro_Midnight_Green.svg/330px-IPhone_11_Pro_Midnight_Green.svg.png",
+    "release_year": 2019,
+    "development_year": 2017,
+    "manufacturing_budget": "Est. $94,000,000"
+  },
+  {
+    "id": "iphone-11-pro-max",
+    "name": "iPhone 11 Pro Max",
+    "year": 2019,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Apple A13 Bionic",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/IPhone_11_Pro_Max_Midnight_Green.svg/330px-IPhone_11_Pro_Max_Midnight_Green.svg.png",
+    "release_year": 2019,
+    "development_year": 2017,
+    "manufacturing_budget": "Est. $55,000,000"
+  },
+  {
+    "id": "iphone-12",
+    "name": "iPhone 12",
+    "year": 2020,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Apple A14 Bionic",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/IPhone_12_Blue.svg/330px-IPhone_12_Blue.svg.png",
+    "release_year": 2020,
+    "development_year": 2018,
+    "manufacturing_budget": "Est. $102,000,000"
+  },
+  {
+    "id": "apple-watch-se",
+    "name": "Apple Watch SE",
+    "year": 2020,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://placehold.co/300x300/111928/ffffff?text=No+Photo",
+    "release_year": 2020,
+    "development_year": 2011,
+    "manufacturing_budget": "Classified (Est. $500M+)"
+  },
+  {
+    "id": "iphone-12-pro",
+    "name": "iPhone 12 Pro",
+    "year": 2020,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Apple A14 Bionic",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/IPhone_12_Pro_Gold.svg/330px-IPhone_12_Pro_Gold.svg.png",
+    "release_year": 2020,
+    "development_year": 2018,
+    "manufacturing_budget": "Est. $165,000,000"
+  },
+  {
+    "id": "macbook-pro-13\"-m1-2020",
+    "name": "MacBook Pro 13\" M1 2020",
+    "year": 2020,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Apple M1",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Macbook_Pro_13%22_M1_2020.jpg/330px-Macbook_Pro_13%22_M1_2020.jpg",
+    "release_year": 2020,
+    "development_year": 2018,
+    "manufacturing_budget": "Est. $86,000,000"
+  },
+  {
+    "id": "imac-(apple-silicon)",
+    "name": "iMac (Apple silicon)",
+    "year": 2021,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Apple M1",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/IMac_M4_2024_2_%28cropped%29.jpg/330px-IMac_M4_2024_2_%28cropped%29.jpg",
+    "release_year": 2021,
+    "development_year": 2019,
+    "manufacturing_budget": "Est. $72,000,000"
+  },
+  {
+    "id": "apple-studio-display",
+    "name": "Apple Studio Display",
+    "year": 2022,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Studio_Display_and_Mac_Studio_and_Magic_Keyboard.jpg/330px-Studio_Display_and_Mac_Studio_and_Magic_Keyboard.jpg",
+    "release_year": 2022,
+    "development_year": 2020,
+    "manufacturing_budget": "Est. $179,000,000"
+  },
+  {
+    "id": "mac-studio-(2022)",
+    "name": "Mac Studio (2022)",
+    "year": 2022,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Apple M1",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Mac_Studio_%282022%29_front.jpg/330px-Mac_Studio_%282022%29_front.jpg",
+    "release_year": 2022,
+    "development_year": 2020,
+    "manufacturing_budget": "Est. $121,000,000"
+  },
+  {
+    "id": "mac-studio",
+    "name": "Mac Studio",
+    "year": 2022,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Mac_Studio_%282022%29_front.jpg/330px-Mac_Studio_%282022%29_front.jpg",
+    "release_year": 2022,
+    "development_year": 2020,
+    "manufacturing_budget": "Est. $66,000,000"
+  },
+  {
+    "id": "iphone-17-pro-max",
+    "name": "iPhone 17 Pro Max",
+    "year": 2025,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Apple A19",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/IPhone_17_Pro_Max_Vector.svg/330px-IPhone_17_Pro_Max_Vector.svg.png",
+    "release_year": 2025,
+    "development_year": 2023,
+    "manufacturing_budget": "Est. $105,000,000"
+  },
+  {
+    "id": "macbook-neo",
+    "name": "MacBook Neo",
+    "year": 2026,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Apple A18 Pro",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/MacBook_Neo-5594.jpg/330px-MacBook_Neo-5594.jpg",
+    "release_year": 2026,
+    "development_year": 2024,
+    "manufacturing_budget": "Est. $59,000,000"
+  },
+  {
+    "id": "apple-workgroup-server",
+    "name": "Apple Workgroup Server",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://placehold.co/300x300/111928/ffffff?text=No+Photo",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "applecd",
+    "name": "AppleCD",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://placehold.co/300x300/111928/ffffff?text=No+Photo",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "applecolor-high-resolution-rgb-monitor",
+    "name": "AppleColor High-Resolution RGB Monitor",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/AppleColor_High-Resolution_RGB_Monitor.png/330px-AppleColor_High-Resolution_RGB_Monitor.png",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "apple-410-color-plotter",
+    "name": "Apple 410 Color Plotter",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Apple_Color_Plotter_crop_%287154380074%29.jpg/330px-Apple_Color_Plotter_crop_%287154380074%29.jpg",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "apple-audiovision-14-display",
+    "name": "Apple AudioVision 14 Display",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Apple_AudioVision_14_Display.png/330px-Apple_AudioVision_14_Display.png",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "apple-daisy-wheel-printer",
+    "name": "Apple Daisy Wheel Printer",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://placehold.co/300x300/111928/ffffff?text=No+Photo",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "apple-ii-sound-cards",
+    "name": "Apple II sound cards",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://placehold.co/300x300/111928/ffffff?text=No+Photo",
+    "release_year": "Unknown",
+    "development_year": 1975,
+    "manufacturing_budget": "$2,500 (Initial Capital)"
+  },
+  {
+    "id": "apple-mouse",
+    "name": "Apple Mouse",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Apple_desktop_mouse.jpg/330px-Apple_desktop_mouse.jpg",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "apple-performa-plus-display",
+    "name": "Apple Performa Plus Display",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Apple_Performa_Plus_Display.png/330px-Apple_Performa_Plus_Display.png",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "apple-wireless-mouse",
+    "name": "Apple Wireless Mouse",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/AppleWirelessMouse.JPG/330px-AppleWirelessMouse.JPG",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "apple-electric-car-project",
+    "name": "Apple electric car project",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://placehold.co/300x300/111928/ffffff?text=No+Photo",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "apple-iphone-7-128gb-jet-black",
+    "name": "Apple iPhone 7 128GB Jet Black",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://placehold.co/300x300/111928/ffffff?text=No+Photo",
+    "release_year": "Unknown",
+    "development_year": 1975,
+    "manufacturing_budget": "$2,500 (Initial Capital)"
+  },
+  {
+    "id": "ipad-(6th-generation)",
+    "name": "iPad (6th generation)",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/IPad_2017_tablet.jpg/330px-IPad_2017_tablet.jpg",
+    "release_year": "Unknown",
+    "development_year": 2004,
+    "manufacturing_budget": "$100,000,000+"
+  },
+  {
+    "id": "apple-a12-bionic",
+    "name": "Apple A12 Bionic",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Apple_A12.jpg/330px-Apple_A12.jpg",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "ipad-pro-12.9-inch-(3rd-generation)",
+    "name": "iPad Pro 12.9-inch (3rd generation)",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/IPad_Pro_logo.svg/330px-IPad_Pro_logo.svg.png",
+    "release_year": "Unknown",
+    "development_year": 2004,
+    "manufacturing_budget": "$100,000,000+"
+  },
+  {
+    "id": "apple-pro-display-xdr",
+    "name": "Apple Pro Display XDR",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Apple_Pro_Display_XDR_and_Mac_Pro_%282019_model%29.png/330px-Apple_Pro_Display_XDR_and_Mac_Pro_%282019_model%29.png",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "ipad-(7th-generation)",
+    "name": "iPad (7th generation)",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/IPad_10.2%E2%80%91inch.png/330px-IPad_10.2%E2%80%91inch.png",
+    "release_year": "Unknown",
+    "development_year": 2004,
+    "manufacturing_budget": "$100,000,000+"
+  },
+  {
+    "id": "macbook-pro-16-inch",
+    "name": "MacBook Pro 16-inch",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Intel Core 7",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://placehold.co/300x300/111928/ffffff?text=No+Photo",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "iphone-se-(2nd-generation)",
+    "name": "iPhone SE (2nd generation)",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Apple A13 Bionic",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/IPhone_SE_%282nd_generation%29_white_vector.svg/330px-IPhone_SE_%282nd_generation%29_white_vector.svg.png",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "apple-hardware",
+    "name": "Apple hardware",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Apple_iPhone.jpg/330px-Apple_iPhone.jpg",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "iphone-12-mini",
+    "name": "iPhone 12 mini",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/IPhone_12_Mini_Blue.svg/330px-IPhone_12_Mini_Blue.svg.png",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "macbook-air-(apple-silicon)",
+    "name": "MacBook Air (Apple Silicon)",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Apple M1",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Macbook_Air.png/330px-Macbook_Air.png",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "macbook-air-(intel-based)",
+    "name": "MacBook Air (Intel-based)",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://placehold.co/300x300/111928/ffffff?text=No+Photo",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "iphone-13-mini",
+    "name": "iPhone 13 mini",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/HK_Kwun_Tong_Apm_Apple_Store_13_Pro_December_2021_IPhone_33.jpg/330px-HK_Kwun_Tong_Apm_Apple_Store_13_Pro_December_2021_IPhone_33.jpg",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "iphone-13-pro-max",
+    "name": "iPhone 13 Pro Max",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Apple A15 Bionic",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://placehold.co/300x300/111928/ffffff?text=No+Photo",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "macbook-pro-14-inch",
+    "name": "MacBook Pro 14-inch",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://placehold.co/300x300/111928/ffffff?text=No+Photo",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "apple-polishing-cloth",
+    "name": "Apple Polishing Cloth",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://placehold.co/300x300/111928/ffffff?text=No+Photo",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "ipod-socks",
+    "name": "iPod Socks",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://placehold.co/300x300/111928/ffffff?text=No+Photo",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "macintosh-plus-home-computer",
+    "name": "Macintosh Plus Home Computer",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://placehold.co/300x300/111928/ffffff?text=No+Photo",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "ipod",
+    "name": "iPod",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://placehold.co/300x300/111928/ffffff?text=No+Photo",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "macintosh-classic-desktop-computer",
+    "name": "Macintosh Classic Desktop Computer",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://placehold.co/300x300/111928/ffffff?text=No+Photo",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "iphone",
+    "name": "iPhone",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/IPhone_17_Pro_Vector.svg/330px-IPhone_17_Pro_Vector.svg.png",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "imac",
+    "name": "iMac",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "PowerPC",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Imac_16-9.png/330px-Imac_16-9.png",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "ipod-touch",
+    "name": "iPod touch",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Apple A5",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/IPod_touch_by_pm128.jpg/330px-IPod_touch_by_pm128.jpg",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "ipad",
+    "name": "iPad",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/IPad_4%2C_model_A1458-0869.jpg/330px-IPad_4%2C_model_A1458-0869.jpg",
+    "release_year": "Unknown",
+    "development_year": 2004,
+    "manufacturing_budget": "$100,000,000+"
+  },
+  {
+    "id": "apple-network-server",
+    "name": "Apple Network Server",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/AppleMuzeumPolska.jpg/330px-AppleMuzeumPolska.jpg",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "ipad-mini",
+    "name": "iPad mini",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Apple A5",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Ipad_Mini.png/330px-Ipad_Mini.png",
+    "release_year": "Unknown",
+    "development_year": 2004,
+    "manufacturing_budget": "$100,000,000+"
+  },
+  {
+    "id": "apple-ii-series",
+    "name": "Apple II series",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "MOS Technology 6502",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Apple_II_Plus%2C_Museum_of_the_Moving_Image.jpg/330px-Apple_II_Plus%2C_Museum_of_the_Moving_Image.jpg",
+    "release_year": "Unknown",
+    "development_year": 1975,
+    "manufacturing_budget": "$2,500 (Initial Capital)"
+  },
+  {
+    "id": "ipod-shuffle",
+    "name": "iPod Shuffle",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/IPod_shuffle_familly.png/330px-IPod_shuffle_familly.png",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "iphone-4s",
+    "name": "iPhone 4S",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Apple A5",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/IPhone_4S_No_shadow.png/330px-IPhone_4S_No_shadow.png",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "apple-tv",
+    "name": "Apple TV",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Apple_TV_4K_%283rd_Generation%2C_2022%29_with_Siri_Remote_%28cropped%29.jpg/330px-Apple_TV_4K_%283rd_Generation%2C_2022%29_with_Siri_Remote_%28cropped%29.jpg",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "ipod-mini",
+    "name": "iPod Mini",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Mini_iPod.svg/330px-Mini_iPod.svg.png",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "ipod-classic",
+    "name": "iPod Classic",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/6G_iPod.svg/330px-6G_iPod.svg.png",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "ipod-hi-fi",
+    "name": "iPod Hi-Fi",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/IPod_Hi-Fi.jpg/330px-IPod_Hi-Fi.jpg",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "mac-mini",
+    "name": "Mac mini",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Apple_Mac_Mini_M4.svg/330px-Apple_Mac_Mini_M4.svg.png",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "apple-earbuds",
+    "name": "Apple earbuds",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Earpods.jpg/330px-Earpods.jpg",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "apple-a4",
+    "name": "Apple A4",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/IPhone_4%2C_model_A1332_-_mainboard_-_A4-7796.jpg/330px-IPhone_4%2C_model_A1332_-_mainboard_-_A4-7796.jpg",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "power-mac-g4-cube",
+    "name": "Power Mac G4 Cube",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "PowerPC G4",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/PowerMac_G4_Cube.jpg/330px-PowerMac_G4_Cube.jpg",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "iphone-16-plus",
+    "name": "iPhone 16 Plus",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/IPhone_16_Plus_Vector.svg/330px-IPhone_16_Plus_Vector.svg.png",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "iphone-16-pro-max",
+    "name": "iPhone 16 Pro Max",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/IPhone_16_Pro_Max_Vector.svg/330px-IPhone_16_Pro_Max_Vector.svg.png",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "apple-devices-(windows-app)",
+    "name": "Apple Devices (Windows app)",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://placehold.co/300x300/111928/ffffff?text=No+Photo",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "power-macintosh-server-series",
+    "name": "Power Macintosh Server series",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Apple_PowerMac_G4_M8570_MDD_sideopen.jpg/330px-Apple_PowerMac_G4_M8570_MDD_sideopen.jpg",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "iphone-16e",
+    "name": "iPhone 16e",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Apple A18",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/IPhone_16e_Vector.svg/330px-IPhone_16e_Vector.svg.png",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "apple-inc.-stickers",
+    "name": "Apple Inc. stickers",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Apple_Mac_Pro_stickers_%2812431114825%29.jpg/330px-Apple_Mac_Pro_stickers_%2812431114825%29.jpg",
+    "release_year": "Unknown",
+    "development_year": 1975,
+    "manufacturing_budget": "$2,500 (Initial Capital)"
+  },
+  {
+    "id": "iphone-air",
+    "name": "iPhone Air",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Apple A19",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/IPhone_Air_Vector.svg/330px-IPhone_Air_Vector.svg.png",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "iphone-pocket",
+    "name": "iPhone Pocket",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://placehold.co/300x300/111928/ffffff?text=No+Photo",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "iphone-17e",
+    "name": "iPhone 17e",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Apple A19",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/IPhone_17e_Vector.svg/330px-IPhone_17e_Vector.svg.png",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "iphone-18",
+    "name": "iPhone 18",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://placehold.co/300x300/111928/ffffff?text=No+Photo",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "ipad-air-(5th-generation)",
+    "name": "iPad Air (5th generation)",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Apple M1",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/0/01/IPad_Air_4.png",
+    "release_year": "Unknown",
+    "development_year": 2004,
+    "manufacturing_budget": "$100,000,000+"
+  },
+  {
+    "id": "iphone-14-pro",
+    "name": "iPhone 14 Pro",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Apple A16 Bionic",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/IPhone_14_Pro_vector.svg/330px-IPhone_14_Pro_vector.svg.png",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "ipod-shuffle-4g",
+    "name": "iPod Shuffle 4G",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/IPod_Shuffle_4G.svg/330px-IPod_Shuffle_4G.svg.png",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "iphone-15",
+    "name": "iPhone 15",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Apple A16 Bionic",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/IPhone_15_Vector.svg/330px-IPhone_15_Vector.svg.png",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "iphone-15-pro",
+    "name": "iPhone 15 Pro",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Apple A17 Pro",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/IPhone_15_Pro_Vector.svg/330px-IPhone_15_Pro_Vector.svg.png",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "iphone-15-plus",
+    "name": "iPhone 15 Plus",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/IPhone_15_Plus.jpeg/330px-IPhone_15_Plus.jpeg",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "iphone-15-pro-max",
+    "name": "iPhone 15 Pro Max",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Apple A17 Pro",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/IPhone_15_pro_max.png/330px-IPhone_15_pro_max.png",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "apple-color-printer",
+    "name": "Apple Color Printer",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://placehold.co/300x300/111928/ffffff?text=No+Photo",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "apple-pencil-pro",
+    "name": "Apple Pencil Pro",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://placehold.co/300x300/111928/ffffff?text=No+Photo",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "apple-multiple-scan-display",
+    "name": "Apple Multiple Scan Display",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Apple_Multiple_Scan_15_Display.png/330px-Apple_Multiple_Scan_15_Display.png",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "mac-studio-(2023)",
+    "name": "Mac Studio (2023)",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Apple M2 Max",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://placehold.co/300x300/111928/ffffff?text=No+Photo",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "macintosh-128k-home-computer",
+    "name": "Macintosh 128K Home Computer",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://placehold.co/300x300/111928/ffffff?text=No+Photo",
+    "release_year": "Unknown",
+    "development_year": 1979,
+    "manufacturing_budget": "$78,000,000"
+  },
+  {
+    "id": "macintosh-se-30-home-computer",
+    "name": "Macintosh SE/30 Home Computer",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://placehold.co/300x300/111928/ffffff?text=No+Photo",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "iphone-se-(3rd-generation)",
+    "name": "iPhone SE (3rd generation)",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Apple A15 Bionic",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/IPhone_SE_%282nd_generation%29_white_vector.svg/330px-IPhone_SE_%282nd_generation%29_white_vector.svg.png",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "macintosh-performa",
+    "name": "Macintosh Performa",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Macintosh_Performa_5200.jpg/330px-Macintosh_Performa_5200.jpg",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "macintosh-quadra",
+    "name": "Macintosh Quadra",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Apple_mac_quadra_800.jpg/330px-Apple_mac_quadra_800.jpg",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "macintosh-se-30",
+    "name": "Macintosh SE/30",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Q378761",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Se30.jpg/330px-Se30.jpg",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "apple-iie-card",
+    "name": "Apple IIe Card",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "WDC 65C02",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://placehold.co/300x300/111928/ffffff?text=No+Photo",
+    "release_year": "Unknown",
+    "development_year": 1975,
+    "manufacturing_budget": "$2,500 (Initial Capital)"
+  },
+  {
+    "id": "macbook",
+    "name": "MacBook",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Intel Core 2 Duo",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Macbook_Air.png/330px-Macbook_Air.png",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "power-macintosh-5500",
+    "name": "Power Macintosh 5500",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Power_Macintosh_5500.jpg/330px-Power_Macintosh_5500.jpg",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "macintosh-quadra-650",
+    "name": "Macintosh Quadra 650",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Quadra_650_Front.jpg/330px-Quadra_650_Front.jpg",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "macintosh-quadra-950",
+    "name": "Macintosh Quadra 950",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Quadra950-01.jpg/330px-Quadra950-01.jpg",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "macintosh-lc-500-series",
+    "name": "Macintosh LC 500 series",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/LC520.jpg/330px-LC520.jpg",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "power-macintosh-7300",
+    "name": "Power Macintosh 7300",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Power_Macintosh_7300.jpg/330px-Power_Macintosh_7300.jpg",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "apple-monochrome-monitor-family",
+    "name": "Apple monochrome monitor family",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://placehold.co/300x300/111928/ffffff?text=No+Photo",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "apple-colorsync-applevision-750-display",
+    "name": "Apple ColorSync/AppleVision 750 Display",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/AppleVision_750_Display.png/330px-AppleVision_750_Display.png",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "ipod-touch-5",
+    "name": "iPod touch 5",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/5th_Generation_iPod_Touch.svg/330px-5th_Generation_iPod_Touch.svg.png",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "apple-pro-mouse",
+    "name": "Apple Pro Mouse",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Apple-pro-mouse1.jpg/330px-Apple-pro-mouse1.jpg",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "power-macintosh-5400",
+    "name": "Power Macintosh 5400",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://placehold.co/300x300/111928/ffffff?text=No+Photo",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "power-macintosh-5260",
+    "name": "Power Macintosh 5260",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Macintosh_Performa_5260_front.jpg/330px-Macintosh_Performa_5260_front.jpg",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "macintosh-lc-580",
+    "name": "Macintosh LC 580",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Macintosh_Performa_580CD_-_front.jpg/330px-Macintosh_Performa_580CD_-_front.jpg",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "apple-cinema-display",
+    "name": "Apple Cinema Display",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Apple_Cinema_display_aluminum-2004-07-23.jpg/330px-Apple_Cinema_display_aluminum-2004-07-23.jpg",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "apple-display-connector",
+    "name": "Apple Display Connector",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Apple_Desktop_Connector_7669.jpg/330px-Apple_Desktop_Connector_7669.jpg",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "apple-ii-plus",
+    "name": "Apple II Plus",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "MOS Technology 6502",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Apple_II_Plus.jpg/330px-Apple_II_Plus.jpg",
+    "release_year": "Unknown",
+    "development_year": 1975,
+    "manufacturing_budget": "$2,500 (Initial Capital)"
+  },
+  {
+    "id": "power-macintosh",
+    "name": "Power Macintosh",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Apple_Power_Macintosh_G5_Late_2005_02.jpg/330px-Apple_Power_Macintosh_G5_Late_2005_02.jpg",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "apple-quicktake",
+    "name": "Apple QuickTake",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Quicktake_200_front.jpg/330px-Quicktake_200_front.jpg",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "apple-displays",
+    "name": "Apple displays",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://placehold.co/300x300/111928/ffffff?text=No+Photo",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "apple-monitor-ii",
+    "name": "Apple Monitor II",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Apple_Monitor_II.png/330px-Apple_Monitor_II.png",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "apple-monitor-iii",
+    "name": "Apple Monitor III",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple3.jpg/330px-Apple3.jpg",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "macintosh-color-classic",
+    "name": "Macintosh Color Classic",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Macintosh_Color_Classic.jpg/330px-Macintosh_Color_Classic.jpg",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "macintosh-ii-series",
+    "name": "Macintosh II series",
+    "year": "Unknown",
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/MacII.jpg/330px-MacII.jpg",
+    "release_year": "Unknown",
+    "development_year": "Unknown",
+    "manufacturing_budget": "Classified"
+  },
+  {
+    "id": "macintosh-512ke",
+    "name": "Macintosh 512Ke",
+    "year": 1986,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Motorola 68000 @ 7.8 MHz",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Apple_512k.jpg/330px-Apple_512k.jpg",
+    "release_year": 1986,
+    "development_year": 1984,
+    "manufacturing_budget": "Est. $5,000,000"
+  },
+  {
+    "id": "apple-mighty-mouse",
+    "name": "Apple Mighty Mouse",
+    "year": 2005,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Unknown",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Apple_Mighty_Mouse_Wireless_in_perspective.jpg/330px-Apple_Mighty_Mouse_Wireless_in_perspective.jpg",
+    "release_year": 2005,
+    "development_year": 2003,
+    "manufacturing_budget": "Est. $80,000,000"
+  },
+  {
+    "id": "macintosh-128k",
+    "name": "Macintosh 128K",
+    "year": 1984,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Motorola 68000 @ 7.8336 MHz (6&nbsp;MHz ...",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Macintosh_128k_transparency.png/330px-Macintosh_128k_transparency.png",
+    "release_year": 1984,
+    "development_year": 1982,
+    "manufacturing_budget": "Est. $5,000,000"
+  },
+  {
+    "id": "macintosh-plus",
+    "name": "Macintosh Plus",
+    "year": 1986,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Motorola 68000 @ 7.8 MHz",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Macplus.jpg/330px-Macplus.jpg",
+    "release_year": 1986,
+    "development_year": 1984,
+    "manufacturing_budget": "Est. $5,000,000"
+  },
+  {
+    "id": "apple-iigs",
+    "name": "Apple IIGS",
+    "year": 1986,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "WDC W65C816",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Apple_IIgs_001_%28transparent_background%29.png/330px-Apple_IIgs_001_%28transparent_background%29.png",
+    "release_year": 1986,
+    "development_year": 1984,
+    "manufacturing_budget": "Est. $5,000,000"
+  },
+  {
+    "id": "macintosh-portable",
+    "name": "Macintosh Portable",
+    "year": 1989,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "Motorola 68000 @ 16 MHz",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Macintosh_Portable-IMG_7541.jpg/330px-Macintosh_Portable-IMG_7541.jpg",
+    "release_year": 1989,
+    "development_year": 1987,
+    "manufacturing_budget": "Est. $5,000,000"
+  },
+  {
+    "id": "power-macintosh-8200",
+    "name": "Power Macintosh 8200",
+    "year": 1995,
+    "category": "Apple Device",
+    "specs": {
+      "Processor": "PowerPC 601",
+      "Memory": "Varies by configuration",
+      "Storage": "Varies by configuration"
+    },
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Power_Macintosh_8200_100.jpg/330px-Power_Macintosh_8200_100.jpg",
+    "release_year": 1995,
+    "development_year": 1993,
+    "manufacturing_budget": "Est. $25,000,000"
+  }
+]

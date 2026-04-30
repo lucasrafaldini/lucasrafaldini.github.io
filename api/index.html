@@ -1,0 +1,270 @@
+---
+layout: default
+title: API Documentation
+---
+
+<style>
+.api-docs-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: var(--text-color, #e0e0e0);
+}
+
+.api-docs-header {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.api-docs-header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    background: linear-gradient(135deg, #a8c0ff, #3f2b96);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.api-docs-header p {
+    font-size: 1.1rem;
+    color: #999;
+}
+
+/* Endpoint Card */
+.endpoint-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 30px;
+    margin-bottom: 40px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.endpoint-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.http-method {
+    background: #27ae60;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.endpoint-url {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 6px 15px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #64ffda;
+    word-break: break-all;
+}
+
+.endpoint-desc {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #ccc;
+}
+
+/* Data Model Table */
+.data-model h3 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 10px;
+}
+
+.model-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.model-table th, .model-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.model-table th {
+    background: rgba(255, 255, 255, 0.05);
+    font-weight: 600;
+    color: #fff;
+}
+
+.model-table td.property {
+    font-family: monospace;
+    color: #a8c0ff;
+    font-weight: bold;
+}
+
+.model-table td.type {
+    color: #f39c12;
+    font-size: 0.9rem;
+}
+
+/* Code Snippet */
+.code-snippet {
+    background: #1e1e1e;
+    border-radius: 8px;
+    padding: 20px;
+    overflow-x: auto;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.code-snippet pre {
+    margin: 0;
+}
+
+.code-snippet code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.95rem;
+    color: #e0e0e0;
+    line-height: 1.5;
+}
+
+.code-keyword { color: #c678dd; }
+.code-string { color: #98c379; }
+.code-function { color: #61afef; }
+.code-comment { color: #7f848e; font-style: italic; }
+
+@media (max-width: 768px) {
+    .endpoint-url {
+        font-size: 0.9rem;
+    }
+    
+    .model-table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+</style>
+
+<div class="api-docs-container">
+    <div class="api-docs-header">
+        <h1>
+            <span class="lang-en">API Documentation</span>
+            <span class="lang-pt">Documentação da API</span>
+        </h1>
+        <p>
+            <span class="lang-en">Explore the available JSON endpoints and data models built for this project.</span>
+            <span class="lang-pt">Explore os endpoints JSON disponíveis e os modelos de dados construídos para este projeto.</span>
+        </p>
+    </div>
+
+    <!-- Apple Devices API Endpoint -->
+    <div class="endpoint-card">
+        <div class="endpoint-header">
+            <span class="http-method">GET</span>
+            <span class="endpoint-url">/api/apple/devices.json</span>
+        </div>
+        
+        <p class="endpoint-desc">
+            <span class="lang-en">Returns a comprehensive historical list of Apple devices, including Macintoshes, iPhones, iPads, and accessories. Features metadata about release years, manufacturing budgets, and tech specifications.</span>
+            <span class="lang-pt">Retorna uma lista histórica abrangente de dispositivos Apple, incluindo Macintoshes, iPhones, iPads e acessórios. Apresenta metadados sobre anos de lançamento, orçamentos de fabricação e especificações técnicas.</span>
+        </p>
+
+        <div class="data-model">
+            <h3>
+                <span class="lang-en">Data Model (Response)</span>
+                <span class="lang-pt">Modelo de Dados (Resposta)</span>
+            </h3>
+            <table class="model-table">
+                <thead>
+                    <tr>
+                        <th>Property</th>
+                        <th>Type</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="property">id</td>
+                        <td class="type">string</td>
+                        <td>Unique identifier for the device (slug).</td>
+                    </tr>
+                    <tr>
+                        <td class="property">name</td>
+                        <td class="type">string</td>
+                        <td>Official name of the Apple device.</td>
+                    </tr>
+                    <tr>
+                        <td class="property">category</td>
+                        <td class="type">string</td>
+                        <td>General category classification.</td>
+                    </tr>
+                    <tr>
+                        <td class="property">photo</td>
+                        <td class="type">string (URL)</td>
+                        <td>Direct URL to a 300px thumbnail on Wikimedia Commons.</td>
+                    </tr>
+                    <tr>
+                        <td class="property">release_year</td>
+                        <td class="type">number | string</td>
+                        <td>Year the device was publicly released.</td>
+                    </tr>
+                    <tr>
+                        <td class="property">development_year</td>
+                        <td class="type">number | string</td>
+                        <td>Estimated year the internal project/R&D started.</td>
+                    </tr>
+                    <tr>
+                        <td class="property">manufacturing_budget</td>
+                        <td class="type">string</td>
+                        <td>Historical estimated or exact project cost.</td>
+                    </tr>
+                    <tr>
+                        <td class="property">specs</td>
+                        <td class="type">object</td>
+                        <td>Contains keys like <code>Processor</code>, <code>Memory</code>, <code>Storage</code>.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="data-model">
+            <h3>
+                <span class="lang-en">Example Usage (JavaScript)</span>
+                <span class="lang-pt">Exemplo de Uso (JavaScript)</span>
+            </h3>
+            <div class="code-snippet">
+<pre><code><span class="code-comment">// Import our built-in ApiRouter</span>
+<span class="code-keyword">import</span> { ApiRouter } <span class="code-keyword">from</span> <span class="code-string">'/js/api-router.js'</span>;
+
+<span class="code-comment">// Initialize router for the apple category</span>
+<span class="code-keyword">const</span> router = <span class="code-keyword">new</span> <span class="code-function">ApiRouter</span>(<span class="code-string">'apple'</span>);
+
+<span class="code-keyword">async function</span> <span class="code-function">fetchAppleDevices</span>() {
+    <span class="code-keyword">try</span> {
+        <span class="code-comment">// Fetch the JSON payload</span>
+        <span class="code-keyword">const</span> data = <span class="code-keyword">await</span> router.<span class="code-function">fetchResource</span>(<span class="code-string">'devices'</span>);
+        
+        <span class="code-function">console</span>.<span class="code-function">log</span>(<span class="code-string">`Loaded ${data.length} Apple devices!`</span>);
+        <span class="code-function">console</span>.<span class="code-function">log</span>(data[0].name); <span class="code-comment">// e.g. "Apple II"</span>
+        
+    } <span class="code-keyword">catch</span> (error) {
+        <span class="code-function">console</span>.<span class="code-function">error</span>(<span class="code-string">"Failed to load API data:"</span>, error);
+    }
+}
+
+<span class="code-function">fetchAppleDevices</span>();</code></pre>
+            </div>
+        </div>
+    </div>
+</div>

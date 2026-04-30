@@ -1,0 +1,258 @@
+---
+layout: default
+title: Apple Devices API Demo
+---
+
+<style>
+/* Styling for Apple Devices Table */
+.apple-api-container {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #fff;
+}
+
+.apple-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.apple-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+.apple-header p {
+    color: #8892b0;
+    font-size: 1.1rem;
+}
+
+.table-wrapper {
+    background: rgba(17, 25, 40, 0.75);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    overflow-x: auto;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.apple-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+}
+
+.apple-table th {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 16px 24px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #ccd6f6;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.apple-table td {
+    padding: 20px 24px;
+    vertical-align: middle;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    color: #a8b2d1;
+    transition: all 0.3s ease;
+}
+
+.apple-table tbody tr {
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.apple-table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+    transform: scale(1.002);
+}
+
+.device-photo-container {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.device-photo-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.apple-table tbody tr:hover .device-photo-container img {
+    transform: scale(1.1);
+}
+
+.device-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #e6f1ff;
+    margin-bottom: 4px;
+}
+
+.device-category {
+    font-size: 0.85rem;
+    color: #64ffda;
+    background: rgba(100, 255, 218, 0.1);
+    padding: 3px 8px;
+    border-radius: 12px;
+    display: inline-block;
+}
+
+.specs-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.specs-list li {
+    font-size: 0.9rem;
+    margin-bottom: 6px;
+}
+
+.specs-list li strong {
+    color: #ccd6f6;
+    margin-right: 5px;
+}
+
+/* Loading Animation */
+.loader-container {
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: #64ffda;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+@keyframes rotation {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 768px) {
+    .apple-header h1 { font-size: 2rem; }
+}
+</style>
+
+<div class="apple-api-container">
+    <div class="apple-header">
+        <h1>Apple Devices API</h1>
+        <p>
+            <span class="lang-en">A history of Apple's flagship products loaded dynamically from our custom JSON API.</span>
+            <span class="lang-pt">Uma história dos principais produtos da Apple carregados dinamicamente da nossa API JSON customizada.</span>
+        </p>
+    </div>
+
+    <div class="table-wrapper">
+        <table class="apple-table" id="devicesTable" style="display:none;">
+            <thead>
+                <tr>
+                    <th>
+                        <span class="lang-en">Photo</span>
+                        <span class="lang-pt">Foto</span>
+                    </th>
+                    <th>
+                        <span class="lang-en">Device</span>
+                        <span class="lang-pt">Dispositivo</span>
+                    </th>
+                    <th>
+                        <span class="lang-en">Timeline & Budget</span>
+                        <span class="lang-pt">Cronograma & Orçamento</span>
+                    </th>
+                    <th>
+                        <span class="lang-en">Specifications</span>
+                        <span class="lang-pt">Especificações</span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="devicesTableBody">
+                <!-- Data will be injected here via JS -->
+            </tbody>
+        </table>
+        <div id="loader" class="loader-container">
+            <span class="loader"></span>
+        </div>
+    </div>
+</div>
+
+<script type="module">
+    import { api } from '/js/api-router.js';
+
+    document.addEventListener('DOMContentLoaded', async () => {
+        const tableBody = document.getElementById('devicesTableBody');
+        const table = document.getElementById('devicesTable');
+        const loader = document.getElementById('loader');
+
+        try {
+            // Fetching data from our custom file-based API router
+            const devices = await api.get('/apple/devices.json');
+            
+            if (devices && devices.length > 0) {
+                devices.forEach(device => {
+                    const row = document.createElement('tr');
+                    
+                    row.innerHTML = `
+                        <td>
+                            <div class="device-photo-container">
+                                <img src="${device.photo}" alt="${device.name} Photo" loading="lazy">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="device-name">${device.name}</div>
+                            <span class="device-category">${device.category}</span>
+                        </td>
+                        <td>
+                            <ul class="specs-list" style="color: #ccd6f6;">
+                                <li><strong>Release:</strong> ${device.release_year || device.year}</li>
+                                <li><strong>Started:</strong> ${device.development_year}</li>
+                                <li><strong>Budget:</strong> <span style="color: #64ffda;">${device.manufacturing_budget}</span></li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul class="specs-list">
+                                <li><strong>CPU:</strong> ${device.specs.Processor}</li>
+                                <li><strong>RAM:</strong> ${device.specs.Memory}</li>
+                                <li><strong>Storage:</strong> ${device.specs.Storage}</li>
+                            </ul>
+                        </td>
+                    `;
+                    tableBody.appendChild(row);
+                });
+                
+                // Hide loader, show table
+                loader.style.display = 'none';
+                table.style.display = 'table';
+            } else {
+                throw new Error("No data received from API");
+            }
+        } catch (error) {
+            console.error("Failed to load Apple Devices:", error);
+            loader.innerHTML = `<p style="color:#ff6b6b; text-align:center;">Failed to load API data. Please try again later.</p>`;
+        }
+    });
+</script>
