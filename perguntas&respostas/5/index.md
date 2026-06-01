@@ -136,21 +136,21 @@ Inheritance is a way to reuse code through type hierarchy. Polymorphism is a way
 
 ## O que são polimorfismo e hereditariedade?
 
-**Hereditariedade** e a relacao em que um tipo reaproveita estrutura e comportamento de outro tipo. No design orientado a objetos classico, isso normalmente e descrito como uma relacao de *eh-um*. Por exemplo, um `Cachorro` pode herdar de `Animal`.
+**Hereditariedade** é a relacao em que um tipo reaproveita estrutura e comportamento de outro tipo. No design orientado a objetos clássico, isso normalmente é descrito como uma relação de *é-um*. Por exemplo, um `Cachorro` pode herdar de `Animal`.
 
-**Polimorfismo** significa “muitas formas”. Em programacao, e a capacidade de usar tipos diferentes por meio da mesma interface e obter comportamentos diferentes dependendo do tipo concreto. Uma chamada como `falar()` pode se comportar de forma diferente dependendo de quem recebe a mensagem.
+**Polimorfismo** significa “muitas formas”. Em programação, é a capacidade de usar tipos diferentes por meio da mesma interface e obter comportamentos diferentes dependendo do tipo concreto. Uma chamada como `falar()` pode se comportar de forma diferente dependendo de quem recebe a mensagem.
 
 ## Como se relacionam
 
-- Os dois ajudam a organizar o codigo com abstracao, em vez de repetir logica em todo lugar.
-- Os dois podem melhorar a legibilidade quando usados com criterio.
-- A hereditariedade pode ser uma forma de obter polimorfismo, mas polimorfismo nao depende de hereditariedade.
+- Os dois ajudam a organizar o código com abstração em vez de repetir logica em todo lugar;
+- Os dois podem melhorar a legibilidade quando usados com critério;
+- A hereditariedade pode ser uma forma de obter polimorfismo, mas polimorfismo não depende de hereditariedade.
 
-## Diferencas
+## Diferenças
 
-- Hereditariedade compartilha estrutura e comportamento por meio de uma relacao pai-filho.
-- Polimorfismo trata de chamar a mesma operacao em tipos diferentes e obter comportamento especifico de cada tipo.
-- Hereditariedade pode gerar mais acoplamento; polimorfismo costuma focar em interfaces e contratos.
+- Hereditariedade compartilha estrutura e comportamento por meio de uma relação pai-filho;
+- Polimorfismo trata de chamar a mesma operação em tipos diferentes e obter comportamento especifico de cada tipo;
+- Hereditariedade pode gerar mais acoplamento; polimorfismo costuma focar em interfaces e contratos;
 - Polimorfismo pode existir sem hereditariedade.
 
 ## Exemplos comparativos
@@ -179,7 +179,7 @@ fazer_falar(Cachorro())
 
 ### Golang
 
-Go nao usa hereditariedade de classes. Ele favorece interfaces, que sao uma forma muito comum de polimorfismo.
+Go não usa hereditariedade de classes. Ele favorece interfaces, que são uma forma muito comum de polimorfismo.
 
 ```go
 package main
@@ -197,7 +197,7 @@ func (Cachorro) Falar() string {
 
 ### Rust
 
-Rust tambem evita hereditariedade de classes. Traits sao a forma padrao de compartilhar comportamento e obter polimorfismo.
+Rust também evita hereditariedade de classes. Traits são a forma padrao de compartilhar comportamento e obter polimorfismo.
 
 ```rust
 trait Falante {
@@ -215,7 +215,7 @@ impl Falante for Cachorro {
 
 ### JavaScript
 
-JavaScript suporta heranca com `extends`, mas o modelo de execucao continua sendo baseado em prototipos.
+JavaScript suporta herança com `extends`, mas o modelo de execução continua sendo baseado em protótipos.
 
 ```javascript
 class Animal {
@@ -237,11 +237,11 @@ function fazerFalar(animal) {
 fazerFalar(new Cachorro());
 ```
 
-Resumindo: hereditariedade e um mecanismo de reaproveitamento; polimorfismo e um mecanismo de comportamento. Uma linguagem pode suportar os dois, apenas um deles, ou nenhum no sentido classico de orientacao a objetos.
+Resumindo: hereditariedade é um mecanismo de reaproveitamento; polimorfismo é um mecanismo de comportamento. Uma linguagem pode suportar os dois, apenas um deles, ou nenhum no sentido classico de orientacao a objetos.
 
 ## Quando usar cada um
 
-- Use hereditariedade quando existir uma relacao real de *eh-um* e a implementacao base realmente reduzir duplicacao.
+- Use hereditariedade quando existir uma relação real de *é-um* e a implementação base realmente reduzir duplicação.
 - Use polimorfismo quando voce quer que o mesmo codigo funcione com varios tipos intercambiaveis.
 - Prefira polimorfismo quando voce quer menos acoplamento, testes mais simples e extensao mais facil ao longo do tempo.
 - Evite hereditariedade so para reaproveitar alguns metodos se a hierarquia nao fizer sentido conceitual.
