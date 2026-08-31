@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>O Décimo Círculo</title>
+    <meta
+      name="description"
+      content="Um aquário de filósofos condenados. Alimente-os. Fale com eles. Eles não saem de lá."
+    />
+    <link rel="stylesheet" href="aquario.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>🐟</text></svg>"
+    />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <h1>O Décimo Círculo</h1>
+      <p class="subtitulo">
+        Dante contou nove. Havia um décimo, para quem pensou demais.
+        <span class="dica">Clique na água para alimentar · clique num peixe para falar</span>
+      </p>
+      <div class="estado-conexao" id="estadoConexao" data-estado="ligando">
+        <span class="ponto"></span><span class="rotulo">ligando ao tanque…</span>
+      </div>
+    </header>
+
+    <main class="palco">
+      <div class="tanque" id="tanque">
+        <canvas id="aquario"></canvas>
+        <div class="vidro" aria-hidden="true"></div>
+        <div class="balões" id="balões"></div>
+      </div>
+
+      <aside class="lateral" id="lateral">
+        <section class="ficha oculta" id="ficha">
+          <button class="fechar" id="fecharFicha" aria-label="Fechar ficha">×</button>
+          <div class="ficha-cabeca">
+            <span class="marca" id="fichaMarca"></span>
+            <div>
+              <h2 id="fichaNome">—</h2>
+              <p class="epiteto" id="fichaEpiteto">—</p>
+            </div>
+          </div>
+          <dl class="atributos">
+            <div><dt>Era</dt><dd id="fichaEra">—</dd></div>
+            <div><dt>Escola</dt><dd id="fichaEscola">—</dd></div>
+          </dl>
+          <p class="pecado"><span>Pecado</span><em id="fichaPecado">—</em></p>
+
+          <div class="vitais">
+            <div class="barra">
+              <label>Fome</label>
+              <div class="trilho"><i id="barraFome" style="width: 0%"></i></div>
+            </div>
+            <div class="barra">
+              <label>Humor</label>
+              <div class="trilho humor"><i id="barraHumor" style="width: 50%"></i></div>
+            </div>
+          </div>
+
+          <div class="conversa" id="conversa"></div>
+
+          <form class="entrada" id="formFala" autocomplete="off">
+            <input
+              id="campoFala"
+              type="text"
+              maxlength="600"
+              placeholder="Diga algo através do vidro…"
+              aria-label="Falar com o peixe"
+            />
+            <button type="submit" id="botaoFala">Falar</button>
+          </form>
+        </section>
+
+        <section class="cronica" id="secaoCronica">
+          <h2>Crônica do círculo</h2>
+          <ol class="lista-cronica" id="listaCronica">
+            <li class="vazio">O tanque está em silêncio.</li>
+          </ol>
+        </section>
+      </aside>
+    </main>
+
+    <script type="module" src="aquario.js"></script>
+  </body>
+</html>
