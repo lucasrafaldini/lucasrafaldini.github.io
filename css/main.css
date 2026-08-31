@@ -709,6 +709,24 @@ body.dark-mode .container {
     color: #fff !important;
 }
 
+body.dark-mode .blurb p,
+body.dark-mode .blurb li {
+    color: #c8cdd5 !important;
+}
+
+body.dark-mode .blurb li a {
+    color: #8da2f0 !important;
+    border-bottom-color: rgba(141, 162, 240, 0.4) !important;
+}
+
+body.dark-mode .blurb li a:hover {
+    border-bottom-color: #8da2f0 !important;
+}
+
+body.dark-mode .blurb hr {
+    background: linear-gradient(90deg, transparent, rgba(141, 162, 240, 0.3), transparent) !important;
+}
+
 body.dark-mode nav {
     background: rgba(26, 26, 46, 0.92) !important;
     border-bottom-color: rgba(255, 255, 255, 0.06) !important;
