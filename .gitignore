@@ -27,3 +27,6 @@ gh-pages/
 pkg/
 test/dest
 tmp/*
+
+# Local preview
+_preview_local/
