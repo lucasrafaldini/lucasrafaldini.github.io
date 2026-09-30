@@ -377,7 +377,7 @@ body {
 }
 
 .linha.peixe::before {
-  content: "— ";
+  content: "- ";
   color: var(--cor, var(--realce));
 }
 

@@ -26,7 +26,7 @@ Modern moralism has evolved. In the past, it was easier to identify: dictating h
 
 Legitimate concerns about AI exist, including misinformation, labor disruption, and the concentration of power. However, it is intellectually dishonest for institutions to publicly condemn AI while secretly investing in mastering it.
 
-The reality is that every institution criticizing AI is simultaneously exploring its applications—religious organizations, governments, universities, corporations, and media companies. This is not due to malice but rather an acknowledgment that technology equates to power, and few choose to remain distant from it.
+The reality is that every institution criticizing AI is simultaneously exploring its applications: religious organizations, governments, universities, corporations, and media companies. This is not due to malice but rather an acknowledgment that technology equates to power, and few choose to remain distant from it.
 
 Meanwhile, those facing the harshest judgment for utilizing AI are often everyday individuals seeking leverage they have historically lacked: solo entrepreneurs, students, independent creators, and small business owners.
 
@@ -54,7 +54,7 @@ O moralismo moderno evoluiu. No passado, ele era mais fácil de reconhecer: dita
 
 Existem preocupações legítimas com IA, incluindo desinformação, impacto no trabalho e concentração de poder. Ainda assim, é intelectualmente desonesto instituições condenarem publicamente a IA enquanto investem secretamente em dominá-la.
 
-A verdade é que toda instituição que critica IA também está explorando suas aplicações em paralelo — organizações religiosas, governos, universidades, empresas e veículos de mídia. Isso não acontece por maldade, mas porque tecnologia equivale a poder, e pouca gente escolhe ficar longe dele.
+A verdade é que toda instituição que critica IA também está explorando suas aplicações em paralelo: organizações religiosas, governos, universidades, empresas e veículos de mídia. Isso não acontece por maldade, mas porque tecnologia equivale a poder, e pouca gente escolhe ficar longe dele.
 
 Enquanto isso, quem enfrenta o julgamento mais duro por usar IA costuma ser justamente gente comum tentando obter uma alavancagem que historicamente nunca teve: empreendedores solo, estudantes, criadores independentes e pequenos negócios.
 

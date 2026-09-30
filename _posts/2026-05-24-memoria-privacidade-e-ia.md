@@ -14,7 +14,7 @@ published: true
 
 # Memory, Privacy, and AI
 
-“Those who would give up essential Liberty, to purchase a little temporary Safety, deserve neither Liberty nor Safety.” — Benjamin Franklin
+“Those who would give up essential Liberty, to purchase a little temporary Safety, deserve neither Liberty nor Safety.” - Benjamin Franklin
 
 For years, Big Tech has trained us to trade privacy for convenience. Now, as AI becomes more personal, learning our habits, conversations, preferences, fears, and intentions, Apple appears to be betting that the next competitive advantage lies not in more intelligence, but in more restraint.
 
@@ -38,7 +38,7 @@ Curious to hear your thoughts: Would you sacrifice personalization in AI for str
 
 # Memória, privacidade e IA
 
-“Aqueles que abririam mão da liberdade essencial para comprar um pouco de segurança temporária não merecem nem liberdade nem segurança.” — Benjamin Franklin
+“Aqueles que abririam mão da liberdade essencial para comprar um pouco de segurança temporária não merecem nem liberdade nem segurança.” - Benjamin Franklin
 
 Por anos, a Big Tech nos treinou para trocar privacidade por conveniência. Agora, à medida que a IA se torna mais pessoal, aprendendo nossos hábitos, conversas, preferências, medos e intenções, a Apple parece apostar que a próxima vantagem competitiva não está em mais inteligência, mas em mais contenção.
 

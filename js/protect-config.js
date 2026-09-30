@@ -1,6 +1,6 @@
 /* js/protect-config.js
    Example site protection configuration. Edit to add/remove protected paths or change passwords.
-   NOTE: keeping passwords here is insecure — this is client-side only.
+   NOTE: keeping passwords here is insecure - this is client-side only.
 */
 (function () {
   if (!window.SiteProtect) return;
@@ -14,7 +14,7 @@
       // pathPrefix: '/apis/777',
       // // hostname removed so it matches localhost and production
       // password: '__PROTECT_PASS_777__',
-      // title: 'Acesso restrito — API Liber 777',
+      // title: 'Acesso restrito - API Liber 777',
       // message: 'Esta seção é privada. Insira a senha fornecida para prosseguir.',
       // rememberDays: 30
     },

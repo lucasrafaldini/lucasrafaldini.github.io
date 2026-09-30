@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Conselhos para Startups — Tradução de Sam Altman"
+title: "Conselhos para Startups: Tradução de Sam Altman"
 title_en: "Startup Advice - Sam Altman (Portuguese Translation)"
 description: "Tradução comentada e fiel ao texto original de Sam Altman, fundador da OpenAI e ex-presidente da Y Combinator, com 95 lições práticas para quem está construindo uma startup."
 author: "Tradução por Lucas Rafaldini"
@@ -45,7 +45,7 @@ Em homenagem à nova turma da Y Combinator que começa amanhã, aqui estão algu
 
 1. Faça algo que as pessoas realmente queiram;
 
-2. Uma ótima equipe e um ótimo mercado são igualmente criticamente importantes — você precisa dos dois. O debate sobre qual é mais importante é tolo;
+2. Uma ótima equipe e um ótimo mercado são igualmente criticamente importantes: você precisa dos dois. O debate sobre qual é mais importante é tolo;
 
 3. Escreva código, converse com usuários e construa a empresa (contrate as melhores pessoas que puder, acerte na cultura, levante investimento, feche vendas, etc.). A maioria das outras coisas que fundadores fazem é perda de tempo;
 
@@ -63,7 +63,7 @@ Em homenagem à nova turma da Y Combinator que começa amanhã, aqui estão algu
 
 10. Crescimento resolve (quase) todos os problemas;
 
-11. Embora o crescimento seja crítico e você deva focar nele, pense ocasionalmente para onde está indo — é preciso crescer *em direção* a algo valioso;  
+11. Embora o crescimento seja crítico e você deva focar nele, pense ocasionalmente para onde está indo: é preciso crescer *em direção* a algo valioso;  
 
 12. Seja obcecado pela qualidade do produto;
 
@@ -71,7 +71,7 @@ Em homenagem à nova turma da Y Combinator que começa amanhã, aqui estão algu
 
 14. Mova-se rápido. A velocidade é uma das suas principais vantagens sobre grandes empresas;
 
-15. Contrate devagar; demita rápido. Contratar é a coisa mais importante que você faz — dedique pelo menos um terço do seu tempo a isso;
+15. Contrate devagar; demita rápido. Contratar é a coisa mais importante que você faz: dedique pelo menos um terço do seu tempo a isso;
 
 16. Pense, de tempos em tempos, por que a vigésima pessoa se juntaria à sua empresa;
 
@@ -89,7 +89,7 @@ Em homenagem à nova turma da Y Combinator que começa amanhã, aqui estão algu
 
 23. Seja frugal (moderado, simples, sóbrio e/ou discreto);  
 
-24. Você frequentemente ouvirá conselhos conflitantes sobre tudo, exceto “construa um ótimo produto”. Isso significa que você pode seguir qualquer caminho na maioria das outras coisas e realmente não importa. Apenas tome uma decisão e volte ao trabalho. Adequação de produto/mercado é o que importa. Você pode – e irá – cometer um monte de erros;
+24. Você frequentemente ouvirá conselhos conflitantes sobre tudo, exceto “construa um ótimo produto”. Isso significa que você pode seguir qualquer caminho na maioria das outras coisas e realmente não importa. Apenas tome uma decisão e volte ao trabalho. Adequação de produto/mercado é o que importa. Você pode (e irá) cometer um monte de erros;
 
 25. Você cria aquilo que mede; 
 
@@ -101,7 +101,7 @@ Em homenagem à nova turma da Y Combinator que começa amanhã, aqui estão algu
 
 29. Mantenha a organização o mais horizontal possível;
 
-30. Ao negociar — levantar fundos, fechar parcerias etc. — crie uma situação competitiva;
+30. Ao negociar (levantar fundos, fechar parcerias etc.), crie uma situação competitiva;
 
 31. “Schleps” (tarefas maçantes e inevitáveis) são boas;
 
@@ -119,7 +119,7 @@ Em homenagem à nova turma da Y Combinator que começa amanhã, aqui estão algu
 
 38. Tenha uma relação direta com seus clientes;
 
-39. Seja formidável — não seja fácil de intimidar;
+39. Seja formidável: não seja fácil de intimidar;
 
 40. Não deixe sua empresa ser comandada por um vendedor. Mas aprenda a vender seu produto;
 
@@ -147,7 +147,7 @@ Em homenagem à nova turma da Y Combinator que começa amanhã, aqui estão algu
 
 52. Observadores de conselho geralmente são dor de cabeça;  
 
-53. Se for pivotar, faça isso completamente e com convicção. A pior coisa é tentar fazer um pouco do que é velho e um pouco do que é novo – é difícil matar seus bebês;
+53. Se for pivotar, faça isso completamente e com convicção. A pior coisa é tentar fazer um pouco do que é velho e um pouco do que é novo: é difícil matar seus bebês;
 
 54. É melhor tomar uma decisão e errar do que hesitar;  
 
@@ -173,7 +173,7 @@ Em homenagem à nova turma da Y Combinator que começa amanhã, aqui estão algu
 
 65. Aprenda a manter-se otimista mesmo quando tudo estiver desmoronando;  
 
-66. Startups deveriam precisar de quanto menos milagres for possível — mas precisam de pelo menos um;
+66. Startups deveriam precisar de quanto menos milagres for possível, mas precisam de pelo menos um;
 
 67. Você precisa ter uma ótima execução. Muito mais gente tem boas ideias do que gente que arregaça as mangas e faz acontecer;
 

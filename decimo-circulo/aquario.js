@@ -1,4 +1,4 @@
-// O Décimo Círculo — cliente.
+// O Décimo Círculo - cliente.
 // O servidor manda vitais e falas; a natação é toda local, a 60fps.
 
 // ─── Backend URL ───────────────────────────────────────────────────────────
@@ -379,7 +379,7 @@ function desenharFeixes(t) {
 }
 
 function desenharPlantas(t) {
-  // Algas discretas no fundo do tanque — oscilam devagar com a "corrente".
+  // Algas discretas no fundo do tanque - oscilam devagar com a "corrente".
   ctx.save();
   const baseY = altura - 8;
   const plantas = [
@@ -510,7 +510,7 @@ function quadro(agora) {
   for (const b of bolhas) desenharBolha(b);
   for (const m of migalhas) desenharMigalha(m);
 
-  // Desenha do fundo para a superfície — quem está mais perto do vidro vem por cima.
+  // Desenha do fundo para a superfície - quem está mais perto do vidro vem por cima.
   const ordenados = [...peixes.values()].sort((a, b) => b.profundidade - a.profundidade);
   for (const p of ordenados) desenharPeixe(p, agora);
 
@@ -604,9 +604,9 @@ function abrirFicha(id) {
   ficha.marca.style.setProperty("--cor", p.cor);
   ficha.nome.textContent = p.nome;
   ficha.epiteto.textContent = p.epiteto ?? meta.epiteto ?? "";
-  ficha.era.textContent = p.era ?? meta.era ?? "—";
-  ficha.escola.textContent = p.escola ?? meta.escola ?? "—";
-  ficha.pecado.textContent = meta.pecado ?? "—";
+  ficha.era.textContent = p.era ?? meta.era ?? "-";
+  ficha.escola.textContent = p.escola ?? meta.escola ?? "-";
+  ficha.pecado.textContent = meta.pecado ?? "-";
   ficha.conversa.innerHTML = "";
   atualizarVitaisFicha(id);
   ficha.campo.focus();
