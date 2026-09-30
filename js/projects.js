@@ -77,7 +77,7 @@
                           <span class="cal-mini-node" style="left: ${nodePos}%"></span>
                       </div>
                       <div class="card-footer">
-                          <span class="mono-code">★ ${stars} STARS</span>
+                          <span class="mono-code card-stars">★ ${stars} STARS</span>
                           <span class="card-action">INSPECT →</span>
                       </div>
                   </div>
