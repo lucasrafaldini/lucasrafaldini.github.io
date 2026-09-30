@@ -17,6 +17,8 @@ Gemfile.lock
 .pre-commit-config.yaml
 *.swp
 *~
+._*
+
 
 # Folders
 /vendor
@@ -30,3 +32,4 @@ tmp/*
 
 # Local preview
 _preview_local/
+preview.html
