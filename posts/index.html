@@ -4,29 +4,72 @@ title: Posts
 description: Lista de posts do site
 ---
 
-<h1>
-    <span class="lang-en">Posts</span>
-    <span class="lang-pt">Posts</span>
-</h1>
+<div class="page-blueprint-header">
+    <div class="tech-header-strip">
+        <div class="strip-item">
+            <span class="strip-label">MODULE:</span>
+            <span class="strip-val mono-code">WRITING // ARCHIVE</span>
+        </div>
+        <div class="strip-item">
+            <span class="strip-label">DISCIPLINE:</span>
+            <span class="strip-val">SOFTWARE ENGINEERING</span>
+        </div>
+        <div class="strip-item">
+            <span class="strip-label">DETAIL:</span>
+            <span class="strip-val mono-code">SEC LABS & AI</span>
+        </div>
+        <div class="strip-item">
+            <span class="strip-label">INDEX:</span>
+            <span class="strip-val status-val">
+                <span class="status-pulse"></span>
+                {{ site.posts | size }} ENTRIES
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="page-title-wrap">
+    <div class="section-tag mono-code">[ 02 // TECHNICAL ESSAYS ]</div>
+    <h1 class="page-main-title">
+        <span class="lang-en">Articles & Architecture Notes</span>
+        <span class="lang-pt">Artigos & Notas de Arquitetura</span>
+    </h1>
+    <p class="page-subtitle">
+        <span class="lang-en">Reflections on software systems, distributed architecture, security, and agent-native workflows.</span>
+        <span class="lang-pt">Reflexões sobre sistemas de software, arquitetura distribuída, segurança e fluxos agent-native.</span>
+    </p>
+</div>
 
 <div class="columns-grid">
     {% for post in site.posts %}
-    <a class="column-card" href="{{ post.url }}">
+    {% assign idx = forloop.index %}
+    <a class="column-card bento-spec-card" href="{{ post.url }}">
         <div>
-            <h3>
+            <div class="card-head">
+                <span class="card-num">{% if idx < 10 %}0{% endif %}{{ idx }}</span>
+                <span class="card-tag">
+                    <span class="lang-en">{{ post.date | date: "%b %d, %Y" }}</span>
+                    <span class="lang-pt">{{ post.date | date: "%d/%m/%Y" }}</span>
+                </span>
+            </div>
+            <h3 class="card-title">
                 <span class="lang-en">{{ post.title_en | default: post.title }}</span>
                 <span class="lang-pt">{{ post.title }}</span>
             </h3>
-            <p>
+            <p class="card-desc">
                 <span class="lang-en">{{ post.summary_en | default: post.summary | default: post.excerpt | strip_html | truncate: 140 }}</span>
                 <span class="lang-pt">{{ post.summary | default: post.excerpt | strip_html | truncate: 140 }}</span>
             </p>
-            <p>
-                <small>
-                    <span class="lang-en">{{ post.date | date: "%b %d, %Y" }}</span>
-                    <span class="lang-pt">{{ post.date | date: "%d %b %Y" }}</span>
-                </small>
-            </p>
+        </div>
+        <div>
+            <div class="card-cal-track">
+                <span class="cal-mini-line"></span>
+                <span class="cal-mini-node" style="left: {{ idx | times: 7 | modulo: 65 | plus: 20 }}%"></span>
+            </div>
+            <div class="card-footer">
+                <span class="mono-code">READING TIME: ~3 MIN</span>
+                <span class="card-action">READ ARTICLE →</span>
+            </div>
         </div>
     </a>
     {% endfor %}

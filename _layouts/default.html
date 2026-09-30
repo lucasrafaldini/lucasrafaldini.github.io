@@ -52,8 +52,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
     <!-- Google Fonts (non-blocking) -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
     
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="/css/main.css">
@@ -90,8 +90,14 @@
     {% include analytics.html %}
 </head>
 <body>
+    <!-- Dynamic High-Contrast Systems Graph (Scroll & Mouse reactive) -->
+    <canvas id="systemsGraphCanvas" aria-hidden="true"></canvas>
+
     <!-- Navigation -->
     <nav>
+        <a href="/" class="nav-brand" aria-label="Lucas Rafaldini">
+            <span class="brand-bracket">[</span><span class="brand-code">LR // ENG</span><span class="brand-bracket">]</span>
+        </a>
         <ul>
             <li>
                 <a href="/" aria-label="Home" data-i18n-aria-en="Home" data-i18n-aria-pt="Pagina inicial">
@@ -171,8 +177,9 @@
     <!-- JavaScript -->
     <script>window.SITE_BASEURL = '{{ site.baseurl | default: "" }}';</script>
     <script src="{{ site.baseurl | default: '' }}/js/protect.js" defer></script>
-    <script src="{{ site.baseurl | default: '' }}/js/protect-config.js" defer></script>
-    <script src="/js/app.js" defer></script>
+    <!-- Three.js (Optional WebGL plugins) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="{{ site.baseurl | default: '' }}/js/app.js" defer></script>
     
     <!-- Service worker registration removed -->
 </body>

@@ -30,3 +30,7 @@ tmp/*
 
 # Local preview
 _preview_local/
+preview.html
+._*
+.Spotlight-V100
+.Trashes

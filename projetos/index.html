@@ -6,16 +6,46 @@ include_repos: []
 exclude_repos: ["lucasrafaldini", "Exercicios-python", "lucasrafaldini.github.io", "Daily-python-challenges", "python-lessons", "Primeiros-passos-dados-python"]
 ---
 
-<h1>
-	<span class="lang-en">Projects</span>
-	<span class="lang-pt">Projetos</span>
-</h1>
+<div class="page-blueprint-header">
+    <div class="tech-header-strip">
+        <div class="strip-item">
+            <span class="strip-label">MODULE:</span>
+            <span class="strip-val mono-code">REPOSITORIES // OPEN_SOURCE</span>
+        </div>
+        <div class="strip-item">
+            <span class="strip-label">DISCIPLINE:</span>
+            <span class="strip-val">SOFTWARE ENGINEERING</span>
+        </div>
+        <div class="strip-item">
+            <span class="strip-label">DETAIL:</span>
+            <span class="strip-val mono-code">SEC LABS & TOOLS</span>
+        </div>
+        <div class="strip-item">
+            <span class="strip-label">PIPELINE:</span>
+            <span class="strip-val status-val">
+                <span class="status-pulse"></span>
+                LIVE GITHUB SYNC
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="page-title-wrap">
+    <div class="section-tag mono-code">[ 01 // SYSTEMS CATALOG ]</div>
+    <h1 class="page-main-title">
+        <span class="lang-en">Projects & Repositories</span>
+        <span class="lang-pt">Projetos & Repositórios</span>
+    </h1>
+    <p class="page-subtitle">
+        <span class="lang-en">Production systems, architecture patterns, and open-source tooling.</span>
+        <span class="lang-pt">Sistemas de software, arquitetura de sistemas e ferramentas de código aberto.</span>
+    </p>
+</div>
 
 <div id="projects" class="columns-grid" data-username="{{ page.username }}" data-include='{{ page.include_repos | jsonify }}' data-exclude='{{ page.exclude_repos | jsonify }}'></div>
 
 <div class="loading" id="projectsLoading">
-	<span class="lang-en">Loading projects...</span>
-	<span class="lang-pt">Carregando projetos...</span>
+    <span class="mono-code">INDEXING GITHUB REPOSITORIES...</span>
 </div>
 
-<script src="/js/projects.js" defer></script>
+<script src="{{ site.baseurl | default: '' }}/js/projects.js" defer></script>

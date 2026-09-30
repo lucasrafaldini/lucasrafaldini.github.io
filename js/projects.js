@@ -50,26 +50,38 @@
           .filter(r => !r.fork)
           .filter(r => shouldShow(r.name, includeList, excludeList))
           .sort((a, b) => (b.stargazers_count || 0) - (a.stargazers_count || 0))
-          .forEach(repo => {
-              const a = createEl('a', 'column-card');
+          .forEach((repo, idx) => {
+              const a = createEl('a', 'column-card bento-spec-card');
               a.href = repo.homepage && repo.homepage.trim() !== '' ? repo.homepage : repo.html_url;
               a.target = '_blank';
               a.rel = 'noopener noreferrer';
 
-              const wrap = createEl('div');
-              const h3 = createEl('h3');
-              h3.textContent = repo.name;
+              const num = String(idx + 1).padStart(2, '0');
+              const lang = (repo.language || 'SYS').toUpperCase();
+              const desc = (repo.description || '').trim() || t('noDescription');
+              const stars = repo.stargazers_count || 0;
+              const nodePos = Math.min(92, Math.max(12, 20 + stars * 10));
 
-              const p = createEl('p');
-              p.textContent = (repo.description || '').trim() || t('noDescription');
-
-              const meta = createEl('p');
-              meta.innerHTML = `<small>★ ${repo.stargazers_count} • ${repo.language || t('unavailable')}</small>`;
-
-              wrap.appendChild(h3);
-              wrap.appendChild(p);
-              wrap.appendChild(meta);
-              a.appendChild(wrap);
+              a.innerHTML = `
+                  <div>
+                      <div class="card-head">
+                          <span class="card-num">${num}</span>
+                          <span class="card-tag">SYS // ${lang}</span>
+                      </div>
+                      <h3 class="card-title">${repo.name}</h3>
+                      <p class="card-desc">${desc}</p>
+                  </div>
+                  <div>
+                      <div class="card-cal-track">
+                          <span class="cal-mini-line"></span>
+                          <span class="cal-mini-node" style="left: ${nodePos}%"></span>
+                      </div>
+                      <div class="card-footer">
+                          <span class="mono-code">★ ${stars} STARS</span>
+                          <span class="card-action">INSPECT →</span>
+                      </div>
+                  </div>
+              `;
               fragment.appendChild(a);
           });
 
