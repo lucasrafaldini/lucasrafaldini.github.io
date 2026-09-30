@@ -1,7 +1,7 @@
 # lucasrafaldini.github.io
 
-[![Hacktoberfest 2026](https://img.shields.io/badge/Hacktoberfest-2026-ED5C9B?style=flat-square&logo=hacktoberfest&logoColor=white)](https://hacktoberfest.com/)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-00d2ff?style=flat-square)](CONTRIBUTING.md)
+[![Agentic Repo](https://img.shields.io/badge/Agentic-CLAUDE.md-00d2ff?style=flat-square)](CLAUDE.md)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE)
 [![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-181717?style=flat-square&logo=github)](https://lucasrafaldini.github.io)
 
@@ -9,13 +9,17 @@ Repositório do meu site pessoal, blog e laboratório de sistemas. Desenvolvido 
 
 ---
 
-## 🎃 Hacktoberfest 2026
+## 🤖 Arquitetura Agêntica (Agentic Repo)
 
-Este repositório participa ativamente do **Hacktoberfest**! Se você quer contribuir para projetos open source, melhorar ferramentas ou exercitar código limpo, é muito bem-vindo.
+Este repositório é totalmente otimizado para desenvolvimento com agentes autônomos e LLMs (Claude Code, Antigravity, Cursor, Windsurf):
 
-- 📖 **Guia de Contribuição**: Confira as regras e o passo a passo em [CONTRIBUTING.md](CONTRIBUTING.md).
-- 📌 **Backlog de Tarefas**: Consulte as 8 issues preparadas para o evento em [.github/HACKTOBERFEST_ISSUES.md](.github/HACKTOBERFEST_ISSUES.md).
-- 🏷️ **Labels Oficiais**: Fique atento às tags `hacktoberfest` e `good first issue`.
+- 📜 **[CLAUDE.md](CLAUDE.md)**: Guia canônico com tokens de design, regras de arquitetura e convenções técnicas.
+- 🛠️ **[skills/](skills/)**: Habilidades modulares reutilizáveis com especificação padrão `SKILL.md`:
+  - `skills/zero-dash-linter/`: Linter automatizado em Python que valida a regra estrita de não usar travessões.
+  - `skills/swiss-blueprint-styler/`: Receitas de design system para cards, telemetria e botões técnicos.
+  - `skills/cardputer-bin-curator/`: Validação e curadoria de firmwares portáteis em `cardputer-bins`.
+  - `skills/bilingual-content-sync/`: Protocolo de sincronismo e paridade entre inglês e português.
+- 👥 **[.agents/](.agents/)**: Perfis especializados de agentes (`blueprint-architect`, `typography-linter`, `cardputer-curator`, `dossier-author`).
 
 > **Regra de Estilo (Tipografia)**: O projeto segue uma convenção estrita de **não usar travessões (em-dash / en-dash)**. Use dois pontos (`:`), parênteses `( )` ou hífen comum (`-`).
 
@@ -48,6 +52,11 @@ Acesse em: `http://localhost:4000`
 python3 -m http.server 8000
 ```
 Acesse em: `http://localhost:8000`
+
+### Opção 3: Executar Linter de Tipografia
+```bash
+python3 skills/zero-dash-linter/lint.py
+```
 
 ---
 
