@@ -165,6 +165,21 @@
                 <div class="perguntas-respostas">
                     {{ content | newline_to_br }}
                 </div>
+            {% elsif page.collection == 'posts' or page.date %}
+                <article class="post-content article-view">
+                    <div class="article-meta-bar">
+                        <a href="/posts" class="article-back-link">
+                            <span class="back-arrow">←</span>
+                            <span class="lang-en">ALL POSTS</span>
+                            <span class="lang-pt">TODOS OS POSTS</span>
+                        </a>
+                        <div class="article-date-badge mono-code">
+                            <span class="lang-en">{{ page.date | date: "%b %d, %Y" }}</span>
+                            <span class="lang-pt">{{ page.date | date: "%d/%m/%Y" }}</span>
+                        </div>
+                    </div>
+                    {{ content }}
+                </article>
             {% else %}
                 {{ content }}
             {% endif %}

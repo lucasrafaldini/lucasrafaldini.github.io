@@ -29,6 +29,7 @@ class RafaldiniApp {
         this.initBlueprintInteractions();
         this.initSystemsGraph();
         this.init3DBust();
+        this.initCodeBlocks();
         
         if (this.currentPage.includes('/perguntas')) {
             this.initQASection();
@@ -833,6 +834,60 @@ class RafaldiniApp {
         };
 
         animate();
+    }
+
+    initCodeBlocks() {
+        const codeBlocks = document.querySelectorAll('article pre, .post-content pre, .article-view pre');
+        codeBlocks.forEach((pre) => {
+            if (pre.previousElementSibling && pre.previousElementSibling.classList.contains('code-block-header')) {
+                return;
+            }
+
+            const code = pre.querySelector('code');
+            let langLabel = 'CODE // BLUEPRINT';
+
+            if (code) {
+                const classList = Array.from(code.classList).concat(Array.from(pre.classList));
+                for (const cls of classList) {
+                    if (cls.startsWith('language-') || cls.startsWith('lang-')) {
+                        const rawLang = cls.replace(/^(language-|lang-)/, '').toUpperCase();
+                        langLabel = `${rawLang} // SOURCE`;
+                        break;
+                    }
+                }
+            }
+
+            const header = document.createElement('div');
+            header.className = 'code-block-header';
+            header.innerHTML = `
+                <span class="code-label">[ ${langLabel} ]</span>
+                <button type="button" class="code-copy-btn" aria-label="Copy code to clipboard">
+                    <span class="copy-text">COPY</span>
+                </button>
+            `;
+
+            pre.parentNode.insertBefore(header, pre);
+
+            const copyBtn = header.querySelector('.code-copy-btn');
+            const copyText = copyBtn.querySelector('.copy-text');
+
+            if (copyBtn) {
+                copyBtn.addEventListener('click', async () => {
+                    const textToCopy = (code ? code.innerText : pre.innerText).trim();
+                    try {
+                        await navigator.clipboard.writeText(textToCopy);
+                        copyBtn.classList.add('copied');
+                        copyText.textContent = 'COPIED ✓';
+                        setTimeout(() => {
+                            copyBtn.classList.remove('copied');
+                            copyText.textContent = 'COPY';
+                        }, 2000);
+                    } catch (err) {
+                        console.error('Failed to copy code snippet', err);
+                    }
+                });
+            }
+        });
     }
 }
 

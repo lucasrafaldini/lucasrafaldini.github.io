@@ -42,8 +42,8 @@ How to check your system
 
 If you want to see if Chrome has already claimed those 4GBs, you can check:
 
-- Component Status: Navigate to chrome://components and look for "On-Device Model".
-- File Location: Check your local AppData (Windows) or Application Support (macOS) folders under Google/Chrome/User Data/Default/OptGuideOnDeviceModel.
+- Component Status: Navigate to `chrome://components` and look for `On-Device Model`.
+- File Location: Check your local AppData (Windows) or Application Support (macOS) folders under `Google/Chrome/User Data/Default/OptGuideOnDeviceModel`.
 
 The Future of the "AI Browser"
 
@@ -85,8 +85,8 @@ Como verificar no seu sistema
 
 Se você quiser ver se o Chrome já tomou esses 4GB, pode verificar:
 
-- Status do componente: acesse chrome://components e procure por "On-Device Model".
-- Local do arquivo: confira as pastas AppData (Windows) ou Application Support (macOS) em Google/Chrome/User Data/Default/OptGuideOnDeviceModel.
+- Status do componente: acesse `chrome://components` e procure por `On-Device Model`.
+- Local do arquivo: confira as pastas AppData (Windows) ou Application Support (macOS) em `Google/Chrome/User Data/Default/OptGuideOnDeviceModel`.
 
 O futuro do "navegador de IA"
 
