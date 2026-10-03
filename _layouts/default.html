@@ -204,5 +204,24 @@
     <script src="{{ site.baseurl | default: '' }}/js/app.js" defer></script>
     
     <!-- Service worker registration removed -->
+    {% if page.mermaid %}
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'dark',
+            themeVariables: {
+                darkMode: true,
+                background: '#0a0e17',
+                primaryColor: '#0f1623',
+                primaryBorderColor: '#00d2ff',
+                primaryTextColor: '#f8fafc',
+                lineColor: '#00d2ff',
+                secondaryColor: '#141c2c',
+                tertiaryColor: '#1e293b'
+            }
+        });
+    </script>
+    {% endif %}
 </body>
 </html>
