@@ -57,6 +57,28 @@ mermaid: true
 
     <section class="estudo-conteudo">
         <section class="lang-pt">
+            <div class="notas-box" style="border-left: 3px solid var(--accent-cyan, #00d2ff); background: rgba(0, 210, 255, 0.03); margin-bottom: 36px;">
+                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px;">
+                    <span class="mono-code" style="color: var(--accent-blue); font-weight: 700; font-size: 0.85rem; letter-spacing: 0.08em;">[ 00 // TL;DR // RESUMO EXECUTIVO EM LINGUAGEM SIMPLES ]</span>
+                </div>
+                <h3 style="margin-top: 0; margin-bottom: 12px; color: var(--text-primary);">O que acontece quando você envia uma foto para uma rede social?</h3>
+                <p><strong>A regra de ouro:</strong> Nenhuma grande rede social armazena seu arquivo original exatamente como você enviou. Em vez disso, o servidor abre sua foto na memória (lê apenas os pixels visíveis), joga fora todos os dados invisíveis (localização GPS, modelo da câmera, códigos e arquivos embutidos) e cria um arquivo totalmente novo, redimensionado e comprimido para carregar rápido e economizar dados no celular.</p>
+
+                <p><strong>Resumo rápido por plataforma:</strong></p>
+                <ul>
+                    <li><strong>Facebook:</strong> Reduz fotos grandes para no máximo 2048px, aplica compressão pesada via MozJPEG e apaga 100% dos dados de localização e câmera.</li>
+                    <li><strong>Instagram:</strong> Força a largura para 1080px, comprime agressivamente (qualidade ~75%), borra transições finas de cores e destrói qualquer dado não visual.</li>
+                    <li><strong>Threads:</strong> Usa o mesmo motor do Instagram, convertendo a maior parte das fotos para o formato WebP para acelerar o feed em celulares.</li>
+                    <li><strong>Twitter / X:</strong> A plataforma mais tolerante: preserva PNGs pequenos (abaixo de 900px) e fotos até 4096px sem estragar tanto a imagem, mas ainda remove dados de GPS e limpa o interior do arquivo.</li>
+                    <li><strong>Bluesky:</strong> O próprio aplicativo no seu celular encolhe a foto antes de enviar (limite de 1 MB por imagem do protocolo aberto AT), convertendo para JPEG leve antes de chegar aos servidores.</li>
+                    <li><strong>Reddit:</strong> Permite fotos pesadas de até 20 MB e mantém arquivos PNG intactos no link direto (<code>i.redd.it</code>), mas limpa dados de privacidade e gera versões WebP para os feeds.</li>
+                    <li><strong>Orkut (Histórico dos anos 2000):</strong> Com a internet discada da época, reduzia qualquer foto para míseros 640x480 ou 1024x768 pixels (pesando entre 40 KB e 90 KB), descartando metadados via ferramentas simples de servidor (GD/ImageMagick).</li>
+                </ul>
+
+                <p><strong>E os dados ocultos (Polyglot PNG / Esteganografia)?</strong><br />
+                Como a rede não repassa seu arquivo e sim <em>recria uma imagem do zero</em> a partir dos pixels, qualquer arquivo ZIP, texto secreto ou vírus escondido dentro da estrutura do arquivo é <strong>100% destruído</strong> no caminho.</p>
+            </div>
+
             <h2>1. Introdução e Escopo da Investigação</h2>
             <p>Quando um usuário realiza o upload de uma fotografia ou diagrama gráfico para uma grande plataforma de rede social, o arquivo raramente é armazenado em sua forma bruta original. Plataformas em hiperescala processam bilhões de uploads diários e operam sob restrições severas de largura de banda, custos de armazenamento distribuído (Object Storage/CDN) e imperativos de segurança da informação.</p>
             <p>Este relatório disseca os mecanismos de ingestão, transcodificação e sanitização executados pelas principais plataformas contemporâneas: <strong>Facebook, Instagram, Threads, Twitter / X, Bluesky e Reddit</strong>, além de resgatar o comportamento histórico do <strong>Orkut</strong> (plataforma precursora que dominou a web brasileira na década de 2000, analisada via acervos técnicos e registros do Wayback Machine). Analisamos o impacto dessas rotinas na degradação perceptual de imagens, na eliminação sistemática de metadados de privacidade (EXIF, IPTC, XMP) e na resistência de técnicas avançadas de ocultação de dados, com foco especial no método <strong>Polyglot PNG pós-DEFLATE no chunk IDAT</strong>.</p>
@@ -373,6 +395,28 @@ print(f"[?] Payload oculto sobreviveu ao pipeline? -> {secret in data_after}")
         </section>
 
         <section class="lang-en">
+            <div class="notas-box" style="border-left: 3px solid var(--accent-cyan, #00d2ff); background: rgba(0, 210, 255, 0.03); margin-bottom: 36px;">
+                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px;">
+                    <span class="mono-code" style="color: var(--accent-blue); font-weight: 700; font-size: 0.85rem; letter-spacing: 0.08em;">[ 00 // TL;DR // EXECUTIVE SUMMARY IN PLAIN LANGUAGE ]</span>
+                </div>
+                <h3 style="margin-top: 0; margin-bottom: 12px; color: var(--text-primary);">What happens when you upload a photo to social media?</h3>
+                <p><strong>The golden rule:</strong> No major social network stores your raw image file as uploaded. Instead, backend ingestion engines decode the file into pure uncompressed pixels in memory, strip all invisible metadata (GPS coordinates, camera serial numbers, embedded scripts), and encode a brand-new, downscaled and compressed image file optimized for fast delivery to mobile feeds.</p>
+
+                <p><strong>Quick breakdown per platform:</strong></p>
+                <ul>
+                    <li><strong>Facebook:</strong> Caps long edge to max 2048px, applies aggressive MozJPEG quantization, and purges 100% of camera/GPS metadata.</li>
+                    <li><strong>Instagram:</strong> Forces width to 1080px, applies heavy compression (quality ~75%), discards 75% of color resolution (4:2:0 subsampling), and deletes all non-pixel data.</li>
+                    <li><strong>Threads:</strong> Shares Instagram's processing cluster, converting most images into dynamic WebP containers to minimize mobile bandwidth usage.</li>
+                    <li><strong>Twitter / X:</strong> The most preservation-friendly: retains lossless PNGs under 900px and JPEGs up to 4096px with high visual fidelity, though container chunks and GPS EXIF are sanitized.</li>
+                    <li><strong>Bluesky:</strong> Your mobile phone app resizes and compresses the photo before sending (enforcing the AT Protocol 1 MB blob ceiling), converting images to lightweight JPEGs client-side.</li>
+                    <li><strong>Reddit:</strong> Supports uploads up to 20 MB and preserves PNG files on direct media links (<code>i.redd.it</code>), while stripping EXIF metadata and serving WebP previews on feed cards.</li>
+                    <li><strong>Orkut (Historical 2000s):</strong> Designed for dial-up bandwidth, forcefully resized all photos down to 640x480 or 1024x768 pixels (file sizes between 40 KB and 90 KB), destroying metadata via basic server-side GD/ImageMagick scripts.</li>
+                </ul>
+
+                <p><strong>What about hidden data (Polyglot PNG / Steganography)?</strong><br />
+                Because the platform never distributes your original container and instead <em>re-encodes the image from raw raster memory</em>, any hidden ZIP archive, secret text, or trailing payload injected into the file structure is <strong>100% destroyed</strong>.</p>
+            </div>
+
             <h2>1. Introduction & Research Scope</h2>
             <p>When an end user uploads a photograph or digital graphic to a major social media platform, the file is rarely stored in its raw byte-for-byte form. Hyperscale platforms process billions of uploads daily and operate under rigid constraints: bandwidth optimization, distributed object storage costs, and cybersecurity mandates.</p>
             <p>This research dossier dissects the ingestion, transcoding, and sanitization pipelines executed by major contemporary platforms: <strong>Facebook, Instagram, Threads, Twitter / X, Bluesky, and Reddit</strong>, alongside a historical case study of <strong>Orkut</strong> (the mid-2000s social network retrieved through technical archives and Wayback Machine records). We evaluate their impact on perceptual degradation, systematic elimination of privacy metadata (EXIF, IPTC, XMP), and the survival thresholds of advanced steganographic hiding methods, with a dedicated focus on the <strong>Polyglot PNG post-DEFLATE IDAT injection technique</strong>.</p>
