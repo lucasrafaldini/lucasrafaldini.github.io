@@ -1964,3 +1964,26 @@ article pre::-webkit-scrollbar-thumb:hover,
     background: var(--surface-subtle);
 }
 
+/* Mermaid Blueprint Diagrams */
+.mermaid-figure {
+    margin: 28px 0 36px;
+}
+
+.mermaid {
+    background: #0a0e17;
+    border: 1px solid var(--border-color);
+    border-left: 3px solid var(--accent-blue);
+    border-radius: 2px;
+    padding: 24px 20px;
+    margin: 24px 0 12px;
+    overflow-x: auto;
+    text-align: center;
+    box-shadow: var(--shadow-card);
+}
+
+.mermaid svg {
+    max-width: 100%;
+    height: auto;
+}
+
+

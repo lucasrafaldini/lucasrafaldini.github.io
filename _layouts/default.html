@@ -208,18 +208,76 @@
     <script type="module">
         import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
         mermaid.initialize({
-            startOnLoad: true,
+            startOnLoad: false,
             theme: 'dark',
+            securityLevel: 'loose',
+            fontFamily: "'JetBrains Mono', 'Inter', monospace",
             themeVariables: {
                 darkMode: true,
                 background: '#0a0e17',
-                primaryColor: '#0f1623',
+                primaryColor: '#111a2e',
                 primaryBorderColor: '#00d2ff',
                 primaryTextColor: '#f8fafc',
-                lineColor: '#00d2ff',
-                secondaryColor: '#141c2c',
-                tertiaryColor: '#1e293b'
+                secondaryColor: '#162238',
+                secondaryBorderColor: '#38bdf8',
+                secondaryTextColor: '#f8fafc',
+                tertiaryColor: '#0f1623',
+                tertiaryBorderColor: '#475569',
+                tertiaryTextColor: '#e2e8f0',
+                lineColor: '#38bdf8',
+                textColor: '#f8fafc',
+                mainBkg: '#111a2e',
+                nodeBorder: '#00d2ff',
+                clusterBkg: '#0d1322',
+                clusterBorder: '#1e3a5f',
+                titleColor: '#38bdf8',
+                edgeLabelBackground: '#0a0e17',
+                actorBkg: '#111a2e',
+                actorBorder: '#00d2ff',
+                actorTextColor: '#f8fafc',
+                actorLineColor: '#38bdf8',
+                signalColor: '#f8fafc',
+                signalTextColor: '#f8fafc',
+                labelBoxBkgColor: '#111a2e',
+                labelBoxBorderColor: '#00d2ff',
+                labelTextColor: '#f8fafc',
+                loopTextColor: '#f8fafc',
+                noteBorderColor: '#38bdf8',
+                noteBkgColor: '#162238',
+                noteTextColor: '#f8fafc'
             }
+        });
+
+        document.querySelectorAll('.mermaid').forEach((el) => {
+            if (!el.dataset.mermaidRaw) {
+                el.dataset.mermaidRaw = el.textContent.trim();
+            }
+        });
+
+        async function renderVisibleMermaid() {
+            const pending = Array.from(document.querySelectorAll('.mermaid')).filter(
+                (el) => el.offsetParent !== null && !el.dataset.mermaidRendered
+            );
+            for (const el of pending) {
+                try {
+                    const id = 'mermaid-svg-' + Math.random().toString(36).slice(2, 10);
+                    const { svg } = await mermaid.render(id, el.dataset.mermaidRaw);
+                    el.innerHTML = svg;
+                    el.dataset.mermaidRendered = 'true';
+                } catch (err) {
+                    console.error('Mermaid render error:', err);
+                }
+            }
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', () => setTimeout(renderVisibleMermaid, 60));
+        } else {
+            setTimeout(renderVisibleMermaid, 60);
+        }
+
+        document.addEventListener('languagechange', () => {
+            setTimeout(renderVisibleMermaid, 60);
         });
     </script>
     {% endif %}
