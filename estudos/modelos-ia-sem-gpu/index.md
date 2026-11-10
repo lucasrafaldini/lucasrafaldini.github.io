@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Modelos de IA Gratuitos Sem GPU: Do OpenCode ao LLM Local
-title_en: Free AI Models Without a GPU: From OpenCode to Local SLMs
-description: Guia prático de engenharia para rodar inteligência artificial sem placa de vídeo dedicada, combinando provedores gratuitos no OpenCode com modelos compactos rodando 100% na CPU (Gemma, Qwen, Llama).
+title: "Modelos de IA Gratuitos Sem GPU: Do OpenCode ao LLM Local"
+title_en: "Free AI Models Without a GPU: From OpenCode to Local SLMs"
+description: "Guia prático de engenharia para rodar inteligência artificial sem placa de vídeo dedicada, combinando provedores gratuitos no OpenCode com modelos compactos rodando 100% na CPU (Gemma, Qwen, Llama)."
 mermaid: true
 ---
 
