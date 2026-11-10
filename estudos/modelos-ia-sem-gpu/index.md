@@ -326,7 +326,65 @@ graph LR
 
             <p><strong>Leitura dos dados:</strong> Mesmo em processadores x86 convencionais com memória DDR4, a velocidade média de geração supera 26 a 34 tokens por segundo. Para efeito de comparação, a leitura humana em ritmo confortável varia entre 4 e 6 palavras por segundo (aproximadamente 5 a 8 tokens por segundo). Isso significa que o modelo gera texto substancialmente mais rápido do que um desenvolvedor é capaz de ler e processar mentalmente.</p>
 
-            <h2>6. Guia Prático: Como Montar Seu Laboratório Gratuito em 5 Minutos</h2>
+            <h2>6. O Segredo dos Modelos Pequenos: Context Engineering, Harness e RAG Híbrido</h2>
+            <p>Existe um equívoco comum ao avaliar modelos compactos de 1B a 4B parâmetros: acreditar que eles são incapazes de realizar tarefas complexas porque possuem menos pesos gravados em disco. Um modelo de 70B parâmetros atua como uma grande enciclopédia estática que memorizou bilhões de fatos durante o pré-treinamento. Tentar fazer um modelo pequeno de 2B adivinhar fatos obscuros sem contexto levará inevitavelmente a alucinações.</p>
+
+            <p>No entanto, a arquitetura de atenção dos modelos modernos (como Gemma 2/3 e Qwen 2.5) possui uma capacidade de raciocínio contextual extraordinária quando você entrega a informação correta na entrada. É aqui que entra a <strong>Engenharia de Contexto (Context Engineering)</strong>: em vez de depender da memória congelada do modelo, você constrói um ambiente estruturado que guia a geração com precisão cirúrgica.</p>
+
+            <h3>A. O Harness de Projeto: agents.md e context.md</h3>
+            <p>Para extrair o comportamento ideal de um modelo pequeno sem precisar de ajustes finos caros (fine-tuning), a melhor prática da engenharia de software agêntica é padronizar a governança do contexto através de arquivos de especificação técnica na raiz do repositório:</p>
+            <ul>
+                <li><strong>agents.md:</strong> Define a identidade operacional, o papel estrito, as restrições inegociáveis e o formato de saída do modelo. Se o modelo precisa atuar como um linter de código, o arquivo <code>agents.md</code> estabelece que ele deve responder unicamente com um objeto JSON estruturado contendo linha, erro e sugestão, proibindo saudações e explicações conversacionais prolixas.</li>
+                <li><strong>context.md:</strong> Documenta a fotografia do projeto em tempo real: convenções arquiteturais, dependências ativas, decisões técnicas recentes (ADRs) e esquemas de dados. Ao injetar o <code>context.md</code> antes do comando do usuário, o modelo de 2B parâmetros passa a programar com a mesma familiaridade da base de código que um engenheiro sênior da equipe.</li>
+            </ul>
+
+            <p>Vemos esse conceito em ação no <strong>Amanuensis</strong>: o software mantém um harness isolado em <code>.amanuensis/AGENT.md</code> acompanhado de um glossário terminológico estruturado em <code>glossary.toml</code>. Quando o modelo <code>TranslateGemma 4B</code> recebe um trecho para traduzir, ele não precisa adivinhar o tom da obra ou como traduzir termos específicos do autor: o harness injeta as regras de consistência antes de cada segmento.</p>
+
+            <h3>B. RAG Híbrido Local: Alta Precisão Sem Bancos Vetoriais na Nuvem</h3>
+            <p>Muitos tutoriais recomendam contratar serviços gerenciados de vetores na nuvem para fazer RAG (Retrieval-Augmented Generation). Em um ambiente local-first, isso é desnecessário e prejudicial à latência. A abordagem mais eficiente em CPU combina busca léxica determinística com busca semântica em duas etapas:</p>
+            <ol>
+                <li><strong>Busca Léxica via SQLite FTS5 (BM25):</strong> Localiza correspondências literais exatas de termos técnicos, identificadores de código, números de porta ou mensagens de erro em menos de 2 milissegundos.</li>
+                <li><strong>Embeddings Compactos (MiniLM ou Nomic):</strong> Modelos de embedding de apenas 80 MB a 120 MB que rodam na CPU em frações de segundo para encontrar parágrafos conceitualmente similares mesmo sem correspondência exata de palavras.</li>
+                <li><strong>Fusão de Ranqueamento Recíproco (RRF):</strong> Algoritmo matemático simples que mescla as duas listas de resultados, eliminando ruídos e selecionando apenas os 2 ou 3 fragmentos de maior relevância.</li>
+            </ol>
+
+            <p>Abaixo vemos o pipeline completo de Engenharia de Contexto que permite a um modelo compacto de CPU responder com a precisão de um modelo de fronteira:</p>
+
+            <div class="mermaid">
+flowchart TD
+    subgraph Storage["Repositório &amp; Memória Local"]
+        AgentDoc["Harness: agents.md (Papel &amp; Regras)"]
+        ContextDoc["Contexto: context.md (Arquitetura)"]
+        FTS["SQLite FTS5 (BM25 Léxico)"]
+        DenseEmb["Embeddings Locais (MiniLM CPU)"]
+    end
+
+    subgraph RAGPipeline["Motor de RAG Híbrido Local"]
+        Query["Pergunta do Usuário / Tarefa"]
+        RRF["Fusão Recíproca (RRF Ranker)"]
+        ContextAssembler["Montador de Prompt Cirúrgico (&lt; 800 tokens)"]
+    end
+
+    subgraph CPUModel["Execução em CPU (Zero-GPU)"]
+        LocalSLM["Gemma 2B / Qwen 2.5 3B (GGUF Q4_K_M)"]
+        Output["Resposta Determinística Sem Alucinação"]
+    end
+
+    Query --> FTS
+    Query --> DenseEmb
+    FTS --> RRF
+    DenseEmb --> RRF
+    AgentDoc --> ContextAssembler
+    ContextDoc --> ContextAssembler
+    RRF --> ContextAssembler
+    Query --> ContextAssembler
+    ContextAssembler -->|Prompt Enxuto e Fundamentado| LocalSLM
+    LocalSLM --> Output
+            </div>
+
+            <p><strong>A economia de tokens na prática:</strong> Modelos pequenos em CPU processam contextos curtos (entre 512 e 2048 tokens) com latência imperceptível. Ao usar Context Engineering e RAG híbrido, você não precisa enviar um prompt inflado de 30 mil tokens que sobrecarregaria o barramento de memória da CPU. Você injeta cirurgicamente apenas 400 a 800 tokens de contexto puro e validado. O modelo pequeno responde em 200 milissegundos, sem alucinar e com custo marginal zero.</p>
+
+            <h2>7. Guia Prático: Como Montar Seu Laboratório Gratuito em 5 Minutos</h2>
 
             <h3>Passo 1: Instalar o Ollama e Baixar o Gemma ou Qwen</h3>
             <p>No macOS ou Linux, a instalação é feita com um único comando no terminal:</p>
@@ -376,7 +434,7 @@ opencode
 # Dentro do console do OpenCode:
 /models</code></pre>
 
-            <h2>7. Filosofia e Soberania Técnica: Por Que o Local-First Vence</h2>
+            <h2>8. Filosofia e Soberania Técnica: Por Que o Local-First Vence</h2>
             <p>A dependência exclusiva de provedores corporativos de nuvem cria uma armadilha silenciosa para equipes e desenvolvedores individuais. APIs mudam termos de serviço, aumentam preços de tokens sem aviso prévio, impõem restrições de conteúdo inesperadas ou sofrem indisponibilidades regionais que travam fluxos de trabalho inteiros.</p>
 
             <p>Trabalhar com a combinação híbrida apresentada neste estudo traz três vantagens estratégicas definitivas:</p>
@@ -655,7 +713,65 @@ graph LR
 
             <p><strong>Benchmark interpretation:</strong> Even across older x86 mobile chips running DDR4 RAM buses, generation speeds regularly surpass 26 to 34 tokens per second. For context, typical human reading speeds range from 4 to 6 words per second (roughly 5 to 8 tokens per second). Consequently, local CPU execution outputs tokens substantially faster than a software engineer can parse and digest the text in real time.</p>
 
-            <h2>6. Implementation Guide: Deploying a Free Local Lab in 5 Minutes</h2>
+            <h2>6. The Secret of Small Models: Context Engineering, Harnesses, and Hybrid RAG</h2>
+            <p>A widespread misconception when evaluating compact 1B to 4B parameter models is assuming they cannot execute intricate engineering workflows because they hold fewer parameters on disk. A 70B parameter model operates like a sprawling static encyclopedia that memorized billions of facts during pretraining. Asking an unassisted 2B model to guess obscure facts without grounding invariably leads to hallucinations.</p>
+
+            <p>However, the attention mechanisms of modern SLMs (such as Gemma 2/3 and Qwen 2.5) possess extraordinary contextual reasoning and structured output fidelity when fed high-density data. This discipline is known as <strong>Context Engineering</strong>: instead of depending on static pretraining memory, developers build deterministic harnesses that guide model generation with surgical accuracy.</p>
+
+            <h3>A. Project Harness Governance: agents.md and context.md</h3>
+            <p>To extract optimal behavior from a compact model without costly fine-tuning passes, agentic software engineering standardizes context governance through technical specification files stored at the repository root:</p>
+            <ul>
+                <li><strong>agents.md:</strong> Establishes the operational persona, strict role definition, non-negotiable boundaries, and mandatory output schemas. If a model must function as a code linter, the <code>agents.md</code> file dictates that it return strictly a structured JSON object containing line, violation, and fix, prohibiting conversational preamble and polite pleasantries.</li>
+                <li><strong>context.md:</strong> Captures an active snapshot of the codebase: architectural invariants, active dependency versions, recent architectural decision records (ADRs), and database schemas. By injecting <code>context.md</code> ahead of user tasks, a 2B parameter model programs with the contextual fluency of a senior staff engineer.</li>
+            </ul>
+
+            <p>We see this architecture in action within <strong>Amanuensis</strong>: the platform maintains an isolated harness in <code>.amanuensis/AGENT.md</code> alongside a structured terminology glossary in <code>glossary.toml</code>. When <code>TranslateGemma 4B</code> receives a sentence unit to translate, it never guesses tone or authorial register: the harness supplies exact consistency constraints prior to each segment.</p>
+
+            <h3>B. Local Hybrid RAG: High Precision Without Cloud Vector Subscriptions</h3>
+            <p>Many introductory guides recommend managed vector databases in the cloud to implement Retrieval-Augmented Generation (RAG). In a local-first architecture, cloud roundtrips introduce unacceptable network latency. The most performant CPU design merges deterministic lexical matching with semantic dense search across two tiers:</p>
+            <ol>
+                <li><strong>Lexical Retrieval via SQLite FTS5 (BM25):</strong> Locates exact keyword matches, variable names, error codes, and port numbers in under 2 milliseconds.</li>
+                <li><strong>Compact Embeddings (MiniLM or Nomic):</strong> Small embedding networks (80 MB to 120 MB) running in CPU memory that resolve conceptually similar passages without requiring identical word overlap.</li>
+                <li><strong>Reciprocal Rank Fusion (RRF):</strong> A lightweight mathematical ranker that merges both result lists, filtering noise and selecting only the top 2 or 3 highest-density code or text snippets.</li>
+            </ol>
+
+            <p>The diagram below illustrates the complete Context Engineering pipeline allowing a lightweight CPU model to match the precision of frontier cloud models:</p>
+
+            <div class="mermaid">
+flowchart TD
+    subgraph StorageEN["Repository &amp; Local Memory"]
+        AgentDocEN["Harness: agents.md (Role &amp; Rules)"]
+        ContextDocEN["Context: context.md (Architecture)"]
+        FTSEN["SQLite FTS5 (BM25 Lexical)"]
+        DenseEmbEN["Local Embeddings (MiniLM CPU)"]
+    end
+
+    subgraph RAGPipelineEN["Local Hybrid RAG Engine"]
+        QueryEN["User Query / Engineering Task"]
+        RRFEN["Reciprocal Rank Fusion (RRF)"]
+        ContextAssemblerEN["Surgical Prompt Assembler (&lt; 800 tokens)"]
+    end
+
+    subgraph CPUModelEN["CPU Execution Bus (Zero-GPU)"]
+        LocalSLMEN["Gemma 2B / Qwen 2.5 3B (GGUF Q4_K_M)"]
+        OutputEN["Deterministic Grounded Output"]
+    end
+
+    QueryEN --> FTSEN
+    QueryEN --> DenseEmbEN
+    FTSEN --> RRFEN
+    DenseEmbEN --> RRFEN
+    AgentDocEN --> ContextAssemblerEN
+    ContextDocEN --> ContextAssemblerEN
+    RRFEN --> ContextAssemblerEN
+    QueryEN --> ContextAssemblerEN
+    ContextAssemblerEN -->|Grounded Concise Prompt| LocalSLMEN
+    LocalSLMEN --> OutputEN
+            </div>
+
+            <p><strong>The practical token economy:</strong> Small models on CPU process concise contexts (between 512 and 2048 tokens) with imperceptible latency. By utilizing Context Engineering and local hybrid RAG, you avoid dispatching bloated 30,000-token prompts that stall the CPU memory bus. You inject surgically between 400 and 800 tokens of verified reference context. The compact model generates verified output in 200 milliseconds without hallucinations and at zero marginal cost.</p>
+
+            <h2>7. Implementation Guide: Deploying a Free Local Lab in 5 Minutes</h2>
 
             <h3>Step 1: Install Ollama and Download Gemma or Qwen</h3>
             <p>On macOS or Linux, setup requires a single shell command:</p>
@@ -705,7 +821,7 @@ opencode
 # Inside OpenCode console:
 /models</code></pre>
 
-            <h2>7. Technical Sovereignty: Why Local-First Architecture Matters</h2>
+            <h2>8. Technical Sovereignty: Why Local-First Architecture Matters</h2>
             <p>Relying exclusively on centralized cloud LLM endpoints creates systemic vulnerabilities for engineering teams and autonomous developers. External providers adjust pricing tiers unexpectedly, throttle bandwidth, revise acceptable use boundaries without notice, or suffer regional routing blackouts that halt development velocity.</p>
 
             <p>Adopting the dual strategy explored in this dossier provides three durable engineering advantages:</p>
