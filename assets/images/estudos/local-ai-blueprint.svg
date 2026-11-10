@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="100%" height="100%" style="background:#0a0e17; font-family:'JetBrains Mono', monospace;">
+  <defs>
+    <!-- Blueprint Grid Pattern -->
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(0, 210, 255, 0.06)" stroke-width="1"/>
+    </pattern>
+    <pattern id="grid-major" width="150" height="150" patternUnits="userSpaceOnUse">
+      <rect width="150" height="150" fill="none" stroke="rgba(0, 210, 255, 0.12)" stroke-width="1.5"/>
+    </pattern>
+
+    <!-- Gradients -->
+    <linearGradient id="cyan-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00d2ff" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#3a86ff" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="gold-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4af37" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ff9e00" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="box-fill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f1623" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#0a0e17" stop-opacity="0.95"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base Grid Background -->
+  <rect width="1200" height="630" fill="#0a0e17"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#grid-major)"/>
+
+  <!-- Outer Technical Blueprint Border -->
+  <rect x="24" y="24" width="1152" height="582" fill="none" stroke="#1e293b" stroke-width="1.5"/>
+  <rect x="28" y="28" width="1144" height="574" fill="none" stroke="rgba(0, 210, 255, 0.15)" stroke-width="1"/>
+
+  <!-- Corner Registration Marks -->
+  <path d="M 18 24 L 30 24 M 24 18 L 24 30" stroke="#00d2ff" stroke-width="2"/>
+  <path d="M 1170 24 L 1182 24 M 1176 18 L 1176 30" stroke="#00d2ff" stroke-width="2"/>
+  <path d="M 18 606 L 30 606 M 24 600 L 24 612" stroke="#00d2ff" stroke-width="2"/>
+  <path d="M 1170 606 L 1182 606 M 1176 600 L 1176 612" stroke="#00d2ff" stroke-width="2"/>
+
+  <!-- Top Telemetry Strip -->
+  <rect x="40" y="40" width="1120" height="34" fill="#0f1623" stroke="#1e293b" stroke-width="1"/>
+  <text x="56" y="62" fill="#00d2ff" font-size="11" font-weight="700" letter-spacing="1.5">SYS // 03</text>
+  <text x="140" y="62" fill="#94a3b8" font-size="11" letter-spacing="1">DISCIPLINE: EDGE AI &amp; SLM RUNTIMES</text>
+  <text x="500" y="62" fill="#94a3b8" font-size="11" letter-spacing="1">HARDWARE: CPU + SYSTEM RAM (ZERO GPU REQ)</text>
+  <circle cx="980" cy="57" r="4" fill="#00d2ff"/>
+  <text x="994" y="62" fill="#00d2ff" font-size="11" font-weight="700" letter-spacing="1">LATENCY: OPTIMIZED</text>
+  <text x="1110" y="62" fill="#d4af37" font-size="11" font-weight="700">∴ 1:1</text>
+
+  <!-- Title & Subtitle Area -->
+  <text x="56" y="115" fill="#f8fafc" font-size="24" font-weight="700" font-family="'Inter', sans-serif" letter-spacing="-0.5">CPU INFERENCE &amp; ZERO-COST AGENT ARCHITECTURE</text>
+  <text x="56" y="140" fill="#94a3b8" font-size="13" font-family="'Inter', sans-serif">Dual Pipeline Strategy: OpenCode Cloud Free Tiers + 100% Local Small Language Models (GGUF / Ollama)</text>
+
+  <!-- Main Architecture Columns -->
+  <!-- LEFT COLUMN: OPENCODE & FREE CLOUD TIERS -->
+  <g transform="translate(56, 165)">
+    <rect x="0" y="0" width="340" height="350" rx="4" fill="url(#box-fill)" stroke="#1e293b" stroke-width="1.5"/>
+    <rect x="0" y="0" width="340" height="32" rx="4" fill="#141c2c" stroke="#1e293b" stroke-width="1"/>
+    <text x="16" y="21" fill="#00d2ff" font-size="11" font-weight="700" letter-spacing="1">[ 01 ] OPENCODE &amp; FREE TIERS</text>
+    <text x="260" y="21" fill="#d4af37" font-size="10">REMOTE / API</text>
+
+    <!-- Cloud Providers List -->
+    <g transform="translate(16, 48)">
+      <!-- Item 1 -->
+      <rect x="0" y="0" width="308" height="54" fill="#0a0e17" stroke="#1e293b" stroke-width="1"/>
+      <text x="12" y="22" fill="#f8fafc" font-size="12" font-weight="700">OpenCode Native Rotation</text>
+      <text x="12" y="40" fill="#94a3b8" font-size="10">DeepSeek Flash / GLM Flash Free Tier</text>
+      <rect x="235" y="12" width="60" height="18" fill="rgba(0, 210, 255, 0.1)" stroke="#00d2ff" stroke-width="0.8"/>
+      <text x="245" y="25" fill="#00d2ff" font-size="9" font-weight="700">ROTATING</text>
+
+      <!-- Item 2 -->
+      <g transform="translate(0, 64)">
+        <rect x="0" y="0" width="308" height="54" fill="#0a0e17" stroke="#1e293b" stroke-width="1"/>
+        <text x="12" y="22" fill="#f8fafc" font-size="12" font-weight="700">Groq Cloud (LPU Free Tier)</text>
+        <text x="12" y="40" fill="#94a3b8" font-size="10">Llama 3.3 70B &amp; Qwen 2.5 32B @ 300+ T/s</text>
+        <rect x="235" y="12" width="60" height="18" fill="rgba(212, 175, 55, 0.1)" stroke="#d4af37" stroke-width="0.8"/>
+        <text x="245" y="25" fill="#d4af37" font-size="9" font-weight="700">FAST RPM</text>
+      </g>
+
+      <!-- Item 3 -->
+      <g transform="translate(0, 128)">
+        <rect x="0" y="0" width="308" height="54" fill="#0a0e17" stroke="#1e293b" stroke-width="1"/>
+        <text x="12" y="22" fill="#f8fafc" font-size="12" font-weight="700">Google AI Studio</text>
+        <text x="12" y="40" fill="#94a3b8" font-size="10">Gemini 2.5 Flash Free Tier (1M Context)</text>
+        <rect x="235" y="12" width="60" height="18" fill="rgba(0, 210, 255, 0.1)" stroke="#00d2ff" stroke-width="0.8"/>
+        <text x="245" y="25" fill="#00d2ff" font-size="9" font-weight="700">1M TOKENS</text>
+      </g>
+
+      <!-- Item 4 -->
+      <g transform="translate(0, 192)">
+        <rect x="0" y="0" width="308" height="54" fill="#0a0e17" stroke="#1e293b" stroke-width="1"/>
+        <text x="12" y="22" fill="#f8fafc" font-size="12" font-weight="700">GitHub Models</text>
+        <text x="12" y="40" fill="#94a3b8" font-size="10">Llama 3.1 &amp; Phi-4 Developer Endpoint</text>
+        <rect x="235" y="12" width="60" height="18" fill="rgba(255, 255, 255, 0.05)" stroke="#475569" stroke-width="0.8"/>
+        <text x="245" y="25" fill="#94a3b8" font-size="9" font-weight="700">DEV TIER</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- CENTER BRIDGE: REAL PRODUCTION WORKFLOWS -->
+  <g transform="translate(426, 165)">
+    <rect x="0" y="0" width="348" height="350" rx="4" fill="url(#box-fill)" stroke="#00d2ff" stroke-width="1.2" stroke-dasharray="6 3"/>
+    <rect x="0" y="0" width="348" height="32" rx="4" fill="#141c2c" stroke="#1e293b" stroke-width="1"/>
+    <text x="16" y="21" fill="#00d2ff" font-size="11" font-weight="700" letter-spacing="1">[ 02 ] PRODUCTION CASE STUDIES</text>
+    <text x="260" y="21" fill="#00d2ff" font-size="10">IN-USE CASES</text>
+
+    <!-- Project 1: Amanuensis -->
+    <g transform="translate(16, 48)">
+      <rect x="0" y="0" width="316" height="116" fill="#0a0e17" stroke="#1e293b" stroke-width="1"/>
+      <rect x="0" y="0" width="4" height="116" fill="#00d2ff"/>
+      <text x="16" y="24" fill="#00d2ff" font-size="13" font-weight="700">AMANUENSIS</text>
+      <text x="130" y="24" fill="#94a3b8" font-size="10">Rust + macOS WKWebView</text>
+      <text x="16" y="46" fill="#f8fafc" font-size="11" font-family="'Inter', sans-serif">Offline CAT Translation Station (Zero-Telemetry)</text>
+      <text x="16" y="66" fill="#94a3b8" font-size="10">Engine: Native GGUF parser + llama.cpp mmap</text>
+      <text x="16" y="84" fill="#94a3b8" font-size="10">Models: TranslateGemma 4B / Qwen 2.5 3B / Llama 3.2</text>
+      <rect x="16" y="94" width="130" height="14" fill="rgba(0, 210, 255, 0.1)"/>
+      <text x="20" y="104" fill="#00d2ff" font-size="9" font-weight="700">CPU MEMORY: ~2.8 GB</text>
+      <rect x="156" y="94" width="144" height="14" fill="rgba(212, 175, 55, 0.1)"/>
+      <text x="160" y="104" fill="#d4af37" font-size="9" font-weight="700">THROUGHPUT: 32 T/S (M-SERIES)</text>
+    </g>
+
+    <!-- Project 2: LoabPron -->
+    <g transform="translate(16, 178)">
+      <rect x="0" y="0" width="316" height="116" fill="#0a0e17" stroke="#1e293b" stroke-width="1"/>
+      <rect x="0" y="0" width="4" height="116" fill="#d4af37"/>
+      <text x="16" y="24" fill="#d4af37" font-size="13" font-weight="700">LOABPRON</text>
+      <text x="110" y="24" fill="#94a3b8" font-size="10">Python FastAPI + Procedural Audio</text>
+      <text x="16" y="46" fill="#f8fafc" font-size="11" font-family="'Inter', sans-serif">Notpron-Style Psychological Riddle with AI Oracle</text>
+      <text x="16" y="66" fill="#94a3b8" font-size="10">Engine: Ollama localhost:11434 CPU-mode</text>
+      <text x="16" y="84" fill="#94a3b8" font-size="10">Model: gemma2:2b (1.6 GB) 100% offline</text>
+      <rect x="16" y="94" width="130" height="14" fill="rgba(212, 175, 55, 0.1)"/>
+      <text x="20" y="104" fill="#d4af37" font-size="9" font-weight="700">PULL TIME: &lt; 90 SECONDS</text>
+      <rect x="156" y="94" width="144" height="14" fill="rgba(0, 210, 255, 0.1)"/>
+      <text x="160" y="104" fill="#00d2ff" font-size="9" font-weight="700">ZERO CLOUD CALLS</text>
+    </g>
+  </g>
+
+  <!-- RIGHT COLUMN: 100% LOCAL SLM RUNTIMES -->
+  <g transform="translate(804, 165)">
+    <rect x="0" y="0" width="340" height="350" rx="4" fill="url(#box-fill)" stroke="#1e293b" stroke-width="1.5"/>
+    <rect x="0" y="0" width="340" height="32" rx="4" fill="#141c2c" stroke="#1e293b" stroke-width="1"/>
+    <text x="16" y="21" fill="#00d2ff" font-size="11" font-weight="700" letter-spacing="1">[ 03 ] 100% LOCAL SLM ENGINES</text>
+    <text x="250" y="21" fill="#00d2ff" font-size="10">CPU / OFFLINE</text>
+
+    <!-- Local Models List -->
+    <g transform="translate(16, 48)">
+      <!-- Item 1 -->
+      <rect x="0" y="0" width="308" height="54" fill="#0a0e17" stroke="#1e293b" stroke-width="1"/>
+      <text x="12" y="22" fill="#f8fafc" font-size="12" font-weight="700">Google Gemma 2 / 3</text>
+      <text x="12" y="40" fill="#94a3b8" font-size="10">1B &amp; 2B: 1.4-1.8 GB RAM // 45-68 T/s</text>
+      <rect x="235" y="12" width="60" height="18" fill="rgba(0, 210, 255, 0.1)" stroke="#00d2ff" stroke-width="0.8"/>
+      <text x="245" y="25" fill="#00d2ff" font-size="9" font-weight="700">DENSE</text>
+
+      <!-- Item 2 -->
+      <g transform="translate(0, 64)">
+        <rect x="0" y="0" width="308" height="54" fill="#0a0e17" stroke="#1e293b" stroke-width="1"/>
+        <text x="12" y="22" fill="#f8fafc" font-size="12" font-weight="700">Qwen 2.5 Coder</text>
+        <text x="12" y="40" fill="#94a3b8" font-size="10">1.5B &amp; 3B: Code autocompletion on CPU</text>
+        <rect x="235" y="12" width="60" height="18" fill="rgba(0, 210, 255, 0.1)" stroke="#00d2ff" stroke-width="0.8"/>
+        <text x="245" y="25" fill="#00d2ff" font-size="9" font-weight="700">CODING</text>
+      </g>
+
+      <!-- Item 3 -->
+      <g transform="translate(0, 128)">
+        <rect x="0" y="0" width="308" height="54" fill="#0a0e17" stroke="#1e293b" stroke-width="1"/>
+        <text x="12" y="22" fill="#f8fafc" font-size="12" font-weight="700">Meta Llama 3.2</text>
+        <text x="12" y="40" fill="#94a3b8" font-size="10">1B &amp; 3B: 128k context, JSON structured output</text>
+        <rect x="235" y="12" width="60" height="18" fill="rgba(212, 175, 55, 0.1)" stroke="#d4af37" stroke-width="0.8"/>
+        <text x="245" y="25" fill="#d4af37" font-size="9" font-weight="700">JSON/CHAT</text>
+      </g>
+
+      <!-- Item 4 -->
+      <g transform="translate(0, 192)">
+        <rect x="0" y="0" width="308" height="54" fill="#0a0e17" stroke="#1e293b" stroke-width="1"/>
+        <text x="12" y="22" fill="#f8fafc" font-size="12" font-weight="700">Phi-3.5 / Phi-4 Mini</text>
+        <text x="12" y="40" fill="#94a3b8" font-size="10">3.8B: Strong logic &amp; math on standard laptops</text>
+        <rect x="235" y="12" width="60" height="18" fill="rgba(0, 210, 255, 0.1)" stroke="#00d2ff" stroke-width="0.8"/>
+        <text x="245" y="25" fill="#00d2ff" font-size="9" font-weight="700">REASONING</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom Telemetry Bar -->
+  <g transform="translate(56, 535)">
+    <rect x="0" y="0" width="1088" height="42" fill="#0f1623" stroke="#1e293b" stroke-width="1"/>
+    <text x="20" y="26" fill="#00d2ff" font-size="11" font-weight="700">BENCHMARK SUMMARY:</text>
+    <text x="180" y="26" fill="#94a3b8" font-size="11">Throughput: 25 - 68 T/s on CPU</text>
+    <text x="440" y="26" fill="#94a3b8" font-size="11">RAM Footprint: 1.2 GB - 3.8 GB (Q4_K_M)</text>
+    <text x="760" y="26" fill="#94a3b8" font-size="11">Zero Telemetry: 100% Air-Gapped Capable</text>
+    <text x="1020" y="26" fill="#d4af37" font-size="11" font-weight="700">VERIFIED</text>
+  </g>
+</svg>

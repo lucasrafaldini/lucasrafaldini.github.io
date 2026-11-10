@@ -29,8 +29,9 @@ def main():
 
     print(f"==> Scanning repository for prohibited dashes at {root_dir}...")
     for root, dirs, files in os.walk(root_dir):
-        if '.git' in dirs:
-            dirs.remove('.git')
+        for ignored in ('.git', '_site', '.jekyll-cache', 'node_modules', 'vendor', '.bundle'):
+            if ignored in dirs:
+                dirs.remove(ignored)
         for file in files:
             if file.endswith(EXTENSIONS):
                 p = os.path.join(root, file)
