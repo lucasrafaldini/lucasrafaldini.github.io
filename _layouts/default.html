@@ -266,6 +266,7 @@
                     el.dataset.mermaidRendered = 'true';
                 } catch (err) {
                     console.error('Mermaid render error:', err);
+                    document.querySelectorAll('[id^="dmermaid-svg-"], .error-icon').forEach((errEl) => errEl.remove());
                 }
             }
         }
@@ -279,6 +280,33 @@
         document.addEventListener('languagechange', () => {
             setTimeout(renderVisibleMermaid, 60);
         });
+    </script>
+    {% endif %}
+
+    {% if page.math %}
+    <!-- KaTeX for LaTeX Math Rendering -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+    <script>
+        function renderMathSafely() {
+            if (typeof renderMathInElement === 'function') {
+                renderMathInElement(document.body, {
+                    delimiters: [
+                        { left: '$$', right: '$$', display: true },
+                        { left: '$', right: '$', display: false }
+                    ],
+                    throwOnError: false
+                });
+            }
+        }
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', () => setTimeout(renderMathSafely, 80));
+        } else {
+            setTimeout(renderMathSafely, 80);
+        }
+        window.addEventListener('load', () => setTimeout(renderMathSafely, 120));
+        document.addEventListener('languagechange', () => setTimeout(renderMathSafely, 60));
     </script>
     {% endif %}
 </body>

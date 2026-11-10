@@ -4,6 +4,7 @@ title: Estratégias de Compressão de Imagens em Redes Sociais
 title_en: Social Media Image Compression Strategies
 description: Estudo analítico e comparativo sobre os pipelines de compressão do Facebook, Twitter/X, Instagram, Bluesky, Reddit, Threads e Orkut, examinando perda perceptual, descarte de metadados EXIF e resiliência de esteganografia polyglot PNG.
 mermaid: true
+math: true
 ---
 
 <article class="estudo-detalhado">
@@ -200,7 +201,7 @@ sequenceDiagram
     participant Decoder as Worker Sandboxed (libpng / libjpeg)
     participant RAM as Buffer Raster em Memoria RAM
     participant Encoder as Motor Transcodificador (MozJPEG / WebP)
-    participant CDN as Object Storage & Edge CDN
+    participant CDN as Object Storage and Edge CDN
     actor Viewer as Destinatario Final
 
     User->>Edge: Upload de PNG Polyglot (Pixels + Payload Pós-DEFLATE + EXIF)
@@ -255,12 +256,12 @@ flowchart TD
     META_PIPE --> META_RES["Forca sRGB + Redimensiona:<br/>IG: 1080px | Threads: 1440px | FB: 2048px"]
     META_RES --> META_ENC["Transcodifica para MozJPEG (Q=70..82, 4:2:0)<br/>Injeta Tag IPTC 'FBMD' / Serve WebP na CDN"]
 
-    PLATFORM -->|Twitter / X| X_PIPE{"Arquivo e PNG com<br/>Transparencia, Paleta 8-bit<br/>ou <= 900x900px?"}
-    X_PIPE -->|Sim (Excecao PNG)| X_PNG["Preserva Formato PNG (4:4:4 Lossless)<br/>Reconstroi Chunks IDAT Limpos e Remove EXIF"]
-    X_PIPE -->|Nao (PNG Opaco > 900px ou JPEG)| X_JPG["Limita a 4096x4096px<br/>Transcodifica para JPEG 4:2:0 (Q=85)"]
+    PLATFORM -->|Twitter / X| X_PIPE{"Arquivo e PNG com<br/>Transparencia, Paleta 8-bit<br/>ou ate 900x900px?"}
+    X_PIPE -->|Sim: Excecao PNG| X_PNG["Preserva Formato PNG (4:4:4 Lossless)<br/>Reconstroi Chunks IDAT Limpos e Remove EXIF"]
+    X_PIPE -->|Nao: PNG Opaco maior que 900px ou JPEG| X_JPG["Limita a 4096x4096px<br/>Transcodifica para JPEG 4:2:0 (Q=85)"]
 
-    PLATFORM -->|Bluesky (AT Protocol)| BSKY_PIPE["Compressor Client-Side no App (React Native / Web)"]
-    BSKY_PIPE --> BSKY_LIM["Reduz para max 2000px e ajusta JPEG Q=80..90<br/>ate ficar estritamente < 1.000.000 bytes (1 MB)"]
+    PLATFORM -->|Bluesky: AT Protocol| BSKY_PIPE["Compressor Client-Side no App (React Native / Web)"]
+    BSKY_PIPE --> BSKY_LIM["Reduz para max 2000px e ajusta JPEG Q=80..90<br/>ate ficar abaixo de 1.000.000 bytes (1 MB)"]
     BSKY_LIM --> BSKY_PDS["Grava Blob no PDS (Hash CID SHA-256)<br/>Proxy cdn.bsky.app converte para WebP"]
 
     PLATFORM -->|Reddit| RED_PIPE["Ingestao Ate 20 MB: Limpa EXIF/GPS na Borda"]
@@ -476,7 +477,7 @@ flowchart TD
                 <div class="mermaid">
 xychart-beta
     title "Fidelidade Visual Pos-Transcodificacao (PSNR em dB - Maior e Melhor)"
-    x-axis ["Orkut (VGA/XGA)", "Instagram (1080p)", "Reddit Preview", "Threads (1440p)", "Facebook (HD)", "Bluesky (2000p)", "Twitter/X (4K JPG)"]
+    x-axis ["Orkut", "Instagram", "Reddit", "Threads", "Facebook", "Bluesky", "Twitter / X"]
     y-axis "PSNR (dB)" 20 --> 45
     bar [28.7, 31.4, 33.1, 33.6, 34.8, 35.2, 38.9]
                 </div>
@@ -782,7 +783,7 @@ sequenceDiagram
     participant Decoder as Sandboxed Worker (libpng / libjpeg)
     participant RAM as Uncompressed Raster Buffer in RAM
     participant Encoder as Transcoding Engine (MozJPEG / WebP)
-    participant CDN as Object Storage & Edge CDN
+    participant CDN as Object Storage and Edge CDN
     actor Viewer as End Recipient
 
     User->>Edge: Upload Polyglot PNG (Pixels + Post-DEFLATE Payload + EXIF)
@@ -837,12 +838,12 @@ flowchart TD
     META_PIPE --> META_RES["Force sRGB + Downscale:<br/>IG: 1080px | Threads: 1440px | FB: 2048px"]
     META_RES --> META_ENC["Transcode via MozJPEG (Q=70..82, 4:2:0)<br/>Inject IPTC 'FBMD' Tag / Serve Edge WebP"]
 
-    PLATFORM -->|Twitter / X| X_PIPE{"Is File PNG with<br/>Alpha, 8-bit Palette,<br/>or <= 900x900px?"}
-    X_PIPE -->|Yes (PNG Exception)| X_PNG["Preserve PNG Format (4:4:4 Lossless)<br/>Rebuild Clean IDAT Chunks & Strip EXIF"]
-    X_PIPE -->|No (Opaque PNG > 900px or JPEG)| X_JPG["Clamp to 4096x4096px<br/>Transcode to JPEG 4:2:0 (Q=85)"]
+    PLATFORM -->|Twitter / X| X_PIPE{"Is File PNG with<br/>Alpha, 8-bit Palette,<br/>or up to 900x900px?"}
+    X_PIPE -->|Yes: PNG Exception| X_PNG["Preserve PNG Format (4:4:4 Lossless)<br/>Rebuild Clean IDAT Chunks and Strip EXIF"]
+    X_PIPE -->|No: Opaque PNG over 900px or JPEG| X_JPG["Clamp to 4096x4096px<br/>Transcode to JPEG 4:2:0 (Q=85)"]
 
-    PLATFORM -->|Bluesky (AT Protocol)| BSKY_PIPE["Client-Side Compressor in App (React Native / Web)"]
-    BSKY_PIPE --> BSKY_LIM["Resize to max 2000px & tune JPEG Q=80..90<br/>until strictly < 1,000,000 bytes (1 MB)"]
+    PLATFORM -->|Bluesky: AT Protocol| BSKY_PIPE["Client-Side Compressor in App (React Native / Web)"]
+    BSKY_PIPE --> BSKY_LIM["Resize to max 2000px and tune JPEG Q=80..90<br/>until strictly under 1,000,000 bytes (1 MB)"]
     BSKY_LIM --> BSKY_PDS["Store Blob in PDS (SHA-256 CID Hash)<br/>Proxy cdn.bsky.app transcodes to WebP"]
 
     PLATFORM -->|Reddit| RED_PIPE["Ingest up to 20 MB: Strip EXIF/GPS at Edge"]
@@ -1058,7 +1059,7 @@ flowchart TD
                 <div class="mermaid">
 xychart-beta
     title "Post-Transcoding Visual Fidelity (PSNR in dB - Higher is Better)"
-    x-axis ["Orkut (VGA/XGA)", "Instagram (1080p)", "Reddit Preview", "Threads (1440p)", "Facebook (HD)", "Bluesky (2000p)", "Twitter/X (4K JPG)"]
+    x-axis ["Orkut", "Instagram", "Reddit", "Threads", "Facebook", "Bluesky", "Twitter / X"]
     y-axis "PSNR (dB)" 20 --> 45
     bar [28.7, 31.4, 33.1, 33.6, 34.8, 35.2, 38.9]
                 </div>

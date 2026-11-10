@@ -1986,4 +1986,17 @@ article pre::-webkit-scrollbar-thumb:hover,
     height: auto;
 }
 
+/* KaTeX Math Styling */
+.katex {
+    font-size: 1.05em;
+    color: var(--text-main);
+}
+
+.katex-display {
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 12px 0;
+    margin: 16px 0;
+}
+
 
