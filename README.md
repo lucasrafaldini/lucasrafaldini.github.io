@@ -33,7 +33,6 @@ Este repositório centraliza e conecta as diferentes frentes de atuação e expl
 - **[Projetos (/projetos/)](https://lucasrafaldini.github.io/projetos/)**: Integração direta com a API do GitHub com filtros e telemetria de repositórios.
 - **[Estudos (/estudos/)](https://lucasrafaldini.github.io/estudos/)**: Dossiês de pesquisa interdisciplinar (incluindo o estudo analítico sobre os Símbolos da Era do Gelo na Europa e escrita proto-cuneiforme).
 - **[Cardputer Bins (/cardputer-bins/)](https://lucasrafaldini.github.io/cardputer-bins/)**: Repositório e player de binários compilados para M5Cardputer.
-- **[O Décimo Círculo (/decimo-circulo/)](https://lucasrafaldini.github.io/decimo-circulo/)**: Experimento em Canvas 2D com autômatos celulares e simulação aquática procedural a 60fps.
 
 ---
 

@@ -68,7 +68,6 @@ python3 skills/zero-dash-linter/lint.py
 ├── _posts/                  # Bilingual blog articles in Markdown
 ├── assets/                  # Static assets (images, icons)
 ├── cardputer-bins/          # M5Cardputer portable firmware catalog
-├── decimo-circulo/          # "The Tenth Circle" 60fps procedural fish tank (Canvas 2D)
 ├── estudos/                 # Long-form research dossiers (Ice Age Symbols, etc.)
 ├── posts/                   # Post archive listing with blueprint telemetry
 ├── projetos/                # Dynamic GitHub repos showcase with live API caching
